@@ -248,34 +248,71 @@ em{font-style:italic;color:var(--brass)}
 .faq-cols details[open] .x{transform:rotate(45deg)}
 .faq-cols details p{margin:0 0 24px 54px;color:var(--ink-dim)}
 
-/* stepper form */
+/* estimate form: same fields as the client's LeadConnector form, Gaslight styling, scrolls inside its card */
 .cta{position:relative;overflow:hidden}
 .cta::before{content:"";position:absolute;width:900px;height:900px;left:50%;top:-40%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,151,0,.2),transparent);pointer-events:none}
 .cta .inner{position:relative;max-width:760px;margin:0 auto;text-align:center}
-.stepper{margin-top:50px;background:rgba(245,240,230,.05);border:1px solid var(--line-light);border-radius:8px;padding:clamp(24px,4vw,44px);text-align:left}
-.st-bar{display:flex;gap:8px;margin-bottom:30px}
-.st-bar i{flex:1;height:3px;background:rgba(245,240,230,.15);border-radius:2px;position:relative;overflow:hidden}
-.st-bar i::after{content:"";position:absolute;inset:0;width:0;background:var(--amber);transition:width .5s var(--ease)}
-.st-bar i.done::after{width:100%}
-.step{display:none}.step.cur{display:block;animation:stepIn .5s var(--ease)}
-@keyframes stepIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
-.step h3{font-size:1.8rem;margin-bottom:20px}
-.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.opts label{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--line-light);border-radius:6px;cursor:pointer;transition:border-color .3s,background .3s}
-.opts input{accent-color:var(--amber);width:18px;height:18px}
-.opts label:has(input:checked){border-color:var(--amber);background:rgba(255,151,0,.08)}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.fields .full{grid-column:1/-1}
-.fields label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600;color:#c9c2b3}
-.fields input,.fields select{font:16px var(--sans);color:var(--ivory);background:rgba(0,0,0,.2);border:1px solid var(--line-light);border-radius:6px;padding:14px;min-height:52px}
-.fields input:focus,.fields select:focus{outline:none;border-color:var(--amber)}
-.fields option{background:var(--iron)}
-.st-nav{display:flex;justify-content:space-between;align-items:center;margin-top:26px;gap:14px}
-.st-nav .back{background:none;border:0;color:#c9c2b3;font:600 14px var(--sans);cursor:pointer;visibility:hidden}
-.status{display:none;margin-top:16px;padding:12px 14px;border:1px solid rgba(255,151,0,.5);border-radius:6px;background:rgba(255,151,0,.1);font-size:14px}
+.qform{margin-top:46px;text-align:left;background:rgba(245,240,230,.05);border:1px solid var(--line-light);border-radius:10px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
+.qf-hd{padding:26px clamp(20px,4vw,40px) 18px;border-bottom:1px solid var(--line-light)}
+.qf-hd h3{font-size:clamp(1.7rem,2.6vw,2.1rem);margin-bottom:8px}
+.qf-hd p{margin:0;color:#c9c2b3;font-size:15px}
+.qf-prog{height:3px;background:rgba(245,240,230,.12);border-radius:2px;margin-top:16px;overflow:hidden}
+.qf-prog i{display:block;height:100%;width:0;background:var(--amber);box-shadow:0 0 10px var(--glow);transition:width .4s var(--ease)}
+.qf-meta{display:flex;justify-content:space-between;margin-top:8px;font-size:12px;color:#a9a293}
+.qf-body{position:relative;max-height:clamp(340px,52vh,500px);overflow-y:auto;overscroll-behavior:contain;padding:22px clamp(20px,4vw,40px) 10px;scrollbar-width:thin;scrollbar-color:rgba(233,178,90,.5) transparent}
+.qf-body::-webkit-scrollbar{width:8px}.qf-body::-webkit-scrollbar-thumb{background:rgba(233,178,90,.45);border-radius:8px}
+.qf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 14px}
+.qf-grid .c2{grid-column:span 2}.qf-grid .c4{grid-column:1/-1}
+.fld{display:flex;flex-direction:column;gap:7px;min-width:0}
+.fld>label,.fld .lbl{font-size:13px;font-weight:600;color:#d9d2c3}
+.fld .req{color:#f0b64a;margin-left:2px}
+.fld input,.fld select,.fld textarea{font:16px var(--sans);color:var(--ivory);background:rgba(0,0,0,.22);border:1px solid var(--line-light);border-radius:6px;padding:13px 14px;min-height:50px;width:100%;transition:border-color .25s,box-shadow .25s}
+.fld textarea{min-height:110px;resize:vertical}
+.fld select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23e9b25a' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;cursor:pointer}
+.fld select:invalid{color:#8f897d}
+.fld option{background:var(--iron);color:var(--ivory)}
+.fld input::placeholder,.fld textarea::placeholder{color:#8f897d}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(255,151,0,.18)}
+.fld.bad input,.fld.bad select,.fld.bad textarea{border-color:#ff8a65;box-shadow:0 0 0 3px rgba(255,138,101,.15)}
+.fld .err{display:none;font-size:12.5px;color:#ffb199}
+.fld.bad .err{display:block}
+.fld[hidden]{display:none}
+.qf-sub{grid-column:1/-1;font:600 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e9b25a;margin:8px 0 -4px;display:flex;align-items:center;gap:10px}
+.qf-sub::after{content:"";flex:1;height:1px;background:var(--line-light)}
+.drop{display:flex;align-items:center;gap:14px;padding:16px;border:1.5px dashed rgba(233,178,90,.45);border-radius:8px;cursor:pointer;background:rgba(255,151,0,.04);transition:background .25s,border-color .25s}
+.drop:hover,.drop.over,.drop:focus-within{background:rgba(255,151,0,.1);border-color:var(--amber)}
+.drop svg{width:28px;height:28px;color:#e9b25a;flex:none}
+.drop b{display:block;font-size:14px;color:var(--ivory)}
+.drop small{font-size:12px;color:#a9a293}
+.drop input{position:absolute;width:1px;height:1px;opacity:0}
+.files{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:6px;font-size:13px;color:#d9d2c3}
+.files li{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;background:rgba(0,0,0,.2);border-radius:6px}
+.files button{background:none;border:0;color:#f0b64a;cursor:pointer;font:600 12px var(--sans)}
+.consent{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;padding:14px;border:1px solid var(--line-light);border-radius:8px;background:rgba(0,0,0,.12);cursor:pointer}
+.consent input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--amber);cursor:pointer}
+.consent b{display:block;font-size:14px;color:var(--ivory);margin-bottom:4px}
+.consent span{font-size:12.5px;line-height:1.55;color:#bdb6a7}
+.consent a{color:#f0b64a}
+.qf-fade{position:sticky;bottom:-10px;height:34px;margin:0 calc(-1*clamp(20px,4vw,40px));background:linear-gradient(0deg,rgb(40,53,47),rgba(40,53,47,0));pointer-events:none;transition:opacity .3s}
+.qf-body.end .qf-fade{opacity:0}
+.qf-ft{padding:16px clamp(20px,4vw,40px) 20px;border-top:1px solid var(--line-light);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:rgba(0,0,0,.12)}
+.qf-ft .qf-hint{font-size:12.5px;color:#a9a293;display:flex;align-items:center;gap:6px}
+.qf-ft .qf-hint svg{width:14px;height:14px;animation:nudge 1.6s infinite}
+.qform.end .qf-ft .qf-hint{visibility:hidden}
+@keyframes nudge{50%{transform:translateY(3px)}}
+.qf-ft .btn{min-height:52px}
+.status{display:none;margin:0 clamp(20px,4vw,40px) 18px;padding:12px 14px;border:1px solid rgba(255,151,0,.5);border-radius:6px;background:rgba(255,151,0,.1);font-size:14px}
 .status.show{display:block}
 .cta-alt{margin-top:26px;color:#c9c2b3;font-size:15px}
 .cta-alt a{color:#f0b64a;font-weight:700;text-decoration:none;white-space:nowrap}
+@media (max-width:640px){
+  .qf-grid{grid-template-columns:1fr 1fr}
+  .qf-grid .c2,.qf-grid .c4{grid-column:1/-1}
+  .qf-grid .c1{grid-column:span 1}
+  .qf-body{max-height:min(460px,58svh)}
+  .qf-ft .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){.qf-ft .qf-hint svg{animation:none}}
 
 /* footer: giant wordmark */
 .ftr{background:#15201b;color:#bdb6a7;padding:80px 0 120px;overflow:hidden}
@@ -611,29 +648,54 @@ em{font-style:italic;color:var(--brass)}
   <div class="wrap inner">
     <p class="kicker" style="justify-content:center">Free, no-obligation estimate</p>
     <h2 id="cta-h">Let's Plan Your <em>First Lit Night</em></h2>
-    <form class="stepper" data-prototype novalidate>
-      <div class="st-bar" aria-hidden="true"><i class="done"></i><i></i><i></i></div>
-      <fieldset class="step cur" style="border:0;padding:0;margin:0"><legend class="sr-only">Step 1 of 3</legend>
-        <h3>What Would You Like to Light?</h3>
-        <div class="opts">
-          <label><input type="checkbox" name="t" value="landscape">Landscape &amp; garden</label>
-          <label><input type="checkbox" name="t" value="path">Pathways &amp; driveway</label>
-          <label><input type="checkbox" name="t" value="patio">Deck, patio, or pool</label>
-          <label><input type="checkbox" name="t" value="curb">Home exterior</label>
-          <label><input type="checkbox" name="t" value="string">String or color lights</label>
-          <label><input type="checkbox" name="t" value="commercial">Commercial property</label>
+    <form class="qform" data-prototype novalidate aria-labelledby="qf-title">
+      <div class="qf-hd">
+        <h3 id="qf-title">Get a Free Estimate</h3>
+        <p>Do you have questions or comments about our services? Fill out the form below and our team will get back to you as soon as possible.</p>
+        <div class="qf-prog" aria-hidden="true"><i></i></div>
+        <div class="qf-meta"><span><span class="req">*</span> Required</span><span class="qf-count" aria-live="polite">0 of 5 required fields done</span></div>
+      </div>
+      <div class="qf-body" tabindex="0" aria-label="Estimate form fields (scrollable)">
+        <div class="qf-grid">
+          <div class="fld c2"><label for="q-name">Name<span class="req">*</span></label><input id="q-name" name="full_name" autocomplete="name" placeholder="Your full name" required aria-describedby="e-name"><span class="err" id="e-name">Please enter your name.</span></div>
+          <div class="fld c2"><label for="q-email">Email<span class="req">*</span></label><input id="q-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="e-email"><span class="err" id="e-email">Please enter a valid email.</span></div>
+          <div class="fld c4"><label for="q-phone">Phone<span class="req">*</span></label><input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(504) 555-0123" required aria-describedby="e-phone"><span class="err" id="e-phone">Please enter a 10-digit phone number.</span></div>
+
+          <p class="qf-sub">Property Address</p>
+          <div class="fld c4"><label for="q-addr">Street address</label><input id="q-addr" name="address" autocomplete="street-address" placeholder="Street address"></div>
+          <div class="fld c2"><label for="q-city">City</label><input id="q-city" name="city" autocomplete="address-level2" placeholder="City"></div>
+          <div class="fld c1"><label for="q-state">State</label><input id="q-state" name="state" autocomplete="address-level1" placeholder="LA" maxlength="20"></div>
+          <div class="fld c1"><label for="q-zip">Postal code</label><input id="q-zip" name="postal_code" autocomplete="postal-code" inputmode="numeric" placeholder="70130" maxlength="10"></div>
+
+          <p class="qf-sub">Your Project</p>
+          <div class="fld c4"><label for="q-svc">Select service<span class="req">*</span></label>
+            <select id="q-svc" name="select_service" required aria-describedby="e-svc"><option value="" selected disabled>Choose one</option><option>Residential Services</option><option>Commercial Services</option></select>
+            <span class="err" id="e-svc">Please choose a service.</span></div>
+          <div class="fld c4" id="w-res" hidden><label for="q-res">Select residential service</label>
+            <select id="q-res" name="select_residential_service"><option value="" selected>Choose one (optional)</option><option>Curb Appeal Lighting</option><option>Festive String Lighting</option><option>Landscape Lighting</option><option>Deck And Patio Lighting</option><option>Pathway Lighting</option><option>Color Changing Lighting</option><option>Sphere Lights</option></select></div>
+          <div class="fld c4" id="w-com" hidden><label for="q-com">Select commercial service</label>
+            <select id="q-com" name="select_commercial_service"><option value="" selected>Choose one (optional)</option><option>Outdoor Lighting</option><option>LED Lighting Systems</option><option>Up/Down lights</option><option>Garden Lights</option></select></div>
+          <div class="fld c4"><label for="q-msg">Message<span class="req">*</span></label><textarea id="q-msg" name="message" placeholder="Tell us about your property and what you'd like lit" required aria-describedby="e-msg"></textarea><span class="err" id="e-msg">Please add a short message.</span></div>
+          <div class="fld c4"><span class="lbl" id="l-up">Upload your photos or videos here (optional)</span>
+            <label class="drop" for="q-file">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span><b>Tap to add files, or drag them here</b><small>PDF, Word, Excel, CSV, PNG, JPG, GIF</small></span>
+              <input id="q-file" name="send_us_an_image_or_video" type="file" multiple accept=".pdf,.doc,.docx,.png,.gif,.jpg,.jpeg,.xls,.xlsx,.csv" aria-labelledby="l-up">
+            </label>
+            <ul class="files" aria-live="polite"></ul></div>
+
+          <p class="qf-sub">Communication Preferences</p>
+          <label class="consent c4"><input type="checkbox" name="terms_and_conditions" value="terms_and_conditions">
+            <span><b>Opt In to Receive SMS Notifications, Alerts &amp; Occasional Marketing Communication</b>You agree to receive automated messages. Receive up to 5 messages per month. Reply STOP to opt out or HELP for help. Message &amp; data rates apply. Terms and privacy policy can be found at link below.<br><a href="https://www.bigeasylighting.com/terms-and-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a> · <a href="https://www.bigeasylighting.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span></label>
+          <label class="consent c4"><input type="checkbox" name="call_consent" value="By submitting this form, I consent to receive calls, including automated calls using AI-generated voice technology, from Big Easy Lighting at the phone number provided above. Consent is not required as a condition of receiving a quote or service. I can revoke consent at any time.">
+            <span>By submitting this form, I consent to receive calls, including automated calls using AI-generated voice technology, from Big Easy Lighting at the phone number provided above. Consent is not required as a condition of receiving a quote or service. I can revoke consent at any time.</span></label>
         </div>
-      </fieldset>
-      <fieldset class="step" style="border:0;padding:0;margin:0"><legend class="sr-only">Step 2 of 3</legend>
-        <h3>Where's the Property?</h3>
-        <div class="fields"><label>ZIP code<input name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code"></label>
-        <label>Property type<select name="ptype"><option>Home</option><option>Business</option><option>HOA or managed property</option></select></label></div>
-      </fieldset>
-      <fieldset class="step" style="border:0;padding:0;margin:0"><legend class="sr-only">Step 3 of 3</legend>
-        <h3>How Do We Reach You?</h3>
-        <div class="fields"><label>Name<input name="name" autocomplete="name"></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label><label class="full">Email<input name="email" type="email" autocomplete="email"></label></div>
-      </fieldset>
-      <div class="st-nav"><button type="button" class="back">← Back</button><button type="button" class="btn btn-amber next">Continue <svg><use href="#arr"/></svg></button></div>
+        <div class="qf-fade" aria-hidden="true"></div>
+      </div>
+      <div class="qf-ft">
+        <span class="qf-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Scroll for more fields</span>
+        <button class="btn btn-amber" type="submit">Submit <svg><use href="#arr"/></svg></button>
+      </div>
       <div class="status" role="status" tabindex="-1">Design prototype: this form isn't connected yet. On the live site it will send to the Big Easy Lighting team.</div>
     </form>
     <p class="cta-alt">Rather talk? Call <a href="tel:+15047846858">(504) 784-6858</a>, Monday–Friday, 8 AM–6 PM.</p>
@@ -745,12 +807,45 @@ em{font-style:italic;color:var(--brass)}
   addEventListener('resize',onScroll); addEventListener('scroll',onScroll,{passive:true}); onScroll();
   // review rows: 3 extra copies so the loop never shows a gap on wide screens
   if(!reduced)document.querySelectorAll('.rr').forEach(function(r){var orig=Array.prototype.slice.call(r.children);for(var k=0;k<3;k++)orig.forEach(function(ch){var c=ch.cloneNode(true);c.setAttribute('aria-hidden','true');r.appendChild(c)})});
-  // stepper
-  var f=document.querySelector('.stepper'),sts=f.querySelectorAll('.step'),bars=f.querySelectorAll('.st-bar i'),nx=f.querySelector('.next'),bk=f.querySelector('.back'),k=0;
-  function show(i){k=i;sts.forEach(function(s,j){s.classList.toggle('cur',j===k)});bars.forEach(function(b,j){b.classList.toggle('done',j<=k)});bk.style.visibility=k?'visible':'hidden';nx.firstChild.textContent=k===sts.length-1?'Request my free estimate ':'Continue '}
-  nx.addEventListener('click',function(){if(k<sts.length-1)show(k+1);else{var s=f.querySelector('.status');s.classList.add('show');s.focus()}});
-  bk.addEventListener('click',function(){if(k)show(k-1)});
-  f.addEventListener('submit',function(e){e.preventDefault()});
+  // estimate form: conditional service fields, progress, inline validation, scroll hint
+  var f=document.querySelector('.qform'),body=f.querySelector('.qf-body'),svc=f.querySelector('#q-svc'),wRes=f.querySelector('#w-res'),wCom=f.querySelector('#w-com');
+  var req=[].slice.call(f.querySelectorAll('[required]')),bar=f.querySelector('.qf-prog i'),cnt=f.querySelector('.qf-count');
+  function valid(el){
+    if(el.id==='q-phone')return el.value.replace(/\D/g,'').replace(/^1(?=\d{10}$)/,'').length===10;
+    if(el.type==='email')return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim());
+    return el.value.trim()!=='';
+  }
+  function progress(){var n=req.filter(valid).length;bar.style.width=(n/req.length*100)+'%';cnt.textContent=n+' of '+req.length+' required fields done'}
+  function mark(el){var ok=valid(el);el.closest('.fld').classList.toggle('bad',!ok);el.setAttribute('aria-invalid',!ok);return ok}
+  req.forEach(function(el){
+    el.addEventListener('input',function(){progress();if(el.closest('.fld').classList.contains('bad'))mark(el)});
+    el.addEventListener('change',progress);
+    el.addEventListener('blur',function(){if(el.value!=='')mark(el)});
+  });
+  svc.addEventListener('change',function(){
+    var r=svc.value==='Residential Services';wRes.hidden=!r;wCom.hidden=r;
+    if(r)f.querySelector('#q-com').value='';else f.querySelector('#q-res').value='';
+  });
+  // scroll hint + fade disappear once the last field is reached
+  function atEnd(){var e=body.scrollHeight-body.scrollTop-body.clientHeight<24;body.classList.toggle('end',e);f.classList.toggle('end',e)}
+  body.addEventListener('scroll',atEnd,{passive:true});addEventListener('resize',atEnd);atEnd();
+  // file picker / drag and drop
+  var fileIn=f.querySelector('#q-file'),drop=f.querySelector('.drop'),list=f.querySelector('.files'),dt=new DataTransfer();
+  function renderFiles(){list.textContent='';[].forEach.call(dt.files,function(file,i){var li=document.createElement('li');var n=document.createElement('span');n.textContent=file.name;var b=document.createElement('button');b.type='button';b.textContent='Remove';b.setAttribute('aria-label','Remove '+file.name);
+    b.addEventListener('click',function(){var nd=new DataTransfer();[].forEach.call(dt.files,function(x,j){if(j!==i)nd.items.add(x)});dt=nd;fileIn.files=dt.files;renderFiles();atEnd()});li.appendChild(n);li.appendChild(b);list.appendChild(li)});atEnd()}
+  function addFiles(files){[].forEach.call(files,function(x){dt.items.add(x)});fileIn.files=dt.files;renderFiles()}
+  fileIn.addEventListener('change',function(){var picked=[].slice.call(fileIn.files);dt=new DataTransfer();addFiles(picked)});
+  ['dragenter','dragover'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.add('over')})});
+  ['dragleave','drop'].forEach(function(t){drop.addEventListener(t,function(e){e.preventDefault();drop.classList.remove('over')})});
+  drop.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files.length)addFiles(e.dataTransfer.files)});
+  // submit: validate, jump to the first problem inside the scroll box
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var bad=req.filter(function(el){return !mark(el)});
+    if(bad.length){var el=bad[0],fld=el.closest('.fld');body.scrollTo({top:Math.max(0,fld.offsetTop-12),behavior:reduced?'auto':'smooth'});el.focus({preventScroll:true});return}
+    var s=f.querySelector('.status');s.classList.add('show');s.focus();
+  });
+  progress();
 })();
 </script>
 
