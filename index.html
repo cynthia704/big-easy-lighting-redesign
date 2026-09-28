@@ -353,12 +353,12 @@ em{font-style:italic;color:var(--brass)}
 }
 
 /* back-to-top + chat (Gaslight styling) */
-.to-top{position:fixed;right:28px;bottom:104px;z-index:70;width:52px;height:52px;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--ivory);color:var(--iron);box-shadow:0 10px 28px -10px rgba(0,0,0,.45);display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s,background .3s}
+.to-top{position:fixed;right:28px;bottom:104px;z-index:70;width:52px;height:52px;border-radius:50%;border:2px solid var(--ivory);padding:0;cursor:pointer;background:var(--iron);color:var(--ivory);box-shadow:0 0 0 1px rgba(29,43,37,.35),0 10px 28px -8px rgba(0,0,0,.5);display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s,background .3s}
 .to-top.show{opacity:1;visibility:visible;transform:none}
-.to-top:hover{background:#fff}
+.to-top:hover{background:#26382f}
 .to-top svg.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
 .to-top .ring circle{fill:none;stroke-width:2.5}
-.to-top .ring .bg{stroke:rgba(29,43,37,.12)}
+.to-top .ring .bg{stroke:rgba(245,240,230,.18)}
 .to-top .ring .fg{stroke:var(--amber);stroke-linecap:round;stroke-dasharray:150.8;stroke-dashoffset:150.8}
 .to-top .arrow{width:20px;height:20px;position:relative;transition:transform .3s var(--ease)}
 .to-top:hover .arrow{transform:translateY(-3px)}
