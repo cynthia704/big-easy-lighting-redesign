@@ -351,6 +351,64 @@ em{font-style:italic;color:var(--brass)}
   .rcard{width:auto;flex:1 1 320px}
   .scard{position:relative;top:auto!important}
 }
+
+/* back-to-top + chat (Gaslight styling) */
+.to-top{position:fixed;right:28px;bottom:104px;z-index:70;width:52px;height:52px;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--ivory);color:var(--iron);box-shadow:0 10px 28px -10px rgba(0,0,0,.45);display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s,background .3s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:#fff}
+.to-top svg.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.to-top .ring circle{fill:none;stroke-width:2.5}
+.to-top .ring .bg{stroke:rgba(29,43,37,.12)}
+.to-top .ring .fg{stroke:var(--amber);stroke-linecap:round;stroke-dasharray:150.8;stroke-dashoffset:150.8}
+.to-top .arrow{width:20px;height:20px;position:relative;transition:transform .3s var(--ease)}
+.to-top:hover .arrow{transform:translateY(-3px)}
+.chat-launch{position:fixed;right:24px;bottom:24px;z-index:70;height:60px;padding:0 22px 0 18px;border-radius:999px;border:0;cursor:pointer;background:var(--iron);color:var(--ivory);display:flex;align-items:center;gap:10px;font:700 14.5px var(--sans);box-shadow:0 14px 34px -12px rgba(0,0,0,.55),0 0 0 1px rgba(233,178,90,.25);transition:transform .3s var(--ease),box-shadow .3s}
+.chat-launch:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(0,0,0,.6),0 0 0 4px rgba(255,151,0,.25)}
+.chat-launch .ic{position:relative;width:26px;height:26px;display:grid;place-items:center}
+.chat-launch .ic svg{width:24px;height:24px;color:#f0b64a}
+.chat-launch .dot{position:absolute;top:-2px;right:-3px;width:10px;height:10px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 2px var(--iron),0 0 10px var(--glow);animation:pulse 2s infinite}
+.chat-launch[aria-expanded="true"] .dot{display:none}
+.chat-launch.handoff{display:none}
+.chat{position:fixed;right:24px;bottom:96px;z-index:71;width:380px;max-width:calc(100vw - 24px);height:min(580px,calc(100vh - 130px));display:flex;flex-direction:column;background:var(--ivory);color:var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.55),0 0 0 1px rgba(29,43,37,.1);opacity:0;visibility:hidden;transform:translateY(16px) scale(.98);transform-origin:100% 100%;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s}
+.chat.open{opacity:1;visibility:visible;transform:none}
+.chat-hd{background:var(--iron);color:var(--ivory);padding:18px 18px 16px;display:flex;align-items:center;gap:12px}
+.chat-hd .av{width:42px;height:42px;border-radius:50%;background:var(--ivory);display:grid;place-items:center;flex:none;box-shadow:0 0 0 3px rgba(233,178,90,.35)}
+.chat-hd .av img{width:34px;height:auto}
+.chat-hd b{display:block;font:400 1.35rem/1.1 var(--serif)}
+.chat-hd small{font-size:12.5px;color:#c9c2b3}
+.chat-hd .x{margin-left:auto;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-light);background:none;color:var(--ivory);cursor:pointer;font:300 20px/1 var(--sans)}
+.chat-hd .x:hover{background:rgba(245,240,230,.1)}
+.chat-log{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.msg{max-width:86%;padding:11px 14px;border-radius:14px;font-size:14.5px;line-height:1.5;animation:msgIn .35s var(--ease)}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.me{background:var(--iron);color:var(--ivory);border-bottom-right-radius:4px;align-self:flex-end}
+.msg .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.msg .acts a,.msg .acts button{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;font:700 13px var(--sans);text-decoration:none;cursor:pointer;border:0;background:var(--amber);color:#1b1206}
+.msg .acts .alt{background:transparent;border:1px solid rgba(29,43,37,.3);color:var(--ink)}
+.typing{display:inline-flex;gap:4px;padding:14px 16px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#b8ad9a;animation:blink 1.1s infinite}
+.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:6px 16px 14px}
+.chips button{min-height:38px;padding:0 14px;border-radius:999px;border:1px solid rgba(176,122,28,.45);background:rgba(255,151,0,.06);color:var(--ink);font:600 13px var(--sans);cursor:pointer;transition:background .25s,border-color .25s}
+.chips button:hover,.chips button:focus-visible{background:rgba(255,151,0,.16);border-color:var(--brass)}
+.chips.compact{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-top:8px;border-top:1px solid var(--line);-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.chips.compact::-webkit-scrollbar{display:none}
+.chips.compact button{flex:none;min-height:34px;padding:0 12px;font-size:12.5px}
+.chat-ft{border-top:1px solid var(--line);padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:8px;background:var(--ivory-2)}
+.chat-ft .human{min-height:44px;border-radius:999px;border:0;background:var(--iron);color:var(--ivory);font:700 14px var(--sans);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.chat-ft .human:hover{background:#26382f}
+.chat-ft .call{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(29,43,37,.25);color:var(--iron)}
+.chat-ft .call svg{width:18px;height:18px}
+.chat-note{font-size:11.5px;color:var(--ink-dim);text-align:center;padding:0 14px 10px;background:var(--ivory-2);margin:0}
+@media (max-width:760px){
+  .chat-launch{right:14px;bottom:calc(82px + env(safe-area-inset-bottom));height:54px;padding:0 16px}
+  .chat-launch .lbl{display:none}
+  .to-top{right:15px;bottom:calc(148px + env(safe-area-inset-bottom));width:48px;height:48px}
+  .chat{right:12px;left:12px;width:auto;max-width:none;bottom:calc(82px + env(safe-area-inset-bottom));height:min(560px,calc(100svh - 170px))}
+}
+@media (prefers-reduced-motion:reduce){.chat-launch .dot{animation:none}}
 </style>
 </head>
 <body>
@@ -596,6 +654,29 @@ em{font-style:italic;color:var(--brass)}
   </div>
 </footer>
 <div class="mbar"><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>Call</a><a class="btn btn-amber" href="#estimate">Free estimate</a></div>
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg class="ring" viewBox="0 0 52 52" aria-hidden="true"><circle class="bg" cx="26" cy="26" r="24"/><circle class="fg" cx="26" cy="26" r="24"/></svg>
+  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<button class="chat-launch" type="button" aria-expanded="false" aria-controls="chat">
+  <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="dot"></span></span>
+  <span class="lbl">Questions? Chat with us</span>
+</button>
+<div class="chat" id="chat" role="dialog" aria-modal="false" aria-labelledby="chat-title" aria-hidden="true">
+  <div class="chat-hd">
+    <span class="av"><img src="assets/logo.png" alt=""></span>
+    <div><b id="chat-title">Big Easy Lighting</b><small>Ask about outdoor lighting</small></div>
+    <button class="x" type="button" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-log" aria-live="polite"></div>
+  <div class="chips" role="group" aria-label="Suggested questions"></div>
+  <div class="chat-ft">
+    <button class="human" type="button"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Talk to a person</button>
+    <a class="call" href="tel:+15047846858" aria-label="Call (504) 784-6858"><svg><use href="#ph"/></svg></a>
+  </div>
+  <p class="chat-note">Monday–Friday, 8 AM–6 PM · (504) 784-6858</p>
+</div>
+
 
 <script>
 (function(){
@@ -670,6 +751,87 @@ em{font-style:italic;color:var(--brass)}
   nx.addEventListener('click',function(){if(k<sts.length-1)show(k+1);else{var s=f.querySelector('.status');s.classList.add('show');s.focus()}});
   bk.addEventListener('click',function(){if(k)show(k-1)});
   f.addEventListener('submit',function(e){e.preventDefault()});
+})();
+</script>
+
+<script>
+/* Back-to-top arrow + chat assistant (quick answers + handoff to the client's LeadConnector chat) */
+(function(){
+  var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- back to top, with a ring that fills as you scroll
+  var top=document.querySelector('.to-top'), ring=top.querySelector('.fg'), C=150.8;
+  function onScroll(){
+    var max=document.documentElement.scrollHeight-innerHeight, p=max>0?scrollY/max:0;
+    ring.style.strokeDashoffset=(C*(1-p)).toFixed(1);
+    top.classList.toggle('show',scrollY>innerHeight*.8);
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  top.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:reduced?'auto':'smooth'});
+    var h=document.getElementById('h1'); if(h){h.setAttribute('tabindex','-1');setTimeout(function(){h.focus({preventScroll:true})},reduced?0:600)}
+  });
+
+  // ---- chat
+  var btn=document.querySelector('.chat-launch'), box=document.getElementById('chat'), log=box.querySelector('.chat-log'),
+      chips=box.querySelector('.chips'), closeB=box.querySelector('.x'), human=box.querySelector('.human'), started=false;
+  var EST={t:'Get a free estimate',href:'#estimate'}, CALL={t:'Call (504) 784-6858',href:'tel:+15047846858',alt:1};
+  var QA=[
+    {q:'How much does it cost?',a:'It depends on the size of the yard, how many fixtures you want, and the design. A few accent lights cost far less than a full-property system. The fastest way to a real number is a free on-site estimate.',acts:[EST]},
+    {q:"What's the free evening demo?",a:'We come out after dark and set up fixtures on your property, so you see the real effect from your own driveway before you decide. The design consultation is free too.',acts:[{t:'Book an evening demo',href:'#estimate'}]},
+    {q:'Where do you work?',a:"We're based in New Orleans and work across Metairie, Kenner, St. Rose, LaPlace, Mandeville, Covington, Madisonville, Abita Springs, and Hammond.",acts:[EST]},
+    {q:'Do you light businesses?',a:'Yes. We light storefronts, restaurants, and managed grounds: outdoor lighting, LED systems, garden lighting, and up/down lights. We handle the design, permits, and installation.',acts:[EST]},
+    {q:'Will it hold up to storms?',a:'Yes. We use corrosion-resistant, weather-rated fixtures with sealed connections, built for our humid, storm-prone Gulf climate.',acts:[]},
+    {q:'When are you open?',a:'Monday through Friday, 8 AM to 6 PM. You can call us at (504) 784-6858 or send a request anytime.',acts:[CALL,EST]}
+  ];
+  function scroll(el){log.scrollTop=el&&el.classList.contains('bot')&&!el.classList.contains('typing')?Math.max(0,el.offsetTop-log.offsetTop-10):log.scrollHeight}
+  function bubble(who,text,acts){
+    var m=document.createElement('div');m.className='msg '+who;m.textContent=text;
+    if(acts&&acts.length){var a=document.createElement('div');a.className='acts';
+      acts.forEach(function(x){var l=document.createElement('a');l.textContent=x.t;l.href=x.href;if(x.alt)l.className='alt';
+        if(x.href.charAt(0)==='#')l.addEventListener('click',function(){setOpen(false)});a.appendChild(l)});m.appendChild(a)}
+    log.appendChild(m);scroll(m);return m;
+  }
+  function botSay(text,acts,cb){
+    if(reduced){bubble('bot',text,acts);cb&&cb();return}
+    var t=document.createElement('div');t.className='msg bot typing';t.setAttribute('aria-label','Typing');t.innerHTML='<i></i><i></i><i></i>';
+    log.appendChild(t);scroll();
+    setTimeout(function(){t.remove();bubble('bot',text,acts);cb&&cb()},Math.min(1100,420+text.length*4));
+  }
+  function renderChips(){
+    chips.innerHTML='';
+    QA.forEach(function(item){var b=document.createElement('button');b.type='button';b.textContent=item.q;
+      b.addEventListener('click',function(){chips.innerHTML='';chips.classList.add('compact');bubble('me',item.q);botSay(item.a,item.acts,renderChips)});chips.appendChild(b)});
+  }
+  function setOpen(o){
+    box.classList.toggle('open',o);box.setAttribute('aria-hidden',!o);btn.setAttribute('aria-expanded',o);
+    if(o){
+      if(!started){started=true;botSay("Hi there! Thinking about lighting up your yard or business? Pick a question below, or tap Talk to a person to reach our team.",null,function(){renderChips();focusFirst()})}
+      else focusFirst();
+    } else btn.focus({preventScroll:true});
+  }
+  function focusFirst(){var f=chips.querySelector('button')||human;f&&f.focus({preventScroll:true})}
+  btn.addEventListener('click',function(){setOpen(!box.classList.contains('open'))});
+  closeB.addEventListener('click',function(){setOpen(false)});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&box.classList.contains('open'))setOpen(false)});
+
+  // ---- handoff to the client's real LeadConnector (GoHighLevel) chat, loaded only on request
+  var lcState='idle', LC_ID='66c34d20d1bc9ea8baf3ad6a';
+  function lcOpen(){try{window.leadConnector.chatWidget.openWidget();return true}catch(e){return false}}
+  function handedOff(){setOpen(false);btn.classList.add('handoff')}
+  human.addEventListener('click',function(){
+    if(lcState==='ready'){if(lcOpen())handedOff();return}
+    if(lcState==='loading')return;
+    lcState='loading';chips.innerHTML='';bubble('me','Talk to a person');
+    botSay('Connecting you with the Big Easy Lighting team now.',null);
+    var fail=setTimeout(function(){if(lcState!=='ready'){lcState='idle';bubble('bot',"Sorry, live chat didn't load. Please call us or send a request and we'll get back to you.",[CALL,EST]);renderChips()}},12000);
+    window.addEventListener('LC_chatWidgetLoaded',function(){lcState='ready';clearTimeout(fail);setTimeout(function(){if(lcOpen())handedOff()},250)},{once:true});
+    var s=document.createElement('script');s.src='https://widgets.leadconnectorhq.com/loader.js';
+    s.setAttribute('data-resources-url','https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    s.setAttribute('data-widget-id',LC_ID);s.async=true;
+    s.onerror=function(){clearTimeout(fail);lcState='idle';bubble('bot',"Sorry, live chat didn't load. Please call us or send a request and we'll get back to you.",[CALL,EST]);renderChips()};
+    document.body.appendChild(s);
+  });
 })();
 </script>
 </body>
