@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Big Easy Lighting | Homepage Redesign Preview</title>
-<meta name="description" content="Big Easy Lighting designs and installs landscape, pathway, and commercial outdoor lighting across Greater New Orleans and the Northshore. Free evening demos.">
+<title>Contact Big Easy Lighting | New Orleans Outdoor Lighting</title>
+<meta name="description" content="Call (504) 784-6858, send a message, or chat with Big Easy Lighting about outdoor lighting in New Orleans. Mon–Fri, 8 AM–6 PM. Free estimates.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -489,6 +489,283 @@ body.modal-open{overflow:hidden}
 @media (max-width:1240px){.hdr .right .phone{display:none}}
 @media (max-width:1000px){.hdr .right>a:not(.btn){display:none}}
 
+
+.rp-hero{position:relative;min-height:0;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;color:var(--ivory);background:#0f1512}
+.rp-hero-bg{position:absolute;inset:0;z-index:-2}
+.rp-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:55% 60%;transform:scale(1.08);transition:transform 3s var(--ease)}
+.loaded .rp-hero-bg img{transform:scale(1)}
+.rp-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(15,22,19,.9) 0%,rgba(15,22,19,.6) 48%,rgba(15,22,19,.2) 100%),linear-gradient(0deg,rgba(15,22,19,.85),rgba(15,22,19,0) 55%)}
+.rp-hero .wrap{width:100%;padding-top:118px;padding-bottom:clamp(36px,5vh,52px)}
+.rp-crumbs{font-size:13.5px;color:#c9c2b3;margin:0 0 14px;display:flex;gap:8px;align-items:center}
+.rp-crumbs a{text-decoration:none}.rp-crumbs a:hover{color:#f0b64a}
+.rp-crumbs span[aria-hidden]{opacity:.5}
+.rp-hero .kicker{color:#e9b25a}
+.rp-hero h1{font-size:clamp(2.2rem,4vw,3.6rem);line-height:1.05;max-width:24ch}
+.rp-hero h1 em{color:#f0b64a}
+.rp-hero .lede{color:#ddd6c8;margin:14px 0 0;max-width:78ch}
+.rp-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;padding:0;list-style:none}
+.rp-jump a{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(245,240,230,.28);font-size:13px;font-weight:600;text-decoration:none;color:#e9e2d4;background:rgba(15,22,19,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:background .25s,border-color .25s,color .25s}
+.rp-jump a:hover{background:rgba(255,151,0,.18);border-color:#e9b25a;color:#fff}
+.rp-ctarow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px;margin-top:22px}
+.rp-ctarow .cta-pair{margin-top:0}
+.rp-trust{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:#bdb6a7}
+.rp-trust b{color:var(--ivory)}
+
+/* services: list + sticky arched preview */
+.rp-svcs .head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:46px}
+.rp-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,6vw,90px);align-items:start}
+.rp-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rp-row{border-bottom:1px solid var(--line);scroll-margin-top:120px}
+.rp-row a.rp-link{display:grid;grid-template-columns:54px 1fr 44px;gap:18px;align-items:start;padding:28px 6px 28px 0;text-decoration:none;transition:padding .4s var(--ease)}
+.rp-row .n{font:italic 400 1.4rem/1 var(--serif);color:#b8ad9a;padding-top:6px;transition:color .3s}
+.rp-row h3{font-size:clamp(1.6rem,2.4vw,2.1rem);margin-bottom:8px;transition:color .3s}
+.rp-row p{margin:0;color:var(--ink-dim);font-size:15.5px;max-width:54ch}
+.rp-row .go{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;margin-top:2px;transition:background .3s,border-color .3s,color .3s,transform .3s var(--ease)}
+.rp-row .go svg{width:18px;height:18px}
+.rp-row .thumb{display:none}
+.rp-row.on a.rp-link{padding-left:12px}
+.rp-row.on .n{color:var(--amber)}
+.rp-row.on h3{color:var(--brass)}
+.rp-row.on .go{background:var(--iron);border-color:var(--iron);color:var(--ivory);transform:rotate(-45deg)}
+.rp-frame{position:sticky;top:120px;aspect-ratio:4/5;border-radius:999px 999px 10px 10px;overflow:hidden;background:var(--iron);box-shadow:0 40px 80px -34px rgba(29,43,37,.6)}
+.rp-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .6s var(--ease),transform 1.4s var(--ease)}
+.rp-frame img.show{opacity:1;transform:none}
+.rp-frame figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 26px;color:var(--ivory);background:linear-gradient(0deg,rgba(15,22,19,.85),transparent);font:italic 400 1.5rem var(--serif);z-index:2}
+.rp-svcs .cta-pair{margin-top:40px}
+
+/* fit finder: goal tabs + panel */
+.rp-fit .head{max-width:760px;margin-bottom:46px}
+.rp-tabs{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,56px);align-items:stretch}
+.rp-tablist{display:flex;flex-direction:column;gap:10px}
+.rp-tablist button{display:flex;align-items:center;gap:14px;text-align:left;padding:18px 20px;border-radius:10px;border:1px solid var(--line-light);background:rgba(245,240,230,.04);color:var(--ivory);font:600 16px var(--sans);cursor:pointer;transition:background .3s,border-color .3s}
+.rp-tablist button .ix{font:italic 400 1.2rem var(--serif);color:#b8ad9a;width:24px}
+.rp-tablist button:hover{background:rgba(245,240,230,.08)}
+.rp-tablist button[aria-selected="true"]{background:rgba(255,151,0,.12);border-color:#e9b25a}
+.rp-tablist button[aria-selected="true"] .ix{color:var(--amber)}
+.rp-panel{display:grid;grid-template-columns:1fr 1fr;border-radius:12px;overflow:hidden;border:1px solid var(--line-light);background:rgba(245,240,230,.04);min-height:420px}
+.rp-panel[hidden]{display:none}
+.rp-panel .txt{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px;animation:rpIn .5s var(--ease)}
+.rp-panel h3{font-size:clamp(1.7rem,2.6vw,2.3rem)}
+.rp-panel p{margin:0;color:#d4cdbf}
+.rp-panel .lbl{font:600 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e9b25a;margin-top:6px}
+.rp-recs{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.rp-recs a{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(233,178,90,.5);color:var(--ivory);text-decoration:none;font-size:13.5px;font-weight:600}
+.rp-recs a:hover{background:rgba(255,151,0,.15)}
+.rp-panel .cta-pair{margin-top:auto;padding-top:8px}
+.rp-panel .ph{position:relative;min-height:260px}
+.rp-panel .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@keyframes rpIn{from{opacity:0;transform:translateY(10px)}}
+
+/* included + timeline */
+.rp-incl .head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end;margin-bottom:46px}
+.rp-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rp-card{background:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:28px 24px 30px;position:relative;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.rp-card:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(29,43,37,.35)}
+.rp-card::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(255,151,0,.22),transparent 70%)}
+.rp-card .ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--iron);color:#f0b64a;margin-bottom:22px}
+.rp-card .ic svg{width:22px;height:22px}
+.rp-card h3{font-size:1.45rem;margin-bottom:10px}
+.rp-card p{margin:0;color:var(--ink-dim);font-size:15px}
+.rp-steps{list-style:none;margin:70px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;position:relative}
+.rp-steps::before{content:"";position:absolute;left:0;right:0;top:25px;height:2px;background:var(--line)}
+.rp-steps::after{content:"";position:absolute;left:0;top:25px;height:2px;width:0;background:var(--amber);box-shadow:0 0 12px var(--glow);transition:width 1.6s var(--ease)}
+.rp-steps.in::after{width:100%}
+.rp-steps li{position:relative}
+.rp-steps .dot{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--ivory-2);border:2px solid var(--line);font:italic 400 1.4rem var(--serif);color:var(--ink-dim);position:relative;z-index:1;transition:background .5s,border-color .5s,color .5s,box-shadow .5s;margin-bottom:22px}
+.rp-steps.in .dot{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 0 8px rgba(255,151,0,.14)}
+.rp-steps.in li:nth-child(2) .dot{transition-delay:.5s}.rp-steps.in li:nth-child(3) .dot{transition-delay:1s}
+.rp-steps h3{font-size:1.5rem;margin-bottom:10px}
+.rp-steps p{margin:0;color:var(--ink-dim);font-size:15.5px}
+
+/* two quotes */
+.rp-quotes .pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px);margin-top:46px}
+.rp-q{margin:0;padding-top:26px;border-top:1px solid var(--line-light)}
+.rp-q .stars{margin-bottom:18px}
+.rp-q blockquote{margin:0;font:400 clamp(1.4rem,2.2vw,1.9rem)/1.3 var(--serif);color:var(--ivory)}
+.rp-q figcaption{margin-top:20px;font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#e9b25a}
+
+/* faq */
+.rp-faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,90px);align-items:start}
+.rp-faq .side{position:sticky;top:130px}
+.rp-faq details{border-top:1px solid var(--line)}
+.rp-faq details:last-child{border-bottom:1px solid var(--line)}
+.rp-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font:400 clamp(1.25rem,1.8vw,1.5rem)/1.3 var(--serif)}
+.rp-faq summary::-webkit-details-marker{display:none}
+.rp-faq summary .x{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--brass);transition:transform .35s var(--ease),background .3s}
+.rp-faq details[open] summary .x{transform:rotate(45deg);background:var(--amber);border-color:var(--amber);color:#1b1206}
+.rp-faq details p{margin:0 0 24px;color:var(--ink-dim);max-width:62ch}
+
+@media (max-width:1000px){
+  .rp-grid,.rp-tabs,.rp-incl .head,.rp-faq .grid{grid-template-columns:1fr}
+  .rp-frame{display:none}
+  .rp-row .thumb{display:block;grid-column:1/-1;aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:6px}
+  .rp-row .thumb img{width:100%;height:100%;object-fit:cover}
+  .rp-cards{grid-template-columns:1fr 1fr}
+  .rp-faq .side{position:static}
+}
+@media (max-width:760px){
+  .rp-hero{min-height:0}
+  .rp-jump{display:none}
+  .rp-hero .wrap{padding-top:118px}
+  .rp-svcs .head{grid-template-columns:1fr}
+  .rp-row a.rp-link{grid-template-columns:36px 1fr 40px;gap:12px}
+  .rp-tablist{flex-direction:row;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+  .rp-tablist::-webkit-scrollbar{display:none}
+  .rp-tablist button{flex:none;padding:12px 16px;font-size:14px}
+  .rp-panel{grid-template-columns:1fr}
+  .rp-panel .ph{order:-1;min-height:200px}
+  .rp-cards,.rp-steps,.rp-quotes .pair{grid-template-columns:1fr}
+  .rp-steps::before,.rp-steps::after{display:none}
+}
+@media (prefers-reduced-motion:reduce){.rp-steps::after{width:100%}.rp-hero-bg img{transform:none}}
+
+/* ===== Commercial page (cp-) ===== */
+.cp-svcs .head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:46px}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cp-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;scroll-margin-top:120px;transition:transform .4s var(--ease),box-shadow .4s}
+.cp-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(29,43,37,.45)}
+.cp-card .img{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--iron)}
+.cp-card .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.cp-card:hover .img img{transform:scale(1.06)}
+.cp-card .img .n{position:absolute;top:16px;left:16px;font:italic 400 1.3rem var(--serif);color:var(--ivory);background:rgba(15,22,19,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);width:46px;height:46px;border-radius:50%;display:grid;place-items:center}
+.cp-card .body{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cp-card h3{font-size:clamp(1.7rem,2.4vw,2.1rem)}
+.cp-card p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:4px 0 0}
+.cp-tags li{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--ivory-2);color:var(--ink)}
+.cp-card .more{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.cp-card .more svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.cp-card:hover .more svg{transform:translateX(4px)}
+.cp-svcs .cta-pair{margin-top:40px}
+
+.cp-props{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.cp-photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.cp-photo img{width:100%;height:100%;object-fit:cover}
+.cp-photo figcaption{position:absolute;left:18px;bottom:18px;right:18px;padding:14px 16px;border-radius:10px;background:rgba(15,22,19,.62);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:13.5px;color:#d9d2c3}
+.cp-photo figcaption b{color:var(--ivory)}
+.cp-types{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cp-types li{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line-light);border-radius:10px;background:rgba(245,240,230,.04);font:400 1.2rem/1.2 var(--serif);transition:background .3s,border-color .3s}
+.cp-types li:hover{background:rgba(255,151,0,.1);border-color:#e9b25a}
+.cp-types svg{width:22px;height:22px;color:#f0b64a;flex:none}
+.cp-types li.more{font:600 13.5px var(--sans);color:#c9c2b3;border-style:dashed}
+
+.cp-why .head{max-width:760px;margin-bottom:46px}
+.cp-why .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(30px,5vw,70px);align-items:start}
+.cp-bens{display:grid;grid-template-columns:1fr 1fr;gap:40px 36px;counter-reset:ben}
+.cp-ben{position:relative;padding-top:18px;border-top:2px solid var(--line)}
+.cp-ben::before{counter-increment:ben;content:"0" counter(ben);display:block;font:italic 400 3.2rem/1 var(--serif);color:transparent;-webkit-text-stroke:1px var(--brass);margin-bottom:14px}
+.cp-ben h3{font-size:1.55rem;margin-bottom:8px}
+.cp-ben p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-apps{position:sticky;top:130px;background:var(--iron);color:var(--ivory);border-radius:14px;padding:30px 28px;box-shadow:0 30px 60px -30px rgba(29,43,37,.6)}
+.cp-apps h3{font-size:1.6rem;margin-bottom:18px}
+.cp-apps ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:12px}
+.cp-apps li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#e4dccd}
+.cp-apps li svg{width:18px;height:18px;color:var(--amber);flex:none;margin-top:3px}
+.cp-apps .cta-pair{margin-top:0;flex-direction:column;align-items:stretch}
+.cp-apps .cta-pair .btn{justify-content:center}
+
+.cp-life{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;position:relative}
+.cp-life::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line-light)}
+.cp-life::after{content:"";position:absolute;left:0;top:27px;height:2px;width:0;background:var(--amber);box-shadow:0 0 14px var(--glow);transition:width 2s var(--ease)}
+.cp-life.in::after{width:100%}
+.cp-life li{position:relative}
+.cp-life .ic{position:relative;z-index:1;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--iron-2);border:2px solid var(--line-light);color:#c9c2b3;margin-bottom:20px;transition:background .5s,border-color .5s,color .5s,box-shadow .5s}
+.cp-life .ic svg{width:22px;height:22px}
+.cp-life.in .ic{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 0 8px rgba(255,151,0,.14)}
+.cp-life.in li:nth-child(2) .ic{transition-delay:.4s}.cp-life.in li:nth-child(3) .ic{transition-delay:.8s}.cp-life.in li:nth-child(4) .ic{transition-delay:1.2s}.cp-life.in li:nth-child(5) .ic{transition-delay:1.6s}
+.cp-life h3{font-size:1.35rem;margin-bottom:8px}
+.cp-life p{margin:0;color:#c9c2b3;font-size:14.5px}
+.cp-lifesec .cta-pair{margin-top:44px}
+
+@media (max-width:1000px){
+  .cp-props,.cp-why .grid{grid-template-columns:1fr}
+  .cp-photo{aspect-ratio:16/10}
+  .cp-apps{position:static}
+  .cp-life{grid-template-columns:1fr 1fr;gap:34px 22px}
+  .cp-life::before,.cp-life::after{display:none}
+}
+@media (max-width:760px){
+  .cp-svcs .head{grid-template-columns:1fr}
+  .cp-grid,.cp-types,.cp-bens,.cp-life{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.cp-life::after{width:100%}}
+
+/* ===== Contact page (ct-) ===== */
+@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+.ct-status{display:inline-flex;align-items:center;gap:8px}
+.ct-status i{display:none;width:9px;height:9px;border-radius:50%;flex:none;background:#8b8b8b}
+.ct-status.ready i{display:block}
+.ct-status.open i{background:#5fd07a;box-shadow:0 0 0 0 rgba(95,208,122,.6);animation:ctPing 2.2s ease-out infinite}
+.ct-status.closed i{background:#e0a44a}
+@keyframes ctPing{70%{box-shadow:0 0 0 9px rgba(95,208,122,0)}100%{box-shadow:0 0 0 0 rgba(95,208,122,0)}}
+
+.ct-tiles{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
+.ct-tile{position:relative;display:flex;flex-direction:column;gap:14px;padding:clamp(26px,3vw,38px);border-radius:16px;background:#fff;border:1px solid var(--line);transition:transform .4s var(--ease),box-shadow .4s,border-color .3s}
+.ct-tile:hover{transform:translateY(-4px);box-shadow:0 30px 50px -34px rgba(29,43,37,.45);border-color:rgba(176,122,28,.4)}
+.ct-tile h3{font-size:1.7rem}
+.ct-tile p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.ct-tile .btn{margin-top:auto;align-self:flex-start}
+.ct-ico{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--iron);color:#f0b64a}
+.ct-ico svg{width:22px;height:22px}
+.ct-btn{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.ct-btn:hover{background:var(--iron);color:var(--ivory)}
+.ct-btn svg,.ct-tile .btn svg{width:18px;height:18px}
+.ct-tile-call{background:var(--iron);border-color:var(--iron);color:var(--ivory);overflow:hidden;isolation:isolate}
+.ct-tile-call::before{content:"";position:absolute;right:-140px;top:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,151,0,.28),transparent);z-index:-1}
+.ct-tile-call .ct-ico{background:var(--amber);color:#1b1206}
+.ct-tile-call p{color:#c9c2b3}
+.ct-tile-call:hover{border-color:var(--iron)}
+.ct-big{font:400 clamp(2.1rem,3.4vw,3rem)/1 var(--serif);color:#f0b64a;text-decoration:none;white-space:nowrap}
+.ct-big:hover{color:#ffcf7a}
+.ct-status-lg{font:600 13px var(--sans);letter-spacing:.06em;color:#e9e2d4!important}
+
+.ct-split{position:relative;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,5vw,72px);align-items:start}
+.ct-info h2{font-size:clamp(2.6rem,4.6vw,4rem)}
+.ct-intro{margin:18px 0 0;color:#d4cdbf;font-size:17px;max-width:46ch}
+.ct-list{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line-light)}
+.ct-list li{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line-light)}
+.ct-li{width:40px;height:40px;flex:none;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-light);color:#f0b64a}
+.ct-li svg{width:18px;height:18px}
+.ct-list div{display:flex;flex-direction:column;gap:4px;font-size:16px;color:var(--ivory)}
+.ct-list small{font:600 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#e9b25a}
+.ct-list a{color:var(--ivory);text-decoration:none;font:400 1.5rem/1.2 var(--serif)}
+.ct-list a:hover{color:#ffcf7a}
+.ct-list .ct-dim{color:#a9a293;font-size:15px}
+.ct-list .ct-status{margin-top:4px;font-size:14px;color:#d4cdbf}
+.ct-status small,.ct-list .ct-status small{font:inherit;letter-spacing:0;text-transform:none;color:inherit;opacity:.7}
+.ct-list a.ct-more{font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#f0b64a;margin-top:4px}
+.ct-social{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.ct-social a{padding:9px 16px;border-radius:40px;border:1px solid var(--line-light);color:var(--ivory);text-decoration:none;font:600 13.5px var(--sans);transition:background .25s,border-color .25s,color .25s}
+.ct-social a:hover{background:var(--amber);border-color:var(--amber);color:#1b1206}
+.ct-formcol{scroll-margin-top:110px}
+.ct-formcol .qform{margin-top:0}
+
+.ct-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.ct-steps li{position:relative;padding:30px 30px 6px 0}
+.ct-steps li+li{padding-left:30px;border-left:1px solid var(--line)}
+.ct-steps .n{display:block;font:italic 400 3.4rem/1 var(--serif);color:var(--brass);margin-bottom:14px}
+.ct-steps h3{font-size:1.5rem;margin-bottom:8px}
+.ct-steps p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.ct-areas{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px 40px;align-items:center;padding:clamp(26px,3vw,36px);border-radius:16px;background:var(--ivory-2);border:1px solid var(--line)}
+.ct-areas h3{font-size:clamp(1.5rem,2.2vw,1.9rem)}
+.ct-areas p{margin:8px 0 0;color:var(--ink-dim);font-size:15px}
+.ct-areas ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.ct-areas a{display:inline-block;padding:9px 15px;border-radius:40px;background:#fff;border:1px solid var(--line);color:var(--ink);text-decoration:none;font:600 14px var(--sans);transition:background .25s,border-color .25s,color .25s}
+.ct-areas a:hover{background:var(--iron);border-color:var(--iron);color:var(--ivory)}
+
+@media (max-width:1000px){
+  .ct-tiles{grid-template-columns:1fr 1fr}
+  .ct-tile-call{grid-column:1/-1}
+  .ct-split{grid-template-columns:minmax(0,1fr)}
+  .ct-areas{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .ct-tiles{grid-template-columns:minmax(0,1fr)}
+  .ct-tile .btn{align-self:stretch;justify-content:center}
+  .ct-steps{grid-template-columns:minmax(0,1fr)}
+  .ct-steps li,.ct-steps li+li{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){.ct-status.open i{animation:none}}
 </style>
 </head>
 <body>
@@ -508,192 +785,69 @@ body.modal-open{overflow:hidden}
   <div class="wrap">
     <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
-    <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
+    <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html" aria-current="page">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html" aria-current="page">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
-<section class="fhero" aria-labelledby="h1">
-  <div class="ph-dark" aria-hidden="true"><img src="assets/curb-lights.jpg" alt="" width="1600" height="1067"></div>
-  <div class="ph-lit"><img src="assets/curb-lights.jpg" alt="Stone steps and a wall lit by warm accent lights at night" width="1600" height="1067" fetchpriority="high"></div>
-  <span class="cursor-ring" aria-hidden="true"></span>
-  <p class="hint" aria-hidden="true"><b></b><span class="hint-t">Move to light the yard</span></p>
-  <div class="badge" aria-hidden="true">
-    <svg class="ring" viewBox="0 0 132 132"><defs><path id="circ" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#circ">Free evening demos · New Orleans ·</textPath></text></svg>
-    <svg class="moon"><use href="#moon"/></svg>
+
+<section class="rp-hero" aria-labelledby="h1">
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/curb-lights.jpg" alt="" fetchpriority="high"></div>
+  <div class="wrap">
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+    <p class="kicker fade-up">Contact Big Easy Lighting</p>
+    <h1 id="h1" class="fade-up d1">Talk to Us About Your <em>Lighting Project</em></h1>
+    <p class="lede fade-up d2">Call, send a message, or start a chat. Ready for an estimate or still figuring out what's possible, you'll get a real answer from our New Orleans team.</p>
+    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a><a class="btn btn-line-l" href="#send">Send a Message <svg><use href="#arr"/></svg></a></div><div class="rp-trust"><span class="ct-status" data-status><i></i><b>Mon–Fri</b> 8 AM–6 PM</span><span><b>Free</b> estimates</span><span><b>Homes</b> &amp; businesses</span></div></div>
   </div>
-  <div class="wrap hero-in">
-    <h1 id="h1" aria-label="New Orleans Outdoor Lighting: Your Home Deserves a Second Look After Dark"><span class="kicker fade-up">New Orleans Outdoor Lighting</span> <span class="row" aria-hidden="true" data-split>Your Home Deserves</span> <span class="row it" aria-hidden="true" data-split>a Second Look</span> <span class="row" aria-hidden="true" data-split>After Dark</span></h1>
-    <div class="hero-bot">
-      <p class="lede fade-up d1">Landscape, pathway, and architectural lighting, designed and installed by a local New Orleans team. See it on your own property with a free evening demo before you decide.</p>
-      <div class="hero-ctas fade-up d2">
-        <a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a>
-        <a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a>
+</section>
+
+<section class="pad ct-ways" aria-labelledby="ways-h">
+  <div class="wrap">
+    <div class="rv" style="max-width:760px;margin-bottom:44px"><p class="kicker">Pick what's easiest</p><h2 id="ways-h">Three Ways to <em>Reach Us</em></h2></div>
+    <div class="ct-tiles">
+      <article class="ct-tile ct-tile-call rv">
+        <span class="ct-ico"><svg><use href="#ph"/></svg></span>
+        <h3>Call Us</h3>
+        <a class="ct-big" href="tel:+15047846858">(504) 784-6858</a>
+        <p class="ct-status ct-status-lg" data-status><i></i><span>Mon–Fri, 8 AM–6 PM</span></p>
+        <a class="btn btn-amber" href="tel:+15047846858">Call Now <svg><use href="#arr"/></svg></a>
+      </article>
+      <article class="ct-tile rv">
+        <span class="ct-ico"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.5 7 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <h3>Send a Message</h3>
+        <p>Tell us about your property and what you'd like lit. You can attach photos of the space, too.</p>
+        <a class="btn ct-btn" href="#send">Go to the Form <svg><use href="#arr"/></svg></a>
+      </article>
+      <article class="ct-tile rv">
+        <span class="ct-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Chat With Us</h3>
+        <p>Quick answers on cost, the free evening demo, and where we work, or ask to talk with a person.</p>
+        <button class="btn ct-btn" type="button" data-open-chat>Open the Chat <svg><use href="#arr"/></svg></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark pad cta ct-formsec" id="estimate" aria-labelledby="cta-h">
+  <div class="wrap ct-split">
+    <div class="ct-info rv">
+      <p class="kicker">Send us a message</p>
+      <h2 id="cta-h">Talk to <em>Us</em></h2>
+      <p class="ct-intro">We don’t let any messages get drowned in our inbox. The team at Big Easy Lighting ensures all questions and concerns are addressed.</p>
+      <ul class="ct-list">
+        <li><span class="ct-li"><svg><use href="#ph"/></svg></span><div><small>Phone</small><a href="tel:+15047846858">(504) 784-6858</a></div></li>
+        <li><span class="ct-li"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div><small>Hours</small><span>Monday–Friday, 8 AM–6 PM</span><span class="ct-dim">Saturday–Sunday, closed</span><span class="ct-status" data-status><i></i><span></span></span></div></li>
+        <li><span class="ct-li"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><div><small>Service area</small><span>Serving New Orleans, LA, and surrounding areas</span><a class="ct-more" href="service-areas.html">See all 10 communities</a></div></li>
+      </ul>
+      <div class="ct-social" aria-label="Big Easy Lighting on social media">
+        <a href="https://www.facebook.com/people/Big-Easy-Lighting/100089479989622/">Facebook</a><a href="https://www.instagram.com/bigeasy_lighting/">Instagram</a><a href="https://www.youtube.com/@bigeasylighting">YouTube</a><a href="https://www.linkedin.com/company/big-easy-lighting/">LinkedIn</a>
       </div>
     </div>
-    <div class="hero-note fade-up d3"><span><b>100%</b> satisfaction guarantee</span><span><b>Permits</b> handled for you</span><span><b>Mon–Fri</b> 8 AM–6 PM</span></div>
-  </div>
-</section>
-
-<div class="tick-wrap"><div class="ticker" aria-hidden="true"><div class="tk">
-  <span>Landscape</span><span>Pathway</span><span>Curb Appeal</span><span>Deck &amp; Patio</span><span>Festive String</span><span>Sphere</span><span>Color-Changing</span><span>Commercial LED</span><span>Up/Down</span>
-  <span>Landscape</span><span>Pathway</span><span>Curb Appeal</span><span>Deck &amp; Patio</span><span>Festive String</span><span>Sphere</span><span>Color-Changing</span><span>Commercial LED</span><span>Up/Down</span>
-</div></div></div>
-
-<section class="statement pad" aria-label="Our approach">
-  <div class="wrap">
-    <p class="kicker" style="justify-content:center">What we believe</p>
-    <p id="statement">Good lighting should be affordable and accessible to everyone. So we design it around how you live, install it with our own electricians, and stick around to keep it glowing.</p>
-    <p class="sig">Big Easy Lighting, New Orleans</p>
-  </div>
-</section>
-
-<section class="pad" id="residential" aria-labelledby="res-h">
-  <div class="wrap">
-    <div class="res-head">
-      <div class="rv"><p class="kicker">For your home</p><h2 id="res-h">Seven Ways to <em>Light Home</em></h2></div>
-      <p class="lede rv" style="margin:0;max-width:40ch"><span class="hover-only">Hover a doorway to open it. </span>Most yards end up with a mix, and we'll help you pick on the demo.</p>
-    </div>
-    <div class="strips rv" role="list">
-      <a class="strip on" role="listitem" href="https://www.bigeasylighting.com/residential/landscape-lighting/"><img src="assets/landscape.jpg" alt="" loading="lazy"><span class="no">01</span><span class="v">Landscape</span><div class="info"><h3>Landscape</h3><p>Uplit trees, glowing beds, and architecture that stands out from the street.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/pathway-lighting/"><img src="assets/pathway.jpg" alt="" loading="lazy"><span class="no">02</span><span class="v">Pathway</span><div class="info"><h3>Pathway</h3><p>Safer walks from the driveway to the door.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/"><img src="assets/curb.jpg" alt="" loading="lazy"><span class="no">03</span><span class="v">Curb Appeal</span><div class="info"><h3>Curb Appeal</h3><p>The house people slow down for.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/"><img src="assets/patio.jpg" alt="" loading="lazy"><span class="no">04</span><span class="v">Deck &amp; Patio</span><div class="info"><h3>Deck &amp; Patio</h3><p>Evenings outside that don't end at sunset.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/festive-string-lighting/"><img src="assets/string2.jpg" alt="" loading="lazy"><span class="no">05</span><span class="v">Festive String</span><div class="info"><h3>Festive String</h3><p>Café-style strands for porches and courtyards.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/sphere-lights/"><img src="assets/sphere.jpg" alt="" loading="lazy"><span class="no">06</span><span class="v">Sphere</span><div class="info"><h3>Sphere</h3><p>Glowing orbs that turn a lawn into a scene.</p><span>Explore →</span></div></a>
-      <a class="strip" role="listitem" href="https://www.bigeasylighting.com/residential/color-changing-lighting/"><img src="assets/color.jpg" alt="" loading="lazy"><span class="no">07</span><span class="v">Color</span><div class="info"><h3>Color-Changing</h3><p>Purple, green, and gold when the season calls for it.</p><span>Explore →</span></div></a>
-    </div>
-    <div class="res-foot rv"><span>Not sure where to start? A free estimate is the easiest first step.</span><div class="cta-pair" style="margin-top:0"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
-  </div>
-</section>
-
-<section class="dark pad" id="commercial" aria-labelledby="com-h">
-  <div class="wrap">
-    <div class="comm-intro">
-      <div class="rv"><p class="kicker">For businesses &amp; properties</p><h2 id="com-h">Properties That Look <em>Open</em> After Dark</h2></div>
-      <div class="rv"><p class="lede" style="margin:0">Exterior lighting brings customers in and keeps walkways safe. We handle design, permits, and installation for storefronts, restaurants, and managed grounds.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
-    </div>
-    <div class="stack">
-      <article class="scard"><div class="txt"><span class="n">01 / 04</span><div><h3>Outdoor <em>Lighting</em></h3><p>Patios, parking, facades, and signage lit so the property reads from the street.</p></div><a class="lnk" href="https://www.bigeasylighting.com/commercial/outdoor-lighting/">See outdoor lighting <svg width="18" height="18"><use href="#ne"/></svg></a></div><img src="assets/commercial.jpg" alt="Restaurant patio lit at night" loading="lazy"></article>
-      <article class="scard"><div class="txt"><span class="n">02 / 04</span><div><h3>LED <em>Systems</em></h3><p>Efficient, long-life fixtures and controls that cut energy use and upkeep.</p></div><a class="lnk" href="https://www.bigeasylighting.com/commercial/led-lighting-systems/">See LED systems <svg width="18" height="18"><use href="#ne"/></svg></a></div><img src="assets/led.jpg" alt="Modern structure with LED lighting at dusk" loading="lazy"></article>
-      <article class="scard"><div class="txt"><span class="n">03 / 04</span><div><h3>Garden &amp; <em>Grounds</em></h3><p>Palms, beds, and courtyards that feel finished after dark.</p></div><a class="lnk" href="https://www.bigeasylighting.com/commercial/garden-lights/">See garden lighting <svg width="18" height="18"><use href="#ne"/></svg></a></div><img src="assets/garden.jpg" alt="Palm-lined grounds lit at dusk" loading="lazy"></article>
-      <article class="scard"><div class="txt"><span class="n">04 / 04</span><div><h3>Up/Down <em>Lights</em></h3><p>Wall wash that shows off the building and lights the entry.</p></div><a class="lnk" href="https://www.bigeasylighting.com/commercial/up-down-lights/">See up/down lights <svg width="18" height="18"><use href="#ne"/></svg></a></div><img src="assets/updown.jpg" alt="Building exterior with up and down lights" loading="lazy"></article>
-    </div>
-  </div>
-</section>
-
-<section class="iris" aria-labelledby="demo-h">
-  <div class="iris-sticky">
-    <div class="iris-img"><img src="assets/pavilion.jpg" alt="Outdoor pavilion with warm pendant and column lighting" loading="lazy"></div>
-    <p class="iris-hint" aria-hidden="true">Keep scrolling</p>
-    <div class="wrap iris-copy">
-      <div class="box dark" style="background:none">
-        <p class="kicker">The free evening demo</p>
-        <h2 id="demo-h">See It Lit <em>Before</em> You Spend a Dollar</h2>
-        <p>Lighting is hard to picture on paper. We come out after dark, set fixtures on your property, and let you see the real effect from your own driveway.</p>
-        <ul class="ticks">
-          <li><svg><use href="#chk"/></svg>Free design consultation with our lighting designer</li>
-          <li><svg><use href="#chk"/></svg>Live preview on your home, at night</li>
-          <li><svg><use href="#chk"/></svg>Maintenance available after install</li>
-        </ul>
-        <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="pad" id="process" style="background:var(--ivory-2)" aria-labelledby="proc-h">
-  <div class="wrap proc">
-    <div class="proc-left">
-      <p class="kicker">How it works</p>
-      <h2 id="proc-h">From First Call to <em>First Night</em></h2>
-      <p class="lede" style="margin-top:22px">Our designers and electricians stay with you from the walk-through to the final fixture adjustment.</p>
-      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
-    </div>
-    <ol class="steps">
-      <li><span class="lamp">1</span><div><h3>Consultation &amp; Site Survey</h3><p>We meet on site, talk through your goals, check your current lighting, and survey the property for fixture placement and power.</p></div></li>
-      <li><span class="lamp">2</span><div><h3>Design &amp; Engineering</h3><p>You get a custom lighting plan built to your needs and budget. We pull the permits and schedule the inspections.</p></div></li>
-      <li><span class="lamp">3</span><div><h3>Installation &amp; Service</h3><p>We install quickly and cleanly, then offer ongoing maintenance so the system keeps performing.</p></div></li>
-    </ol>
-  </div>
-</section>
-
-<section class="dark pad" aria-labelledby="rev-h">
-  <div class="wrap rev-head rv"><div><p class="kicker">Reviews</p><h2 id="rev-h">Neighbors <em>Talk</em></h2></div><p class="lede" style="margin:0;max-width:34ch">What homeowners across Greater New Orleans say after the lights go on.</p></div>
-  <div class="rev-rows">
-    <div class="rr">
-      <figure class="rcard"><blockquote>“Big Easy Lighting did an excellent job on our landscape lighting. They provided us with helpful advice and were extremely easy to work with. We're delighted with the results!”</blockquote><figcaption>Christina Porter<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-      <figure class="rcard"><blockquote>“The crew was great. As a physician, I appreciate it when people pay close attention to details! They transformed our entire lot and my family and I could enjoy being in our pool late with all the beautiful lighting.”</blockquote><figcaption>Edward Bergeron<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-      <figure class="rcard"><blockquote>“Our lighting system was installed by Big Easy Lighting to a world-class standard! Our home has been enhanced beyond our expectations. Thank you!”</blockquote><figcaption>Charles Zeitler<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-    </div>
-    <div class="rr rev">
-      <figure class="rcard"><blockquote>“We loved our lights, so we added some additional pathway light fixtures. Once again, we're very pleased with Big Easy Lighting's customer service and would highly recommend them for any outdoor lighting needs.”</blockquote><figcaption>Carol Burditt<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-      <figure class="rcard"><blockquote>“It was an easy and seamless process from demo to installation. It was a great installation and the lighting turned out even better than expected. Thanks again!”</blockquote><figcaption>Gina Bowman<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-      <figure class="rcard"><blockquote>“If I need garden lighting, I will only choose this company. With Big Easy Lighting, I had an easy time working with my lights, and I can't wait to work with them again next year.”</blockquote><figcaption>Harold Atkinson<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure>
-    </div>
-  </div>
-</section>
-
-
-<section class="pad dark spec-sec" aria-labelledby="spec-h">
-  <div class="spec-bg" aria-hidden="true"><img src="assets/pool.jpg" alt="" loading="lazy" width="1600" height="1067"></div>
-  <div class="wrap spec">
-    <div class="rv"><p class="kicker">Built for the Gulf</p><h2 id="spec-h">Humidity, Storms, and <em>Salt Air,</em> Handled</h2><p class="lede" style="margin-top:22px">Cheap fixtures corrode fast down here. Here's what goes into every system we install.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
-    <dl class="rv">
-      <div class="row"><dt>Fixtures</dt><dd>Corrosion-Resistant, Weather-Rated<small>Chosen for our humid, storm-prone climate.</small></dd></div>
-      <div class="row"><dt>Connections</dt><dd>Sealed at Every Splice<small>Keeps moisture out of the system through hurricane season.</small></dd></div>
-      <div class="row"><dt>Voltage</dt><dd>12-Volt Low-Voltage<small>Safer, energy efficient, and easy to expand later.</small></dd></div>
-      <div class="row"><dt>Light source</dt><dd>LED<small>Warm, bright light that costs very little to run.</small></dd></div>
-      <div class="row"><dt>Paperwork</dt><dd>Permits &amp; Inspections<small>We pull them and schedule them for you.</small></dd></div>
-    </dl>
-  </div>
-</section>
-
-<section class="pad" id="areas" style="background:var(--ivory-2)" aria-labelledby="area-h">
-  <div class="wrap">
-    <div class="rv" style="text-align:center"><p class="kicker" style="justify-content:center">Where we work</p><h2 id="area-h">Both Sides of <em>the Lake</em></h2></div>
-    <div class="lake">
-      <div class="shore rv"><h3>Southshore &amp; River Parishes</h3><ul>
-        <li><span>New Orleans</span></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/metairie/">Metairie</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/kenner/">Kenner</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/st-rose/">St. Rose</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/laplace/">LaPlace</a></li></ul></div>
-      <div class="water" aria-hidden="true"><svg viewBox="0 0 200 320" preserveAspectRatio="none"><path d="M60 0 C 20 60, 100 100, 60 160 S 20 260, 60 320"/><path d="M100 0 C 60 60, 140 100, 100 160 S 60 260, 100 320"/><path d="M140 0 C 100 60, 180 100, 140 160 S 100 260, 140 320"/></svg><span>Lake Pontchartrain</span></div>
-      <div class="shore r rv"><h3>Northshore</h3><ul>
-        <li><a href="https://www.bigeasylighting.com/service-areas/mandeville/">Mandeville</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/covington/">Covington</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/madisonville/">Madisonville</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/abita-springs/">Abita Springs</a></li>
-        <li><a href="https://www.bigeasylighting.com/service-areas/hammond/">Hammond</a></li></ul></div>
-    </div>
-    <div class="cta-pair center rv"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
-  </div>
-</section>
-
-<section class="pad" aria-labelledby="faq-h">
-  <div class="wrap">
-    <div class="rv"><p class="kicker">Good questions</p><h2 id="faq-h">Before You <em>Call</em></h2></div>
-    <div class="faq-cols">
-      <div>
-        <details><summary><span class="i">01</span>How Much Does Landscape Lighting Cost in New Orleans?<span class="x">+</span></summary><p>It depends on the size of the yard, the number of fixtures, and the design. A few accent lights cost far less than a full-property system. A free on-site estimate gives you an accurate number.</p></details>
-        <details><summary><span class="i">02</span>What Is Low-Voltage Landscape Lighting?<span class="x">+</span></summary><p>A transformer steps household power down to 12 volts, which makes the system safer, efficient, and easy to expand.</p></details>
-      </div>
-      <div>
-        <details><summary><span class="i">03</span>Will It Hold Up to Storms and Humidity?<span class="x">+</span></summary><p>Yes. We use corrosion-resistant, weather-rated fixtures with sealed connections built for the Gulf climate.</p></details>
-        <details><summary><span class="i">04</span>Does Outdoor Lighting Use a Lot of Electricity?<span class="x">+</span></summary><p>No. Low-voltage LED fixtures use very little power, so running costs stay low even with the whole yard lit.</p></details>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="dark pad cta" id="estimate" aria-labelledby="cta-h">
-  <div class="wrap inner">
-    <p class="kicker" style="justify-content:center">Free, no-obligation estimate</p>
-    <h2 id="cta-h">Let's Plan Your <em>First Lit Night</em></h2>
-    <form class="qform" data-prototype novalidate aria-labelledby="qf-title">
+    <div class="ct-formcol" id="send">
+      <form class="qform" data-prototype novalidate aria-labelledby="qf-title">
       <div class="qf-hd">
         <h3 id="qf-title">Get a Free Estimate</h3>
         <p>Do you have questions or comments about our services? Fill out the form below and our team will get back to you as soon as possible.</p>
@@ -743,9 +897,39 @@ body.modal-open{overflow:hidden}
       </div>
       <div class="status" role="status" tabindex="-1">Design prototype: this form isn't connected yet. On the live site it will send to the Big Easy Lighting team.</div>
     </form>
-    <p class="cta-alt">Rather talk? Call <a href="tel:+15047846858">(504) 784-6858</a>, Monday–Friday, 8 AM–6 PM.</p>
+    </div>
   </div>
 </section>
+
+<section class="pad ct-next" aria-labelledby="next-h">
+  <div class="wrap">
+    <div class="rv" style="max-width:760px;margin-bottom:44px"><p class="kicker">What happens next</p><h2 id="next-h">After You <em>Reach Out</em></h2></div>
+    <ol class="ct-steps">
+      <li class="rv"><span class="n">1</span><h3>We Get Back to You</h3><p>Our team reads every message and follows up to talk through your property and what you have in mind.</p></li>
+      <li class="rv"><span class="n">2</span><h3>Free Estimate and Design</h3><p>We walk the property, plan the lighting, and give you a free, no-obligation estimate.</p></li>
+      <li class="rv"><span class="n">3</span><h3>See It Lit Before You Decide</h3><p>With the free evening demo, we set fixtures up after dark so you see the real effect first.</p></li>
+    </ol>
+    <div class="ct-areas rv">
+      <div><h3>Serving New Orleans and Surrounding Areas</h3><p>Both sides of Lake Pontchartrain, from Hammond to St. Rose.</p></div>
+      <ul>
+        <li><a href="service-areas.html#area-new-orleans">New Orleans</a></li><li><a href="service-areas.html#area-metairie">Metairie</a></li><li><a href="service-areas.html#area-kenner">Kenner</a></li><li><a href="service-areas.html#area-st-rose">St. Rose</a></li><li><a href="service-areas.html#area-laplace">LaPlace</a></li><li><a href="service-areas.html#area-mandeville">Mandeville</a></li><li><a href="service-areas.html#area-covington">Covington</a></li><li><a href="service-areas.html#area-madisonville">Madisonville</a></li><li><a href="service-areas.html#area-abita-springs">Abita Springs</a></li><li><a href="service-areas.html#area-hammond">Hammond</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pad rp-faq" style="padding-top:0" aria-labelledby="cfaq-h">
+  <div class="wrap grid">
+    <div class="side rv"><p class="kicker">Contact FAQ</p><h2 id="cfaq-h">Quick Answers Before <em>You Call</em></h2><p class="lede" style="margin-top:18px">What people ask most before they get in touch.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
+    <div class="rv">
+      <details open><summary>Is the Estimate Really Free?<span class="x">+</span></summary><p>Yes. Every project starts with a free, no-obligation estimate, and the design consultation and evening demo are free too.</p></details>
+      <details><summary>What Are Your Hours?<span class="x">+</span></summary><p>We're available Monday through Friday, 8 AM to 6 PM Central. You can send a message through the form any time.</p></details>
+      <details><summary>Can I Send Photos of My Property?<span class="x">+</span></summary><p>Yes. The form has an optional upload field for photos of your yard, building, or the spot you want lit.</p></details>
+      <details><summary>Do You Work Outside New Orleans?<span class="x">+</span></summary><p>Yes. We serve Metairie, Kenner, St. Rose, LaPlace, and the Northshore, including Mandeville, Covington, Madisonville, Abita Springs, and Hammond.</p></details>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="ftr">
@@ -795,71 +979,27 @@ body.modal-open{overflow:hidden}
 (function(){
   var R=document.documentElement; R.classList.remove('no-js'); R.classList.add('js');
   var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var mobile=function(){return innerWidth<=760};
-  var fine=matchMedia('(hover: hover) and (pointer: fine)').matches;
-  // split hero headline into letters (words kept whole so lines never break mid-word)
-  document.querySelectorAll('[data-split]').forEach(function(row,ri){
-    var words=row.textContent.trim().split(' '),n=0;row.textContent='';
-    words.forEach(function(w,wi){var wd=document.createElement('span');wd.className='wd';
-      w.split('').forEach(function(c){var sp=document.createElement('span');sp.className='ch';sp.textContent=c;sp.style.transitionDelay=(ri*.2+n*.03)+'s';n++;wd.appendChild(sp)});
-      row.appendChild(wd);if(wi<words.length-1)row.appendChild(document.createTextNode(' '))});
-  });
-  requestAnimationFrame(function(){setTimeout(function(){document.body.classList.add('loaded')},60)});
-  // flashlight hero
-  var hero=document.querySelector('.fhero');
-  function setPos(x,y){hero.style.setProperty('--x',x+'px');hero.style.setProperty('--y',y+'px')}
-  if(reduced){hero.classList.add('touch');hero.style.setProperty('--r','1600px');document.querySelector('.hint').style.display='none'}
-  else if(fine){
-    var tx=innerWidth*.7,ty=innerHeight*.55,cx=tx,cy=ty;
-    hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();tx=e.clientX-r.left;ty=e.clientY-r.top});
-    (function loop(){cx+=(tx-cx)*.14;cy+=(ty-cy)*.14;setPos(cx,cy);requestAnimationFrame(loop)})();
-  } else {
-    hero.classList.add('touch');document.querySelector('.hint-t').textContent='Tap to light the yard';
-    var t0=performance.now(),auto=true;
-    hero.addEventListener('pointerdown',function(e){auto=false;var r=hero.getBoundingClientRect();setPos(e.clientX-r.left,e.clientY-r.top)});
-    (function drift(now){if(!auto)return;var t=(now-t0)/1000,w=hero.clientWidth,h=hero.clientHeight;setPos(w*(.5+.3*Math.sin(t*.6)),h*(.45+.18*Math.sin(t*1.1)));requestAnimationFrame(drift)})(t0);
-    hero.style.setProperty('--r','180px');
-  }
-  // expanding arch panels
-  var strips=document.querySelectorAll('.strip');
-  strips.forEach(function(st){function on(){strips.forEach(function(x){x.classList.toggle('on',x===st)})}st.addEventListener('mouseenter',on);st.addEventListener('focus',on)});
-
+  setTimeout(function(){document.body.classList.add('loaded')},60);
   var hdr=document.querySelector('.hdr');
+  function onScroll(){hdr.classList.toggle('scrolled',scrollY>30)}
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
   // menu
   var mb=document.querySelector('.menu'),dr=document.getElementById('drawer');
   mb.addEventListener('click',function(){var o=dr.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
   dr.addEventListener('click',function(e){if(e.target.closest('a')){dr.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
-  // statement words
-  var st=document.getElementById('statement'), hl=['affordable','accessible','glowing.'];
-  st.innerHTML=st.textContent.trim().split(/\s+/).map(function(w){return '<span class="w'+(hl.indexOf(w.replace(/[,]/g,''))>-1?' hl':'')+'">'+w+'</span>'}).join(' ');
-  var words=st.querySelectorAll('.w');
   // reveals
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
-  document.querySelectorAll('.rv,.water').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
-  // steps active
-  var steps=document.querySelectorAll('.steps li');
-  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('active')})},{rootMargin:'-45% 0px -45% 0px'});
-  steps.forEach(function(s){reduced?s.classList.add('active'):so.observe(s)});
-  // scroll-linked
-  var iris=document.querySelector('.iris'),irisImg=document.querySelector('.iris-img'),irisCopy=document.querySelector('.iris-copy'),hint=document.querySelector('.iris-hint');
-  var cards=document.querySelectorAll('.scard');
-  function prog(el){var r=el.getBoundingClientRect(); return Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)))}
-  function onScroll(){
-    hdr.classList.toggle('scrolled',scrollY>30);
-    if(reduced) return;
-    var vh=innerHeight, r=st.getBoundingClientRect(), p=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35)));
-    var n=Math.round(p*words.length); words.forEach(function(w,i){w.classList.toggle('on',i<n)});
-    if(!mobile()){
-      var pi=prog(iris); irisImg.style.clipPath='circle('+(12+pi*1.4*88)+'% at 50% 50%)'; irisCopy.classList.toggle('show',pi>.45); hint.style.opacity=pi>.2?0:1;
-    }
-    if(innerWidth>760)cards.forEach(function(c,i){var nx=cards[i+1];if(!nx){c.style.transform='';c.style.filter='';return}var cr=c.getBoundingClientRect(),nr=nx.getBoundingClientRect();var p=Math.min(1,Math.max(0,(cr.bottom-nr.top)/cr.height));c.style.transform='scale('+(1-p*.06)+')';c.style.filter='brightness('+(1-p*.35)+')'});
-  }
-  if(reduced){words.forEach(function(w){w.classList.add('on')})}
-  addEventListener('resize',onScroll); addEventListener('scroll',onScroll,{passive:true}); onScroll();
-  var specSec=document.querySelector('.spec-sec');
-  if(reduced)specSec.classList.add('lit');else new IntersectionObserver(function(es,o){if(es[0].isIntersecting){specSec.classList.add('lit');o.disconnect()}},{threshold:.25}).observe(specSec);
-  // review rows: 3 extra copies so the loop never shows a gap on wide screens
-  if(!reduced)document.querySelectorAll('.rr').forEach(function(r){var orig=Array.prototype.slice.call(r.children);for(var k=0;k<3;k++)orig.forEach(function(ch){var c=ch.cloneNode(true);c.setAttribute('aria-hidden','true');r.appendChild(c)})});
+  document.querySelectorAll('.rv,.rp-steps,.cp-life,.ab-track').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
+  // services: highlight a row and swap the arched preview (hover, focus, or scroll position)
+  var rows=[].slice.call(document.querySelectorAll('.rp-row')),frame=document.querySelector('.rp-frame'),imgs=frame?frame.querySelectorAll('img'):[],cap=frame?frame.querySelector('figcaption'):null;
+  function act(i){rows.forEach(function(r,j){r.classList.toggle('on',j===i)});[].forEach.call(imgs,function(im,j){im.classList.toggle('show',j===i)});if(cap)cap.textContent=rows[i].querySelector('h3').textContent}
+  rows.forEach(function(r,i){r.addEventListener('mouseenter',function(){act(i)});r.querySelector('a').addEventListener('focus',function(){act(i)})});
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(rows.indexOf(e.target))})},{rootMargin:'-45% 0px -50% 0px'});
+  rows.forEach(function(r){ro.observe(r)});
+  // goal tabs (arrow keys supported)
+  var tabs=[].slice.call(document.querySelectorAll('.rp-tablist [role=tab]'));
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){var k=/Arrow(Down|Right)/.test(e.key)?1:/Arrow(Up|Left)/.test(e.key)?-1:0;if(k){e.preventDefault();var n=tabs[(i+k+tabs.length)%tabs.length];sel(n);n.focus()}})});
   // estimate form: the page form is copied into the popup so both stay identical, then each copy gets its own behavior
   var pageForm=document.querySelector('#estimate .qform'), modal=document.getElementById('est-modal'), panel=modal.querySelector('.est-panel');
   var popForm=pageForm.cloneNode(true), ids={};
@@ -930,7 +1070,6 @@ body.modal-open{overflow:hidden}
   });
 })();
 </script>
-
 <script>
 /* Back-to-top arrow + chat assistant (quick answers + handoff to the client's LeadConnector chat) */
 (function(){
@@ -1010,6 +1149,41 @@ body.modal-open{overflow:hidden}
     document.body.appendChild(s);
   });
 })();
+</script>
+<script>
+/* Contact: live open/closed status (Central Time, Mon-Fri 8 AM-6 PM) and the chat tile */
+(function(){
+  var DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], FULL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function central(){
+    try{
+      var p={}; new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false})
+        .formatToParts(new Date()).forEach(function(x){p[x.type]=x.value;});
+      return {d:DAYS.indexOf(p.weekday), m:(parseInt(p.hour,10)%24)*60+parseInt(p.minute,10)};
+    }catch(e){ return null; }
+  }
+  function status(){
+    var c=central(); if(!c||c.d<0) return null;
+    var weekday=c.d>=1&&c.d<=5, OPEN=8*60, CLOSE=18*60;
+    if(weekday&&c.m>=OPEN&&c.m<CLOSE) return {open:true, html:'<b>Open now</b> until 6 PM'};
+    var next;
+    if(weekday&&c.m<OPEN) next='today at 8 AM';
+    else { var d=(c.d+1)%7; while(d===0||d===6) d=(d+1)%7; next=(d===(c.d+1)%7?'tomorrow':FULL[d])+' at 8 AM'; }
+    return {open:false, html:'<b>Closed now</b>, opens '+next};
+  }
+  function paint(){
+    var s=status(); if(!s) return;
+    [].forEach.call(document.querySelectorAll('[data-status]'),function(el){
+      el.classList.add('ready'); el.classList.toggle('open',s.open); el.classList.toggle('closed',!s.open);
+      el.innerHTML='<i></i><span>'+s.html+' <small>(Central)</small></span>';
+    });
+  }
+  paint(); setInterval(paint,60000);
+
+  [].forEach.call(document.querySelectorAll('[data-open-chat]'),function(b){
+    b.addEventListener('click',function(){ var l=document.querySelector('.chat-launch'); if(l){ l.click(); } });
+  });
+})();
+
 </script>
 </body>
 </html>
