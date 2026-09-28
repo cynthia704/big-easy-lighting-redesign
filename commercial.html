@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Residential Outdoor Lighting in New Orleans | Big Easy Lighting</title>
-<meta name="description" content="Landscape, pathway, patio, string, sphere, and color-changing lighting for New Orleans homes. Designed and installed by Big Easy Lighting. Free estimates: (504) 784-6858.">
+<title>Commercial Outdoor Lighting in New Orleans | Big Easy Lighting</title>
+<meta name="description" content="Parking lot, building, sign, walkway, LED, garden, and up/down lighting for New Orleans businesses. Built to local codes. Free estimates: (504) 784-6858.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/hero-house.jpg">
+<link rel="preload" as="image" href="assets/commercial.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -618,6 +618,77 @@ body.modal-open{overflow:hidden}
   .rp-steps::before,.rp-steps::after{display:none}
 }
 @media (prefers-reduced-motion:reduce){.rp-steps::after{width:100%}.rp-hero-bg img{transform:none}}
+
+/* ===== Commercial page (cp-) ===== */
+.cp-svcs .head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:46px}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cp-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;scroll-margin-top:120px;transition:transform .4s var(--ease),box-shadow .4s}
+.cp-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(29,43,37,.45)}
+.cp-card .img{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--iron)}
+.cp-card .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.cp-card:hover .img img{transform:scale(1.06)}
+.cp-card .img .n{position:absolute;top:16px;left:16px;font:italic 400 1.3rem var(--serif);color:var(--ivory);background:rgba(15,22,19,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);width:46px;height:46px;border-radius:50%;display:grid;place-items:center}
+.cp-card .body{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cp-card h3{font-size:clamp(1.7rem,2.4vw,2.1rem)}
+.cp-card p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:4px 0 0}
+.cp-tags li{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--ivory-2);color:var(--ink)}
+.cp-card .more{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.cp-card .more svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.cp-card:hover .more svg{transform:translateX(4px)}
+.cp-svcs .cta-pair{margin-top:40px}
+
+.cp-props{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.cp-photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.cp-photo img{width:100%;height:100%;object-fit:cover}
+.cp-photo figcaption{position:absolute;left:18px;bottom:18px;right:18px;padding:14px 16px;border-radius:10px;background:rgba(15,22,19,.62);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:13.5px;color:#d9d2c3}
+.cp-photo figcaption b{color:var(--ivory)}
+.cp-types{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cp-types li{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line-light);border-radius:10px;background:rgba(245,240,230,.04);font:400 1.2rem/1.2 var(--serif);transition:background .3s,border-color .3s}
+.cp-types li:hover{background:rgba(255,151,0,.1);border-color:#e9b25a}
+.cp-types svg{width:22px;height:22px;color:#f0b64a;flex:none}
+.cp-types li.more{font:600 13.5px var(--sans);color:#c9c2b3;border-style:dashed}
+
+.cp-why .head{max-width:760px;margin-bottom:46px}
+.cp-why .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(30px,5vw,70px);align-items:start}
+.cp-bens{display:grid;grid-template-columns:1fr 1fr;gap:40px 36px;counter-reset:ben}
+.cp-ben{position:relative;padding-top:18px;border-top:2px solid var(--line)}
+.cp-ben::before{counter-increment:ben;content:"0" counter(ben);display:block;font:italic 400 3.2rem/1 var(--serif);color:transparent;-webkit-text-stroke:1px var(--brass);margin-bottom:14px}
+.cp-ben h3{font-size:1.55rem;margin-bottom:8px}
+.cp-ben p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-apps{position:sticky;top:130px;background:var(--iron);color:var(--ivory);border-radius:14px;padding:30px 28px;box-shadow:0 30px 60px -30px rgba(29,43,37,.6)}
+.cp-apps h3{font-size:1.6rem;margin-bottom:18px}
+.cp-apps ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:12px}
+.cp-apps li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#e4dccd}
+.cp-apps li svg{width:18px;height:18px;color:var(--amber);flex:none;margin-top:3px}
+.cp-apps .cta-pair{margin-top:0;flex-direction:column;align-items:stretch}
+.cp-apps .cta-pair .btn{justify-content:center}
+
+.cp-life{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;position:relative}
+.cp-life::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line-light)}
+.cp-life::after{content:"";position:absolute;left:0;top:27px;height:2px;width:0;background:var(--amber);box-shadow:0 0 14px var(--glow);transition:width 2s var(--ease)}
+.cp-life.in::after{width:100%}
+.cp-life li{position:relative}
+.cp-life .ic{position:relative;z-index:1;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--iron-2);border:2px solid var(--line-light);color:#c9c2b3;margin-bottom:20px;transition:background .5s,border-color .5s,color .5s,box-shadow .5s}
+.cp-life .ic svg{width:22px;height:22px}
+.cp-life.in .ic{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 0 8px rgba(255,151,0,.14)}
+.cp-life.in li:nth-child(2) .ic{transition-delay:.4s}.cp-life.in li:nth-child(3) .ic{transition-delay:.8s}.cp-life.in li:nth-child(4) .ic{transition-delay:1.2s}.cp-life.in li:nth-child(5) .ic{transition-delay:1.6s}
+.cp-life h3{font-size:1.35rem;margin-bottom:8px}
+.cp-life p{margin:0;color:#c9c2b3;font-size:14.5px}
+.cp-lifesec .cta-pair{margin-top:44px}
+
+@media (max-width:1000px){
+  .cp-props,.cp-why .grid{grid-template-columns:1fr}
+  .cp-photo{aspect-ratio:16/10}
+  .cp-apps{position:static}
+  .cp-life{grid-template-columns:1fr 1fr;gap:34px 22px}
+  .cp-life::before,.cp-life::after{display:none}
+}
+@media (max-width:760px){
+  .cp-svcs .head{grid-template-columns:1fr}
+  .cp-grid,.cp-types,.cp-bens,.cp-life{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.cp-life::after{width:100%}}
 </style>
 </head>
 <body>
@@ -635,111 +706,115 @@ body.modal-open{overflow:hidden}
 
 <header class="hdr">
   <div class="wrap">
-    <nav aria-label="Primary"><a href="residential.html" aria-current="page">Residential</a><a href="commercial.html">Commercial</a><a href="https://www.bigeasylighting.com/service-areas/">Service Areas</a></nav>
+    <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html" aria-current="page">Commercial</a><a href="https://www.bigeasylighting.com/service-areas/">Service Areas</a></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
     <nav class="right" aria-label="Secondary"><a href="https://www.bigeasylighting.com/about/">About</a><a href="https://www.bigeasylighting.com/blog/">Blog</a><a href="https://www.bigeasylighting.com/contact/">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html" aria-current="page">Residential</a><a href="commercial.html">Commercial</a><a href="https://www.bigeasylighting.com/service-areas/">Service Areas</a><a href="https://www.bigeasylighting.com/about/">About</a><a href="https://www.bigeasylighting.com/blog/">Blog</a><a href="https://www.bigeasylighting.com/contact/">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html" aria-current="page">Commercial</a><a href="https://www.bigeasylighting.com/service-areas/">Service Areas</a><a href="https://www.bigeasylighting.com/about/">About</a><a href="https://www.bigeasylighting.com/blog/">Blog</a><a href="https://www.bigeasylighting.com/contact/">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
 
 <section class="rp-hero" aria-labelledby="h1">
-  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/hero-house.jpg" alt="" width="1812" height="1200" fetchpriority="high"></div>
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/commercial.jpg" alt="" width="950" height="450" fetchpriority="high"></div>
   <div class="wrap">
-    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Residential</span></nav>
-    <p class="kicker fade-up">Residential lighting</p>
-    <h1 id="h1" class="fade-up d1">Residential Outdoor Lighting for New&nbsp;Orleans <em>Homes</em></h1>
-    <p class="lede fade-up d2">Landscape, pathway, patio, and holiday lighting, designed around how you use your yard and installed by our own electricians. Every project starts with a free estimate.</p>
-    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>100%</b> satisfaction guarantee</span><span><b>Permits</b> handled for you</span><span><b>Mon–Fri</b> 8 AM–6 PM</span></div></div>
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Commercial</span></nav>
+    <p class="kicker fade-up">Commercial lighting</p>
+    <h1 id="h1" class="fade-up d1">Commercial Outdoor Lighting for New&nbsp;Orleans <em>Businesses</em></h1>
+    <p class="lede fade-up d2">Parking lots, storefronts, signage, walkways, and grounds, designed, installed, and maintained to meet local codes. Every project starts with a free estimate.</p>
+    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>Built</b> to local codes</span><span><b>Repair</b> &amp; maintenance</span><span><b>Mon–Fri</b> 8 AM–6 PM</span></div></div>
     <ul class="rp-jump fade-up d3" aria-label="Jump to a service">
-      <li><a href="#svc-landscape">Landscape</a></li><li><a href="#svc-pathway">Pathway</a></li><li><a href="#svc-curb">Curb Appeal</a></li><li><a href="#svc-patio">Deck &amp; Patio</a></li><li><a href="#svc-string">Festive String</a></li><li><a href="#svc-sphere">Sphere</a></li><li><a href="#svc-color">Color-Changing</a></li>
+      <li><a href="#svc-outdoor">Outdoor Lighting</a></li><li><a href="#svc-led">LED Systems</a></li><li><a href="#svc-garden">Garden &amp; Grounds</a></li><li><a href="#svc-updown">Up/Down Lighting</a></li>
     </ul>
   </div>
 </section>
 
-<section class="pad rp-svcs" id="services" aria-labelledby="svc-h">
+<section class="pad cp-svcs" id="services" aria-labelledby="svc-h">
   <div class="wrap">
     <div class="head">
-      <div class="rv"><p class="kicker">Seven services</p><h2 id="svc-h">Pick the Lighting That <em>Fits Your Home</em></h2></div>
-      <p class="lede rv" style="margin:0;max-width:40ch">Most yards use a mix. Tap any service to see the full details, or get a free estimate and we'll recommend the right combination.</p>
+      <div class="rv"><p class="kicker">Four services</p><h2 id="svc-h">Lighting Built for <em>How Your Property Works</em></h2></div>
+      <p class="lede rv" style="margin:0;max-width:40ch">Most properties combine two or three of these. The free estimate maps out exactly what yours needs.</p>
     </div>
-    <div class="rp-grid">
-      <ol class="rp-list">
-        <li class="rp-row on" id="svc-landscape" data-i="0"><a class="rp-link" href="https://www.bigeasylighting.com/residential/landscape-lighting/"><div class="thumb"><img src="assets/landscape.jpg" alt="Garden path and tree lit at night" loading="lazy"></div><span class="n">01</span><div><h3>Landscape Lighting</h3><p>Uplit trees, glowing garden beds, and architecture that stands out from the street. Wall lights, uplights, path lights, and sensor lights, designed as one system.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-pathway" data-i="1"><a class="rp-link" href="https://www.bigeasylighting.com/residential/pathway-lighting/"><div class="thumb"><img src="assets/pathway.jpg" alt="Walkway lined with path lights" loading="lazy"></div><span class="n">02</span><div><h3>Pathway Lighting</h3><p>Safer walks from the driveway to the door, with light that sets the mood. Free design consultation, and no project is too small.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-curb" data-i="2"><a class="rp-link" href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/"><div class="thumb"><img src="assets/curb.jpg" alt="Home and pool lit at dusk" loading="lazy"></div><span class="n">03</span><div><h3>Curb Appeal Lighting</h3><p>Accent the architecture, entryway, and landscaping so your home looks inviting and secure after dark.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-patio" data-i="3"><a class="rp-link" href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/"><div class="thumb"><img src="assets/patio.jpg" alt="Covered patio under warm lights" loading="lazy"></div><span class="n">04</span><div><h3>Deck &amp; Patio Lighting</h3><p>Comfortable, secure, attractive light for outdoor dinners, lounging, and late nights on the deck.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-string" data-i="4"><a class="rp-link" href="https://www.bigeasylighting.com/residential/festive-string-lighting/"><div class="thumb"><img src="assets/string2.jpg" alt="String lights along a deck rail" loading="lazy"></div><span class="n">05</span><div><h3>Festive String Lighting</h3><p>Café-style strands for porches, courtyards, and backyards, installed safely and to local building codes.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-sphere" data-i="5"><a class="rp-link" href="https://www.bigeasylighting.com/residential/sphere-lights/"><div class="thumb"><img src="assets/sphere.jpg" alt="Glowing sphere lights on a lawn" loading="lazy"></div><span class="n">06</span><div><h3>Sphere Lights</h3><p>Glowing globes that turn a lawn or garden into a scene, with installation, repair, and maintenance.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-color" data-i="6"><a class="rp-link" href="https://www.bigeasylighting.com/residential/color-changing-lighting/"><div class="thumb"><img src="assets/color.jpg" alt="Courtyard garden lighting" loading="lazy"></div><span class="n">07</span><div><h3>Color-Changing Lighting</h3><p>Programmable lights you can adjust remotely. Purple, green, and gold for Mardi Gras, warm white the rest of the year. For new builds or existing homes.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-      </ol>
-      <figure class="rp-frame" aria-hidden="true" style="margin:0">
-        <img class="show" src="assets/landscape.jpg" alt="" loading="lazy"><img src="assets/pathway.jpg" alt="" loading="lazy"><img src="assets/curb.jpg" alt="" loading="lazy"><img src="assets/patio.jpg" alt="" loading="lazy"><img src="assets/string2.jpg" alt="" loading="lazy"><img src="assets/sphere.jpg" alt="" loading="lazy"><img src="assets/color.jpg" alt="" loading="lazy">
-        <figcaption>Landscape Lighting</figcaption>
-      </figure>
+    <div class="cp-grid">
+      <a class="cp-card rv" id="svc-outdoor" href="https://www.bigeasylighting.com/commercial/outdoor-lighting/"><div class="img"><img src="assets/commercial.jpg" alt="Restaurant patio and building lit at night" loading="lazy"><span class="n">1</span></div><div class="body"><h3>Outdoor Lighting</h3><p>Exterior lighting for facades, entrances, walkways, parking, and signage that keeps visitors safe and the property up to code.</p><ul class="cp-tags"><li>Parking lots</li><li>Building &amp; signs</li><li>Walkways &amp; stairs</li><li>Security lighting</li></ul><span class="more">See details <svg><use href="#arr"/></svg></span></div></a>
+      <a class="cp-card rv" id="svc-led" href="https://www.bigeasylighting.com/commercial/led-lighting-systems/"><div class="img"><img src="assets/led.jpg" alt="Modern structure lit with LED lighting" loading="lazy"><span class="n">2</span></div><div class="body"><h3>LED Lighting Systems</h3><p>Energy-efficient LED fixtures, controls, and retrofits for exteriors and interiors, with dimming, scheduling, and smart controls.</p><ul class="cp-tags"><li>LED retrofits</li><li>Interior office LED</li><li>Dimming &amp; controls</li><li>RGB color</li></ul><span class="more">See details <svg><use href="#arr"/></svg></span></div></a>
+      <a class="cp-card rv" id="svc-garden" href="https://www.bigeasylighting.com/commercial/garden-lights/"><div class="img"><img src="assets/garden.jpg" alt="Palm-lined grounds lit at dusk" loading="lazy"><span class="n">3</span></div><div class="body"><h3>Garden &amp; Grounds Lighting</h3><p>Landscaped beds, trees, courtyards, and paths lit so the grounds feel finished and safe after dark.</p><ul class="cp-tags"><li>Landscape &amp; features</li><li>Courtyards</li><li>Pathways</li><li>String lights</li></ul><span class="more">See details <svg><use href="#arr"/></svg></span></div></a>
+      <a class="cp-card rv" id="svc-updown" href="https://www.bigeasylighting.com/commercial/up-down-lights/"><div class="img"><img src="assets/updown.jpg" alt="Building exterior with up and down wall lights" loading="lazy"><span class="n">4</span></div><div class="body"><h3>Up/Down Lighting</h3><p>Dramatic washes of light on columns, entry walls, facades, and tall trees, for a polished, high-end look at night.</p><ul class="cp-tags"><li>Facades</li><li>Columns</li><li>Entry walls</li><li>Signage</li></ul><span class="more">See details <svg><use href="#arr"/></svg></span></div></a>
     </div>
     <div class="cta-pair rv"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
   </div>
 </section>
 
-<section class="pad dark rp-fit" aria-labelledby="fit-h">
-  <div class="wrap">
-    <div class="head rv"><p class="kicker">Not sure where to start?</p><h2 id="fit-h">Start With <em>Your Goal</em></h2><p class="lede" style="margin-top:18px">Pick what matters most. We'll point you to the services that usually fit, and the free estimate covers the rest.</p></div>
-    <div class="rp-tabs rv">
-      <div class="rp-tablist" role="tablist" aria-label="Lighting goals">
-        <button role="tab" id="g1" aria-controls="gp1" aria-selected="true"><span class="ix">1</span>Safer Walkways at Night</button>
-        <button role="tab" id="g2" aria-controls="gp2" aria-selected="false" tabindex="-1"><span class="ix">2</span>More Curb Appeal</button>
-        <button role="tab" id="g3" aria-controls="gp3" aria-selected="false" tabindex="-1"><span class="ix">3</span>Evenings Outside</button>
-        <button role="tab" id="g4" aria-controls="gp4" aria-selected="false" tabindex="-1"><span class="ix">4</span>Holidays and Mardi Gras</button>
-        <button role="tab" id="g5" aria-controls="gp5" aria-selected="false" tabindex="-1"><span class="ix">5</span>Show Off the Garden</button>
-      </div>
-      <div class="rp-panel" role="tabpanel" id="gp1" aria-labelledby="g1"><div class="txt"><h3>Safer Walkways at Night</h3><p>Low, even light along walks, steps, and the driveway so nobody trips on the way in, and the house feels secure.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/pathway-lighting/">Pathway Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/landscape-lighting/">Landscape Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/curb-lights.jpg" alt="Stone steps lit by warm step lights" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp2" aria-labelledby="g2" hidden><div class="txt"><h3>More Curb Appeal</h3><p>Light the architecture and the entryway so your home reads from the street and looks cared for after dark.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/">Curb Appeal Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/landscape-lighting/">Landscape Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/updown.jpg" alt="Home exterior with wall lights" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp3" aria-labelledby="g3" hidden><div class="txt"><h3>Evenings Outside</h3><p>Warm, glare-free light for dinners on the deck, the pool, and late nights with friends.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/">Deck &amp; Patio Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/festive-string-lighting/">Festive String Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/pool.jpg" alt="Backyard pool lit at night" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp4" aria-labelledby="g4" hidden><div class="txt"><h3>Holidays and Mardi Gras</h3><p>Switch to purple, green, and gold for Mardi Gras or any holiday, then back to warm white, without climbing a ladder.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/color-changing-lighting/">Color-Changing Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/festive-string-lighting/">Festive String Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/string.jpg" alt="Warm string light bulbs at night" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp5" aria-labelledby="g5" hidden><div class="txt"><h3>Show Off the Garden</h3><p>Uplight live oaks and palms, wash the planting beds, and add glowing spheres to the lawn.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/landscape-lighting/">Landscape Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/sphere-lights/">Sphere Lights →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/garden.jpg" alt="Palm trees and planting beds uplit at dusk" loading="lazy"></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="pad rp-incl" style="background:var(--ivory-2)" aria-labelledby="inc-h">
-  <div class="wrap">
-    <div class="head"><div class="rv"><p class="kicker">Every home project</p><h2 id="inc-h">What Comes <em>Standard</em></h2></div><p class="lede rv" style="margin:0">No surprise add-ons. These come with every residential project, from a few path lights to a full-property system.</p></div>
-    <div class="rp-cards">
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20 15.5 8.5M14 4l6 6-3 3-6-6 3-3ZM4 20l1.5-4.5L8.5 18.5 4 20Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Free Design Consultation</h3><p>We walk the property, talk through what you want to see, and map where each fixture goes.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg><use href="#moon"/></svg></span><h3>Free Evening Demo</h3><p>We set fixtures up on your property after dark so you see the real effect before you decide.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Permits and Inspections</h3><p>We pull the permits and schedule the inspections, so you don't deal with the paperwork.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Ongoing Maintenance</h3><p>Cleaning, bulb checks, and fixture adjustments to keep your system looking like day one.</p></article>
-    </div>
-    <ol class="rp-steps">
-      <li><span class="dot">1</span><h3>Consultation &amp; Site Survey</h3><p>We meet on site, talk through your goals, check your current lighting, and survey the property for fixture placement.</p></li>
-      <li><span class="dot">2</span><h3>Design &amp; Engineering</h3><p>A custom lighting plan built to your needs and budget. We handle the permits and inspections.</p></li>
-      <li><span class="dot">3</span><h3>Installation &amp; Service</h3><p>We install promptly and efficiently, then offer ongoing maintenance to keep the system in peak condition.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="pad dark rp-quotes" aria-labelledby="q-h">
-  <div class="wrap">
-    <div class="rv"><p class="kicker">From homeowners</p><h2 id="q-h">Lit Yards, <em>Happy Neighbors</em></h2></div>
-    <div class="pair">
-      <figure class="rp-q rv"><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“They transformed our entire lot and my family and I could enjoy being in our pool late with all the beautiful lighting.”</blockquote><figcaption>Edward Bergeron</figcaption></figure>
-      <figure class="rp-q rv"><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“We loved our lights, so we added some additional pathway light fixtures.”</blockquote><figcaption>Carol Burditt</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="pad rp-faq" aria-labelledby="rfaq-h">
-  <div class="wrap grid">
-    <div class="side rv"><p class="kicker">Residential FAQ</p><h2 id="rfaq-h">Questions Homeowners <em>Ask First</em></h2><p class="lede" style="margin-top:18px">Something else on your mind? Call us or request a free estimate.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
+<section class="pad dark" aria-labelledby="prop-h">
+  <div class="wrap cp-props">
+    <figure class="cp-photo rv" style="margin:0"><img src="assets/pavilion.jpg" alt="Covered outdoor seating area with warm pendant and column lighting" loading="lazy"><figcaption><b>Hospitality, retail, offices, and more.</b> Every property gets a plan built around its hours, traffic, and codes.</figcaption></figure>
     <div class="rv">
-      <details open><summary>How Much Does Residential Outdoor Lighting Cost?<span class="x">+</span></summary><p>It depends on the size of the yard, the number of fixtures, and the design. A few accent lights cost far less than a full-property system. A free on-site estimate gives you an accurate number for your home.</p></details>
-      <details><summary>What Is Low-Voltage Landscape Lighting?<span class="x">+</span></summary><p>A transformer steps household power down to 12 volts. That makes the system safer, energy efficient, and easy to expand later.</p></details>
-      <details><summary>Can I Add More Lights Later?<span class="x">+</span></summary><p>Yes. Low-voltage systems are easy to expand, so you can start with the front of the house and add the backyard later.</p></details>
-      <details><summary>Will It Survive New Orleans Storms and Humidity?<span class="x">+</span></summary><p>Yes. We install corrosion-resistant, weather-rated fixtures with sealed connections built for our humid, storm-prone Gulf climate.</p></details>
-      <details><summary>Do You Maintain the System After Install?<span class="x">+</span></summary><p>Yes. Maintenance includes removing hard water deposits, cleaning bulbs, and adjusting fixtures so everything keeps performing.</p></details>
+      <p class="kicker">Properties we light</p>
+      <h2 id="prop-h">From Corner Storefronts to <em>Campuses</em></h2>
+      <p class="lede" style="margin-top:18px">Commercial lighting has to work for customers, staff, and security at the same time. We light all kinds of New Orleans properties.</p>
+      <ul class="cp-types">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M16 3c-2 1.5-2 6 0 8v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Restaurants and Bars</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8ZM9 8a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Retail Stores</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5M7 11.5a1.5 1.5 0 1 0 0-.01" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Hotels and Resorts</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4h10v17M15 9h4v12M3 21h18M8 8h4M8 12h4M8 16h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Office Buildings</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V11l6 3v-3l6 3V5h4v16H3ZM7 17h2M12 17h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Industrial Properties</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M10 4h4M6 21v-9l6-5 6 5v9H6ZM10 21v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Religious Institutions</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9ZM6 11v5c3 2 9 2 12 0v-5M22 9v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Schools and Universities</li>
+        <li class="more">…and more. Ask us about yours.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pad cp-why" style="background:var(--ivory-2)" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="head rv"><p class="kicker">Why it pays off</p><h2 id="why-h">What Good Exterior Lighting <em>Does for Business</em></h2></div>
+    <div class="grid">
+      <div class="cp-bens">
+        <article class="cp-ben rv"><h3>Better Accessibility</h3><p>Customers and staff find entrances, steps, and parking easily after dark, and nobody has to guess where the walkway goes.</p></article>
+        <article class="cp-ben rv"><h3>Better Security</h3><p>Well-lit exteriors remove the dark spots intruders rely on and make the property safer for customers and staff.</p></article>
+        <article class="cp-ben rv"><h3>A Better First Impression</h3><p>Facade, sign, and entrance lighting make a storefront stand out and feel welcoming from the street.</p></article>
+        <article class="cp-ben rv"><h3>Lower Energy Costs</h3><p>Modern LED fixtures cut energy and maintenance costs while improving the quality of the light.</p></article>
+      </div>
+      <aside class="cp-apps rv" aria-labelledby="apps-h">
+        <h3 id="apps-h">Most Common Applications</h3>
+        <ul>
+          <li><svg><use href="#chk"/></svg>Parking lot lighting</li>
+          <li><svg><use href="#chk"/></svg>Building and sign illumination</li>
+          <li><svg><use href="#chk"/></svg>Walkway, pathway, and staircase lighting</li>
+          <li><svg><use href="#chk"/></svg>Landscape and feature lighting</li>
+          <li><svg><use href="#chk"/></svg>Security and emergency lighting</li>
+        </ul>
+        <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="pad dark cp-lifesec" aria-labelledby="life-h">
+  <div class="wrap">
+    <div class="rv" style="max-width:760px"><p class="kicker">Start to finish</p><h2 id="life-h">One Team From Design to <em>Upkeep</em></h2><p class="lede" style="margin-top:18px">New systems, repairs, replacements, and upgrades. You don't need a different company for each stage.</p></div>
+    <ol class="cp-life">
+      <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20 15.5 8.5M14 4l6 6-3 3-6-6 3-3ZM4 20l1.5-4.5L8.5 18.5 4 20Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Custom Design</h3><p>A lighting plan built around your property, from traditional fixtures to modern LED.</p></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Permits and Codes</h3><p>Every system meets local codes and regulations. We handle the permits and inspections.</p></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Installation</h3><p>Trained technicians use proper installation techniques for safe, reliable performance.</p></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Repair and Replacement</h3><p>Fixes and fixture replacements for existing systems, not only new installs.</p></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Maintenance and Upgrades</h3><p>Ongoing upkeep and LED retrofits that keep costs down and the property bright.</p></li>
+    </ol>
+    <div class="cta-pair rv"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+  </div>
+</section>
+
+<section class="pad rp-faq" aria-labelledby="cfaq-h">
+  <div class="wrap grid">
+    <div class="side rv"><p class="kicker">Commercial FAQ</p><h2 id="cfaq-h">Questions Business Owners <em>Ask First</em></h2><p class="lede" style="margin-top:18px">Something else on your mind? Call us or request a free estimate.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
+    <div class="rv">
+      <details open><summary>What Is Commercial Outdoor Lighting?<span class="x">+</span></summary><p>Commercial outdoor lighting covers a business's exterior, including facades, entrances, walkways, parking, and signage. It improves visibility, safety, and curb appeal for New Orleans businesses at night.</p></details>
+      <details><summary>How Much Does Commercial Outdoor Lighting Cost?<span class="x">+</span></summary><p>Cost depends on the size of the property, the number of fixtures, and the wiring required. A small storefront costs far less than a large lot. A free estimate gives you the number.</p></details>
+      <details><summary>Does Outdoor Lighting Improve Business Security?<span class="x">+</span></summary><p>Yes. Well-lit exteriors remove the dark spots intruders rely on and make a property safer for customers and staff, which is why security lighting is a core part of commercial design.</p></details>
+      <details><summary>What Lighting Is Best for a Storefront?<span class="x">+</span></summary><p>A mix of facade lighting, sign lighting, and entrance lighting makes a storefront stand out and feel welcoming. We design the layers to fit your business.</p></details>
+      <details><summary>Are LED Lighting Systems Worth the Cost?<span class="x">+</span></summary><p>Yes. The higher upfront cost is offset by lower energy and maintenance bills over the long life of an LED system, making it a smart investment.</p></details>
     </div>
   </div>
 </section>
@@ -860,7 +935,7 @@ body.modal-open{overflow:hidden}
   dr.addEventListener('click',function(e){if(e.target.closest('a')){dr.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
   // reveals
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
-  document.querySelectorAll('.rv,.rp-steps').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
+  document.querySelectorAll('.rv,.rp-steps,.cp-life').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
   // services: highlight a row and swap the arched preview (hover, focus, or scroll position)
   var rows=[].slice.call(document.querySelectorAll('.rp-row')),frame=document.querySelector('.rp-frame'),imgs=frame?frame.querySelectorAll('img'):[],cap=frame?frame.querySelector('figcaption'):null;
   function act(i){rows.forEach(function(r,j){r.classList.toggle('on',j===i)});[].forEach.call(imgs,function(im,j){im.classList.toggle('show',j===i)});if(cap)cap.textContent=rows[i].querySelector('h3').textContent}
