@@ -565,7 +565,7 @@ body.modal-open{overflow:hidden}
 <section class="statement pad" aria-label="Our approach">
   <div class="wrap">
     <p class="kicker" style="justify-content:center">What we believe</p>
-    <p id="statement">Good lighting should be affordable and accessible to everyone. So we design it around how you live, install it with our own electricians, and stick around to keep it glowing.</p>
+    <p id="statement">Good lighting should be affordable and accessible to everyone. So we design it around how you live, have&nbsp;our team install it, and stick around to keep it glowing.</p>
     <p class="sig">Big Easy Lighting, New Orleans</p>
   </div>
 </section>
@@ -629,7 +629,7 @@ body.modal-open{overflow:hidden}
     <div class="proc-left">
       <p class="kicker">How it works</p>
       <h2 id="proc-h">From First Call to <em>First Night</em></h2>
-      <p class="lede" style="margin-top:22px">Our designers and electricians stay with you from the walk-through to the final fixture adjustment.</p>
+      <p class="lede" style="margin-top:22px">Our team stays with you from the walk-through to the final fixture adjustment.</p>
       <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
     </div>
     <ol class="steps">
@@ -851,7 +851,7 @@ body.modal-open{overflow:hidden}
   dr.addEventListener('click',function(e){if(e.target.closest('a')){dr.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
   // statement words
   var st=document.getElementById('statement'), hl=['affordable','accessible','glowing.'];
-  st.innerHTML=st.textContent.trim().split(/\s+/).map(function(w){return '<span class="w'+(hl.indexOf(w.replace(/[,]/g,''))>-1?' hl':'')+'">'+w+'</span>'}).join(' ');
+  st.innerHTML=st.textContent.trim().split(/[ \t\r\n]+/).map(function(w){return '<span class="w'+(hl.indexOf(w.replace(/[,]/g,''))>-1?' hl':'')+'">'+w+'</span>'}).join(' ');
   var words=st.querySelectorAll('.w');
   // reveals
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
