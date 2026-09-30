@@ -263,7 +263,9 @@ em{font-style:italic;color:var(--brass)}
 /* estimate form: same fields as the client's LeadConnector form, Gaslight styling, scrolls inside its card */
 .cta{position:relative;overflow:hidden}
 .cta::before{content:"";position:absolute;width:900px;height:900px;left:50%;top:-40%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,151,0,.2),transparent);pointer-events:none}
-.cta .inner{position:relative;max-width:760px;margin:0 auto;text-align:center}
+.cta .inner{position:relative;max-width:900px;margin:0 auto;text-align:center}
+.cta .inner>.qform,.cta .inner>.cta-alt{max-width:672px;margin-left:auto;margin-right:auto}
+.cta h2{text-wrap:balance}
 .qform{margin-top:46px;text-align:left;background:rgba(245,240,230,.05);border:1px solid var(--line-light);border-radius:10px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
 .qf-hd{padding:26px clamp(20px,4vw,40px) 18px;border-bottom:1px solid var(--line-light)}
 .qf-hd h3{font-size:clamp(1.7rem,2.6vw,2.1rem);margin-bottom:8px}
@@ -695,11 +697,13 @@ body.modal-open{overflow:hidden}
 @media (min-width:761px){.rp-hero h1{max-width:none}.sv-l2{white-space:nowrap}}
 @media (max-width:760px){.sv-br{display:none}}
 .sv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px 48px;flex-wrap:wrap;margin-bottom:40px}
-.sv-head>div{max-width:680px}
-.sv-head>p{margin:0;max-width:44ch;color:var(--ink-dim);font-size:16px}
+.sv-head>div{flex:1 1 auto;min-width:0}
+.sv-head>p{margin:0;flex:0 1 380px;color:var(--ink-dim);font-size:16px}
+.sv-head h2,.sv-why-head h2,.sv-gulf h2{text-wrap:balance}
+.sv-why-head{margin-bottom:clamp(30px,4vw,48px)}
 .dark .sv-head>p{color:#c9c2b3}
 
-.sv-why-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(36px,6vw,90px);align-items:center}
+.sv-why-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(36px,6vw,90px);align-items:start}
 .sv-benefits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
 .sv-benefits li{display:flex;gap:16px;padding:26px 22px 26px 0;border-bottom:1px solid var(--line)}
 .sv-benefits li:nth-child(even){padding-left:22px;padding-right:0;border-left:1px solid var(--line)}
@@ -839,11 +843,11 @@ body.modal-open{overflow:hidden}
 </section>
 
 <section class="pad sv-why" aria-labelledby="why-h">
-  <div class="wrap sv-why-grid">
+  <div class="wrap">
+    <div class="rv sv-why-head"><p class="kicker">Why light the landscape</p><h2 id="why-h">Your Yard Doesn't Have to <em>Disappear at Sunset</em></h2></div>
+    <div class="sv-why-grid">
     <div class="rv">
-      <p class="kicker">Why light the landscape</p>
-      <h2 id="why-h">Your Yard Doesn't Have to <em>Disappear at Sunset</em></h2>
-      <p class="lede" style="margin-top:18px">A properly installed system transforms a property in ways you feel every evening. There's an upfront cost, and the payoff shows up night after night.</p>
+      <p class="lede">A properly installed system transforms a property in ways you feel every evening. There's an upfront cost, and the payoff shows up night after night.</p>
       <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
     </div>
     <ul class="sv-benefits">
@@ -852,6 +856,7 @@ body.modal-open{overflow:hidden}
       <li class="rv"><span class="sv-bn">03</span><div><h3>A Welcoming Place to Gather</h3><p>Create the kind of atmosphere that makes guests stay and evenings run long.</p></div></li>
       <li class="rv"><span class="sv-bn">04</span><div><h3>More Hours in Your Yard</h3><p>Relax outside long after sunset instead of heading in when it gets dark.</p></div></li>
     </ul>
+    </div>
   </div>
 </section>
 
@@ -1011,7 +1016,7 @@ body.modal-open{overflow:hidden}
 <section class="pad dark sv-gulf" aria-labelledby="gulf-h">
   <div class="sv-gulf-bg" aria-hidden="true"><img src="assets/updown.jpg" alt="" loading="lazy"></div>
   <div class="wrap">
-    <div class="rv" style="max-width:700px"><p class="kicker">Built for New Orleans</p><h2 id="gulf-h">Made for Gulf Summers and <em>Hurricane Season</em></h2><p class="lede" style="margin-top:18px">Our humid, storm-prone climate makes fixture quality and proper sealing essential. We design systems that are as durable as they are beautiful.</p></div>
+    <div class="rv"><p class="kicker">Built for New Orleans</p><h2 id="gulf-h">Made for Gulf Summers and <em>Hurricane Season</em></h2><p class="lede" style="margin-top:18px;max-width:700px">Our humid, storm-prone climate makes fixture quality and proper sealing essential. We design systems that are as durable as they are beautiful.</p></div>
     <ul class="sv-specs">
       <li class="rv"><b>12V</b><h3>Low-Voltage System</h3><p>A transformer steps household power down to 12 volts, which is safer and easy to expand later.</p></li>
       <li class="rv"><b>LED</b><h3>Low Running Costs</h3><p>Modern LED fixtures use very little power while putting out bright, warm light.</p></li>
