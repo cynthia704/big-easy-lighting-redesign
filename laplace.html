@@ -831,6 +831,65 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
 @media (max-width:1180px){.tn-oth{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:1000px){.tn-cols{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:760px){.tn-note .btn{align-self:stretch;justify-content:center}.tn-col{padding:20px}}
+
+/* ===== Town pages, added sections (Sep 30, 2026) ===== */
+.stars{display:inline-flex;gap:3px;color:var(--amber)}
+.stars svg{width:15px;height:15px}
+/* Get to know */
+.tn-know-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,90px);align-items:start}
+.tn-know-grid .lede{margin-top:18px}
+.tn-sub{margin:30px 0 12px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.tn-marks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tn-marks li{padding:9px 15px;border-radius:40px;background:var(--ivory-2);border:1px solid var(--line);font:600 14px var(--sans);color:var(--ink)}
+.tn-marks a{color:inherit;text-decoration:none}
+.tn-marks li.lk{background:#fff}
+.tn-marks li.lk:hover{border-color:var(--brass)}
+.tn-facts{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:f}
+.tn-facts li{counter-increment:f;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:start;padding:22px 24px;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.tn-facts li::before{content:"0" counter(f);font:400 2rem/1 var(--serif);color:var(--amber)}
+.tn-facts p{margin:0;color:var(--ink-dim)}
+.tn-facts h3{font-size:1.3rem;margin:0 0 6px}
+/* Demo + weather (dark with photo) */
+.tn-photo{position:relative;overflow:hidden;isolation:isolate}
+.tn-photo-bg{position:absolute;inset:0;z-index:-1}
+.tn-photo-bg img{width:100%;height:100%;object-fit:cover;opacity:.3}
+.tn-photo-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--iron) 25%,rgba(29,43,37,.7))}
+.tn-demo-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,90px);align-items:center}
+.tn-demo-img{margin:0;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.tn-demo-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.tn-demo-box .lede{margin-top:18px}
+.tn-ticks{list-style:none;padding:0;margin:24px 0 30px;display:grid;gap:12px}
+.tn-ticks li{display:flex;gap:12px;align-items:flex-start;color:#ece5d6}
+.tn-ticks svg{width:20px;height:20px;color:var(--amber);flex:none;margin-top:3px}
+.tn-specs{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tn-specs li{padding:26px 24px;border-radius:14px;background:rgba(15,22,19,.55);border:1px solid var(--line-light);backdrop-filter:blur(6px)}
+.tn-specs b{display:block;font:400 2.6rem/1 var(--serif);color:#f0b64a;text-shadow:0 0 30px rgba(255,151,0,.35);margin-bottom:14px}
+.tn-specs h3{font-size:1.35rem;margin-bottom:6px}
+.tn-specs p{margin:0;color:#c9c2b3;font-size:15px}
+/* Process timeline */
+.tn-proc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,90px);align-items:start}
+.tn-proc-side{position:sticky;top:120px}
+.tn-proc-side .lede{margin-top:18px}
+.tn-tl{list-style:none;margin:0;padding:0 0 0 40px;position:relative}
+.tn-tl::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tn-tl::after{content:"";position:absolute;left:11px;top:8px;width:2px;height:var(--prog,0%);max-height:calc(100% - 16px);background:linear-gradient(var(--amber),#ffcf7a);box-shadow:0 0 12px rgba(255,151,0,.6);transition:height .2s linear}
+.tn-tl>li{position:relative;padding-bottom:34px}
+.tn-tl>li:last-child{padding-bottom:0}
+.tn-node{position:absolute;left:-40px;top:2px;width:24px;height:24px;border-radius:50%;background:var(--ivory);border:2px solid var(--line);transition:border-color .4s,background .4s,box-shadow .4s}
+.tn-tl>li.lit .tn-node{border-color:var(--amber);background:var(--amber);box-shadow:0 0 16px 3px rgba(255,151,0,.45)}
+.tn-step{margin:0 0 4px;font:600 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.tn-tl h3{font-size:1.55rem;margin-bottom:8px}
+.tn-tl p{margin:0;color:var(--ink-dim)}
+/* Reviews */
+.tn-rev-head{display:flex;justify-content:space-between;align-items:end;gap:24px 48px;flex-wrap:wrap;margin-bottom:36px}
+.tn-rev-head .lede{margin:0;max-width:40ch}
+.tn-revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.tn-rc{margin:0;padding:28px 28px 24px;border-radius:14px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:20px}
+.tn-rc blockquote{margin:0;flex:1;font:400 1.2rem/1.4 var(--serif);color:var(--ink)}
+.tn-rc figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+@media (max-width:1000px){.tn-know-grid,.tn-proc-grid,.tn-demo-grid{grid-template-columns:minmax(0,1fr)}.tn-proc-side{position:static}.tn-revs{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.tn-specs{grid-template-columns:minmax(0,1fr)}.tn-facts li{padding:18px;gap:14px}}
+@media (prefers-reduced-motion:reduce){.tn-tl::after{transition:none}}
 </style>
 </head>
 <body>
@@ -870,12 +929,24 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   </div>
 </section>
 
+<section class="sa-samesec" style="background:var(--ivory-2)" aria-labelledby="same-h">
+  <div class="wrap">
+    <h2 id="same-h" class="sr-only">What Every LaPlace Project Gets</h2>
+    <ul class="sa-same" style="margin:0;padding:0">
+      <li><svg><use href="#moon"/></svg><div><b>Free Evening Demo</b><span>See it lit on your property first</span></div></li>
+      <li><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><div><b>Local Permits Handled</b><span>Built to local codes and regulations</span></div></li>
+      <li><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><div><b>Repair and Maintenance</b><span>We keep what we install running</span></div></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 7.8 7 9 4-1.2 7-4.6 7-9V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>100% Satisfaction</b><span>Our guarantee on every job</span></div></li>
+    </ul>
+  </div>
+</section>
+
 <section class="pad dark sa-mapsec tn-local" aria-labelledby="local-h">
   <div class="wrap grid">
     <div class="rv">
       <p class="kicker">Lighting in LaPlace</p>
       <h2 id="local-h">Planned Around <em>LaPlace Properties</em></h2>
-      <p class="lede" style="margin-top:18px">From landscape uplighting and pathway fixtures to commercial and security lighting, we use weather-rated systems designed for our humid, storm-prone climate.</p>
+      <p class="lede" style="margin-top:18px">From landscape uplighting and pathway fixtures to commercial and security lighting, we use weather-rated systems designed for our humid, <span style="white-space:nowrap">storm-prone</span> climate.</p>
       <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
     </div>
     <figure class="sa-map tn-map rv">
@@ -885,7 +956,26 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   </div>
 </section>
 
-<section class="pad tn-svcs" aria-labelledby="svc-h">
+<section class="pad tn-know" aria-labelledby="know-h">
+  <div class="wrap">
+    <div class="rv tn-head"><p class="kicker">About LaPlace</p><h2 id="know-h">Get to Know <em>LaPlace</em></h2></div>
+    <div class="tn-know-grid">
+    <div class="rv">
+      <p class="lede" style="margin-top:0">LaPlace sits on the east bank of the Mississippi River in St. John the Baptist Parish, upriver from New Orleans, where Interstate 55 joins Interstate 10. It grew up around a railroad station named for Basile Laplace and is known across Louisiana for its andouille sausage. Cypress swamp of the Maurepas Swamp Wildlife Management Area reaches into town, and the Bonnet Carre Spillway lies just east past Montz.</p>
+      <p class="tn-sub">Local landmarks</p>
+      <ul class="tn-marks"><li>Bonnet Carre Spillway</li><li>Maurepas Swamp WMA</li><li>River Road</li></ul>
+      <p class="tn-sub">Neighboring communities</p>
+      <ul class="tn-marks"><li>Reserve</li><li>Montz</li></ul>
+    </div>
+    <div class="rv">
+      <p class="tn-sub" style="margin-top:0">Three things to know</p>
+      <ul class="tn-facts"><li><p>Governor Edwin Edwards declared LaPlace the Andouille Capital of the World, and the town has held an Andouille Festival since 1972.</p></li><li><p>LaPlace is named for Basile Laplace, a pharmacist and planter whose name went first to the railroad station, then the whole town.</p></li><li><p>Jazz trombonist Edward &#x27;Kid&#x27; Ory, who later led a successful New Orleans band, was raised on Woodland Plantation in LaPlace.</p></li></ul>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad tn-svcs" style="background:var(--ivory-2)" aria-labelledby="svc-h">
   <div class="wrap">
     <div class="rv tn-head"><p class="kicker">Our services</p><h2 id="svc-h">What We Light <em>in LaPlace</em></h2></div>
     <div class="tn-cols">
@@ -896,15 +986,57 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   </div>
 </section>
 
-<section class="sa-samesec" style="background:var(--ivory-2)" aria-labelledby="same-h">
+<section class="pad dark tn-demo" aria-labelledby="demo-h">
+  <div class="wrap tn-demo-grid">
+    <div class="tn-demo-box rv">
+      <p class="kicker">The free evening demo</p>
+      <h2 id="demo-h">See It Lit at Night, <em>Before You Decide</em></h2>
+      <p class="lede">Lighting is hard to picture on paper. We come out to your LaPlace property after dark, set up fixtures, and let you see the real effect before you commit to anything.</p>
+      <ul class="tn-ticks">
+        <li><svg><use href="#chk"/></svg>Free design consultation with our lighting designer</li>
+        <li><svg><use href="#chk"/></svg>Live preview on your property, at night</li>
+        <li><svg><use href="#chk"/></svg>Maintenance available after install</li>
+      </ul>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+    <figure class="tn-demo-img rv"><img src="assets/pavilion.jpg" alt="Outdoor pavilion with warm pendant and column lighting" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="pad tn-proc" aria-labelledby="proc-h">
+  <div class="wrap tn-proc-grid">
+    <div class="tn-proc-side rv">
+      <p class="kicker">How it works</p>
+      <h2 id="proc-h">How We Work <em>in LaPlace</em></h2>
+      <p class="lede">We stay with you from the first look at your property to keeping the system bright for years.</p>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+    <ol class="tn-tl">
+      <li class="rv"><span class="tn-node"></span><p class="tn-step">Step 1</p><h3>Consultation and Site Survey</h3><p>We meet on site, talk through your goals, check your current lighting, and survey the property for fixture placement and power.</p></li>
+      <li class="rv"><span class="tn-node"></span><p class="tn-step">Step 2</p><h3>Lighting Design</h3><p>You get a custom lighting plan built to your needs and budget. The design consultation is free.</p></li>
+      <li class="rv"><span class="tn-node"></span><p class="tn-step">Step 3</p><h3>Free Evening Demo</h3><p>We set fixtures up after dark so you can see how the lighting changes your property before you decide.</p></li>
+      <li class="rv"><span class="tn-node"></span><p class="tn-step">Step 4</p><h3>Installation</h3><p>Our team installs everything in the plan, with permits and inspections handled.</p></li>
+      <li class="rv"><span class="tn-node"></span><p class="tn-step">Step 5</p><h3>Ongoing Maintenance</h3><p>We clean bulbs, remove hard water deposits, and adjust fixtures so the system keeps performing.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="pad dark tn-photo tn-wx" aria-labelledby="wx-h">
+  <div class="tn-photo-bg" aria-hidden="true"><img src="assets/updown.jpg" alt="" loading="lazy"></div>
   <div class="wrap">
-    <h2 id="same-h" class="sr-only">What Every LaPlace Project Gets</h2>
-    <ul class="sa-same" style="margin:0;padding:0">
-      <li><svg><use href="#moon"/></svg><div><b>Free Evening Demo</b><span>See it lit on your property first</span></div></li>
-      <li><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><div><b>Local Permits Handled</b><span>Built to local codes and regulations</span></div></li>
-      <li><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><div><b>Repair and Maintenance</b><span>We keep what we install running</span></div></li>
-      <li><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 7.8 7 9 4-1.2 7-4.6 7-9V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>100% Satisfaction</b><span>Our guarantee on every job</span></div></li>
+    <div class="rv"><p class="kicker">Built for Louisiana</p><h2 id="wx-h">Ready for LaPlace Summers and <em>Storm Season</em></h2><p class="lede" style="margin-top:18px;max-width:700px">Our humid, storm-prone climate makes fixture quality and proper sealing essential. We design systems that are as durable as they are beautiful.</p></div>
+    <ul class="tn-specs">
+      <li class="rv"><b>12V</b><h3>Low-Voltage System</h3><p>A transformer steps household power down to 12 volts, which is safer and easy to expand later.</p></li>
+      <li class="rv"><b>LED</b><h3>Low Running Costs</h3><p>Modern LED fixtures use very little power while putting out bright, warm light.</p></li>
+      <li class="rv"><b>Sealed</b><h3>Weather-Rated Fixtures</h3><p>Corrosion-resistant fixtures with sealed connections, built to keep performing season after season.</p></li>
     </ul>
+  </div>
+</section>
+
+<section class="pad tn-rev" style="background:var(--ivory-2)" aria-labelledby="trev-h">
+  <div class="wrap">
+    <div class="tn-rev-head rv"><div><p class="kicker">Reviews</p><h2 id="trev-h">What Our <em>Customers Say</em></h2></div><p class="lede">Real reviews from Big&nbsp;Easy&nbsp;Lighting customers.</p></div>
+    <div class="tn-revs"><figure class="tn-rc rv"><blockquote>“We loved our lights, so we added some additional pathway light fixtures. Once again, we're very pleased with Big Easy Lighting's customer service and would highly recommend them for any outdoor lighting needs.”</blockquote><figcaption>Carol Burditt<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure><figure class="tn-rc rv"><blockquote>“It was an easy and seamless process from demo to installation. It was a great installation and the lighting turned out even better than expected. Thanks again!”</blockquote><figcaption>Gina Bowman<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure><figure class="tn-rc rv"><blockquote>“Big Easy Lighting did an excellent job on our landscape lighting. They provided us with helpful advice and were extremely easy to work with. We're delighted with the results!”</blockquote><figcaption>Christina Porter<span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption></figure></div>
   </div>
 </section>
 
@@ -1207,7 +1339,7 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
 /* Keeps the last two words of headings and sentences together, and stops names, times and phone numbers splitting across lines */
 (function(){
   var NB='\u00a0';
-  var KEEP=[[/New Orleans/g,'New'+NB+'Orleans'],[/St\. Rose/g,'St.'+NB+'Rose'],[/Abita Springs/g,'Abita'+NB+'Springs'],[/Lake Pontchartrain/g,'Lake'+NB+'Pontchartrain'],[/Service Areas/g,'Service'+NB+'Areas'],[/Salt Air/g,'Salt'+NB+'Air'],
+  var KEEP=[[/New Orleans/g,'New'+NB+'Orleans'],[/St(\.?) Rose/g,'St$1'+NB+'Rose'],[/Abita Springs/g,'Abita'+NB+'Springs'],[/Lake Pontchartrain/g,'Lake'+NB+'Pontchartrain'],[/Service Areas/g,'Service'+NB+'Areas'],[/Salt Air/g,'Salt'+NB+'Air'],
             [/(\d{1,2}) (AM|PM)\b/g,'$1'+NB+'$2'],[/\((\d{3})\) (\d{3})/g,'($1)'+NB+'$2'],[/(\d+) (volts|articles|communities)\b/g,'$1'+NB+'$2']];
   function texts(el){ var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null), a=[], n; while((n=w.nextNode())) if(!n.parentElement.closest('[aria-hidden=true],.x')) a.push(n); return a; }
   document.querySelectorAll('body *:not(script):not(style)').forEach(function(el){
@@ -1238,5 +1370,5 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   });
 })();
 </script>
-</body>
+<script>(function(){var tl=document.querySelector('.tn-tl');if(!tl)return;var items=[].slice.call(tl.children),ticking=false;function upd(){ticking=false;var r=tl.getBoundingClientRect(),mid=window.innerHeight*0.6;var p=Math.max(0,Math.min(1,(mid-r.top)/r.height));tl.style.setProperty('--prog',(p*100).toFixed(1)+'%');items.forEach(function(li){li.classList.toggle('lit',li.getBoundingClientRect().top+12<mid);});}window.addEventListener('scroll',function(){if(!ticking){ticking=true;window.requestAnimationFrame(upd);}},{passive:true});window.addEventListener('resize',upd);upd();})();</script></body>
 </html>

@@ -1375,7 +1375,7 @@ body.modal-open{overflow:hidden}
 /* Keeps the last two words of headings and sentences together, and stops names, times and phone numbers splitting across lines */
 (function(){
   var NB='\u00a0';
-  var KEEP=[[/New Orleans/g,'New'+NB+'Orleans'],[/St\. Rose/g,'St.'+NB+'Rose'],[/Abita Springs/g,'Abita'+NB+'Springs'],[/Lake Pontchartrain/g,'Lake'+NB+'Pontchartrain'],[/Service Areas/g,'Service'+NB+'Areas'],[/Salt Air/g,'Salt'+NB+'Air'],
+  var KEEP=[[/New Orleans/g,'New'+NB+'Orleans'],[/St(\.?) Rose/g,'St$1'+NB+'Rose'],[/Abita Springs/g,'Abita'+NB+'Springs'],[/Lake Pontchartrain/g,'Lake'+NB+'Pontchartrain'],[/Service Areas/g,'Service'+NB+'Areas'],[/Salt Air/g,'Salt'+NB+'Air'],
             [/(\d{1,2}) (AM|PM)\b/g,'$1'+NB+'$2'],[/\((\d{3})\) (\d{3})/g,'($1)'+NB+'$2'],[/(\d+) (volts|articles|communities)\b/g,'$1'+NB+'$2']];
   function texts(el){ var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null), a=[], n; while((n=w.nextNode())) if(!n.parentElement.closest('[aria-hidden=true],.x')) a.push(n); return a; }
   document.querySelectorAll('body *:not(script):not(style)').forEach(function(el){
