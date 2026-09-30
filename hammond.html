@@ -890,6 +890,33 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
 @media (max-width:1000px){.tn-know-grid,.tn-proc-grid,.tn-demo-grid{grid-template-columns:minmax(0,1fr)}.tn-proc-side{position:static}.tn-revs{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:760px){.tn-specs{grid-template-columns:minmax(0,1fr)}.tn-facts li{padding:18px;gap:14px}}
 @media (prefers-reduced-motion:reduce){.tn-tl::after{transition:none}}
+
+/* ===== Town pages, All About {Town} (Sep 30, 2026) ===== */
+.tn-ab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
+.tn-ab-img{margin:0;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(27,34,30,.18);position:sticky;top:120px}
+.tn-ab-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.tn-ab .lede{margin-top:18px}
+.tn-kv{margin:14px 0 0;color:var(--ink-dim)}
+.tn-kv b{color:var(--brass);font-weight:600}
+.tn-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.tn-maplink svg{width:14px;height:14px}
+.tn-maplink:hover{text-decoration:underline}
+.tn-ab h3.tn-ab-h3{margin:34px 0 0;font-size:1.6rem}
+.tn-chk{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.tn-chk li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;color:var(--ink-dim)}
+.tn-chk li>svg{width:20px;height:20px;color:var(--amber);margin-top:3px}
+.tn-chk b{color:var(--ink);font-weight:600}
+.tn-chk a{color:inherit}
+.tn-chk2{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
+.tn-ab .cta-pair{margin-top:32px}
+.tn-ab3 .tn-chk li{color:#c9c2b3}
+.tn-ab3 .tn-chk b,.tn-ab3 .tn-chk a{color:var(--ivory)}
+.tn-ab3 h3.tn-ab-h3{color:var(--ivory)}
+.tn-ab-map{position:sticky;top:120px;border-radius:16px;overflow:hidden;border:1px solid var(--line-light);background:#28332e}
+.tn-ab-map iframe{display:block;width:100%;aspect-ratio:4/3.4;border:0;filter:saturate(.85)}
+@media (max-width:1000px){.tn-ab-grid{grid-template-columns:minmax(0,1fr)}.tn-ab-img,.tn-ab-map{position:static}.tn-ab2 .tn-ab-img{order:-1}}
+@media (max-width:520px){.tn-chk2{grid-template-columns:minmax(0,1fr)}}
+.tn-ab3 .tn-kv{color:#c9c2b3;margin-top:18px}.tn-ab3 .tn-kv b{color:#f0b64a}
 </style>
 </head>
 <body>
@@ -953,25 +980,6 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
       <svg viewBox="0 0 425 520" role="group" aria-label="Simplified map of Big Easy Lighting service areas around Lake Pontchartrain"><path class="lake" d="M100.1,267.2 C104.3,249.1 108.4,231.1 125.1,216.7 C141.8,202.3 173.0,189.0 200.1,180.6 C227.2,172.2 260.6,166.1 287.7,166.1 C314.8,166.1 341.9,172.2 362.8,180.6 C383.7,189.0 402.4,201.1 412.8,216.7 C423.2,232.3 424.3,252.7 425.3,274.4 C426.3,296.1 429.4,326.2 419.0,346.7 C408.6,367.2 384.7,386.4 362.8,397.2 C340.9,408.0 314.8,410.5 287.7,411.7 C260.6,412.9 225.1,410.4 200.1,404.4 C175.1,398.4 154.3,388.8 137.6,375.6 C120.9,362.4 106.3,343.1 100.1,325.0 C93.8,306.9 95.9,285.2 100.1,267.2 Z"/><path class="river" d="M0.0,361.1 C10.4,365.9 43.7,380.4 62.5,390.0 C81.3,399.6 98.0,408.1 112.6,418.9 C127.2,429.7 138.6,445.4 150.1,455.0 C161.6,464.6 168.9,474.3 181.4,476.7 C193.9,479.1 210.6,468.2 225.2,469.4 C239.8,470.6 254.3,482.7 268.9,483.9 C283.5,485.1 300.2,480.3 312.7,476.7 C325.2,473.1 331.5,461.0 344.0,462.2 C356.5,463.4 374.3,482.6 387.8,483.9 C401.3,485.2 418.8,472.3 425.0,470.0"/><line class="cause" x1="278.3" y1="411.7" x2="315.8" y2="184.2"/><text class="water-lbl" x="205" y="298" text-anchor="middle">Lake Pontchartrain</text><text class="sm-lbl" x="305" y="250" transform="rotate(-81 305 250)">Causeway</text><text class="sm-lbl" x="6" y="352">Mississippi River</text><a class="town" href="service-areas.html#area-new-orleans" data-city="new-orleans" aria-label="New Orleans"><circle class="halo" cx="330.9" cy="468.7" r="11"/><circle class="dot" cx="330.9" cy="468.7" r="5.5"/><text x="330.9" y="497" text-anchor="middle">New Orleans</text></a><a class="town" href="metairie.html" data-city="metairie" aria-label="Metairie"><circle class="halo" cx="279.6" cy="444.9" r="11"/><circle class="dot" cx="279.6" cy="444.9" r="5.5"/><text x="279.6" y="430" text-anchor="middle">Metairie</text></a><a class="town" href="kenner.html" data-city="kenner" aria-label="Kenner"><circle class="halo" cx="223.9" cy="437.7" r="11"/><circle class="dot" cx="223.9" cy="437.7" r="5.5"/><text x="223.9" y="459" text-anchor="middle">Kenner</text></a><a class="town" href="st-rose.html" data-city="st-rose" aria-label="St. Rose"><circle class="halo" cx="172.0" cy="471.6" r="11"/><circle class="dot" cx="172.0" cy="471.6" r="5.5"/><text x="172.0" y="500" text-anchor="middle">St. Rose</text></a><a class="town" href="laplace.html" data-city="laplace" aria-label="LaPlace"><circle class="halo" cx="74.4" cy="384.9" r="11"/><circle class="dot" cx="74.4" cy="384.9" r="5.5"/><text x="74.4" y="370" text-anchor="middle">LaPlace</text></a><a class="town" href="mandeville.html" data-city="mandeville" aria-label="Mandeville"><circle class="halo" cx="334.0" cy="174.8" r="11"/><circle class="dot" cx="334.0" cy="174.8" r="5.5"/><text x="334.0" y="160" text-anchor="middle">Mandeville</text></a><a class="town" href="covington.html" data-city="covington" aria-label="Covington"><circle class="halo" cx="312.7" cy="90.3" r="11"/><circle class="dot" cx="312.7" cy="90.3" r="5.5"/><text x="301" y="94.5" text-anchor="end">Covington</text></a><a class="town" href="madisonville.html" data-city="madisonville" aria-label="Madisonville"><circle class="halo" cx="277.1" cy="140.8" r="11"/><circle class="dot" cx="277.1" cy="140.8" r="5.5"/><text x="265" y="145" text-anchor="end">Madisonville</text></a><a class="town" href="abita-springs.html" data-city="abita-springs" aria-label="Abita Springs"><circle class="halo" cx="351.5" cy="88.1" r="11"/><circle class="dot" cx="351.5" cy="88.1" r="5.5"/><text x="351.5" y="72" text-anchor="middle">Abita Springs</text></a><a class="town cur" href="hammond.html" data-city="hammond" aria-current="page" aria-label="Hammond"><circle class="halo" cx="86.3" cy="69.3" r="11"/><circle class="dot" cx="86.3" cy="69.3" r="5.5"/><text x="98" y="73.5" text-anchor="start">Hammond</text></a></svg>
       <figcaption>Simplified map, not to scale. Tap a town to see its page.</figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="pad tn-know" aria-labelledby="know-h">
-  <div class="wrap">
-    <div class="rv tn-head"><p class="kicker">About Hammond</p><h2 id="know-h">Get to Know <em>Hammond</em></h2></div>
-    <div class="tn-know-grid">
-    <div class="rv">
-      <p class="lede" style="margin-top:0">Hammond is a city in Tangipahoa Parish, north of Lake Pontchartrain where Interstates 12 and 55 cross. It grew around the railroad, which came through in 1854, and by the early 1900s was known as a strawberry shipping town. Today it is home to Southeastern Louisiana University and a downtown historic district.</p>
-      <p class="tn-sub">Local landmarks</p>
-      <ul class="tn-marks"><li>Hammond Historic District</li><li>Columbia Theatre</li><li>Zemurray Park</li><li>The Hammond Oak</li></ul>
-      <p class="tn-sub">Neighboring communities</p>
-      <ul class="tn-marks"><li>Ponchatoula</li><li>Natalbany</li></ul>
-    </div>
-    <div class="rv">
-      <p class="tn-sub" style="margin-top:0">Three things to know</p>
-      <ul class="tn-facts"><li><p>Swedish immigrant Peter Hammond founded the town around 1818 and is buried beneath the Hammond Oak on East Charles Street.</p></li><li><p>By the early twentieth century, Hammond was known as the &#x27;Strawberry Capital of America,&#x27; as a state historical marker notes.</p></li><li><p>The Columbia Theatre opened downtown in 1928 as a movie palace and reopened in 2002 after a restoration led by Southeastern.</p></li></ul>
-    </div>
-    </div>
   </div>
 </section>
 
@@ -1044,6 +1052,50 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   <div class="wrap grid">
     <div class="side rv"><p class="kicker">Hammond lighting FAQ</p><h2 id="tfaq-h">Common Questions <em>in Hammond</em></h2><p class="lede" style="margin-top:18px">Don't see yours? Call and ask. We're always happy to help.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
     <div class="rv"><details open><summary>How Much Does Outdoor Lighting Installation Cost in Hammond?<span class="x">+</span></summary><p>Outdoor lighting cost in Hammond depends on the number of fixtures, the type of lighting, and how much wiring the layout needs. A small pathway or accent project sits at the lower end, while a full landscape system costs more. A free on-site estimate gives you the most accurate number.</p></details><details><summary>Is Landscape Lighting Worth It?<span class="x">+</span></summary><p>Yes. Landscape lighting improves curb appeal, safety, and security while extending how long you can enjoy your yard at night. In Hammond, well-placed lighting also highlights mature trees and architecture, and it is one of the higher-return outdoor upgrades.</p></details><details><summary>Do You Install Both Residential and Commercial Lighting in Hammond?<span class="x">+</span></summary><p>Yes. We handle residential landscape and outdoor lighting as well as commercial lighting for businesses across Hammond and Tangipahoa Parish, from homes to storefronts, parking areas, and signage.</p></details><details><summary>How Long Does a Lighting Installation Take?<span class="x">+</span></summary><p>Most outdoor lighting installations take from one to a few days, depending on the number of fixtures and the wiring involved. We give you a clear schedule up front and keep the site clean as we work.</p></details><details><summary>Does Outdoor Lighting Hold Up to Hammond&#x27;s Weather?<span class="x">+</span></summary><p>Yes. We use weather-rated, corrosion-resistant fixtures and proper sealing built for our humid, storm-prone Gulf climate. Low-voltage systems are designed to keep performing through Hammond&#x27;s heat, rain, and humidity.</p></details></div>
+  </div>
+</section>
+
+<section class="pad tn-ab tn-ab1" style="background:var(--ivory-2)" aria-labelledby="ab-h">
+  <div class="wrap tn-ab-grid">
+    <figure class="tn-ab-img rv"><img src="assets/towns/hammond-1.jpg" alt="Downtown street at dusk" loading="lazy" width="1400" height="1050"></figure>
+    <div class="rv">
+      <p class="kicker">All about Hammond</p>
+      <h2 id="ab-h">About <em>Hammond</em></h2>
+      <p class="lede">Hammond is a city in Tangipahoa Parish, north of Lake Pontchartrain where Interstates 12 and 55 cross. It grew around the railroad, which came through in 1854, and by the early 1900s was known as a strawberry shipping town. Today it is home to Southeastern Louisiana University and a downtown historic district.</p>
+      <p class="tn-kv"><b>Parish:</b> Tangipahoa Parish</p>
+      <p class="tn-kv"><b>Landmarks:</b> Hammond Historic District, Columbia Theatre, Zemurray Park, The Hammond Oak</p>
+      <a class="tn-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Hammond%2C+LA" target="_blank" rel="noopener">View Hammond on Google Maps <svg><use href="#ne"/></svg></a>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad tn-ab tn-ab2" aria-labelledby="todo-h">
+  <div class="wrap tn-ab-grid">
+    <div class="rv">
+      <h2 id="todo-h">Things to Do <em>in Hammond</em></h2>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>Zemurray Park:</b> The 33-acre city park on South Oak Street has a pond, a walking track, a playground, and a skate park.</span></li><li><svg><use href="#chk"/></svg><span><b>Hammond Historic District Walking Tour:</b> A self-guided tour of 20 downtown stops, including the Columbia Theatre and the old Greyhound station.</span></li><li><svg><use href="#chk"/></svg><span><b>Tangipahoa African American Heritage Museum:</b> Murals, artifacts, and photographs of local African American heritage, plus a veterans archive, at Phoenix Square.</span></li><li><svg><use href="#chk"/></svg><span><b>Hammond Square:</b> Open-air shopping center at I-12 and U.S. 51 Business with Target, Dillard&#x27;s, and an AMC theater.</span></li><li><svg><use href="#chk"/></svg><span><b>Hammond Live:</b> Free outdoor concerts under the oaks in Cate Square Park; bring lawn chairs or a picnic blanket.</span></li></ul>
+      <h3 class="tn-ab-h3">Notable Residents</h3>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>Robert Alford:</b> Hammond-born cornerback who starred at Southeastern and played for the Falcons and Cardinals.</span></li><li><svg><use href="#chk"/></svg><span><b>Kayla Ard:</b> Hammond-born basketball coach who led Utah State&#x27;s women&#x27;s team from 2020 to 2024.</span></li><li><svg><use href="#chk"/></svg><span><b>George W. Bond:</b> Educator who led Louisiana Tech and served as acting president of Southeastern in Hammond.</span></li><li><svg><use href="#chk"/></svg><span><b>George S. Bowman Jr.:</b> Hammond-born Marine Corps major general who served in World War II, Korea, and Vietnam.</span></li></ul>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+    <figure class="tn-ab-img rv"><img src="assets/towns/hammond-2.jpg" alt="Rows of strawberry plants in a field" loading="lazy" width="1400" height="1050"></figure>
+  </div>
+</section>
+
+<section class="pad dark tn-ab tn-ab3" aria-labelledby="ff-h">
+  <div class="wrap tn-ab-grid">
+    <div class="tn-ab-map rv"><iframe title="Map of Hammond, Louisiana" src="https://maps.google.com/maps?q=Hammond%2C+LA&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="rv">
+      <h2 id="ff-h">Fun Facts <em>About Hammond</em></h2>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span>Swedish immigrant Peter Hammond founded the town around 1818 and is buried beneath the Hammond Oak on East Charles Street.</span></li><li><svg><use href="#chk"/></svg><span>By the early twentieth century, Hammond was known as the &#x27;Strawberry Capital of America,&#x27; as a state historical marker notes.</span></li><li><svg><use href="#chk"/></svg><span>The Columbia Theatre opened downtown in 1928 as a movie palace and reopened in 2002 after a restoration led by Southeastern.</span></li></ul>
+      <h3 class="tn-ab-h3">Nearby Communities</h3>
+      <ul class="tn-chk tn-chk2"><li><svg><use href="#chk"/></svg><span>Ponchatoula</span></li><li><svg><use href="#chk"/></svg><span>Natalbany</span></li></ul>
+      <h3 class="tn-ab-h3">Driving Directions</h3>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>From Downtown New Orleans:</b> Take I-10 West to I-55 North near LaPlace, then cross the Manchac Swamp Bridge to Hammond.</span></li><li><svg><use href="#chk"/></svg><span><b>From Baton Rouge:</b> Take I-12 East to I-55 (exit 38) or U.S. 51 Business (exit 40) in Hammond.</span></li><li><svg><use href="#chk"/></svg><span><b>From Covington and the North Shore:</b> Take I-12 West to U.S. 51 Business (exit 40) in Hammond.</span></li></ul>
+      <p class="tn-kv"><b>Public transit:</b> Amtrak&#x27;s daily City of New Orleans train, running between New Orleans and Chicago, stops at Hammond&#x27;s station on Northwest Railroad Avenue.</p>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
   </div>
 </section>
 

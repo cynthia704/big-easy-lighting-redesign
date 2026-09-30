@@ -890,6 +890,33 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
 @media (max-width:1000px){.tn-know-grid,.tn-proc-grid,.tn-demo-grid{grid-template-columns:minmax(0,1fr)}.tn-proc-side{position:static}.tn-revs{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:760px){.tn-specs{grid-template-columns:minmax(0,1fr)}.tn-facts li{padding:18px;gap:14px}}
 @media (prefers-reduced-motion:reduce){.tn-tl::after{transition:none}}
+
+/* ===== Town pages, All About {Town} (Sep 30, 2026) ===== */
+.tn-ab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:start}
+.tn-ab-img{margin:0;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(27,34,30,.18);position:sticky;top:120px}
+.tn-ab-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.tn-ab .lede{margin-top:18px}
+.tn-kv{margin:14px 0 0;color:var(--ink-dim)}
+.tn-kv b{color:var(--brass);font-weight:600}
+.tn-maplink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.tn-maplink svg{width:14px;height:14px}
+.tn-maplink:hover{text-decoration:underline}
+.tn-ab h3.tn-ab-h3{margin:34px 0 0;font-size:1.6rem}
+.tn-chk{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.tn-chk li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;color:var(--ink-dim)}
+.tn-chk li>svg{width:20px;height:20px;color:var(--amber);margin-top:3px}
+.tn-chk b{color:var(--ink);font-weight:600}
+.tn-chk a{color:inherit}
+.tn-chk2{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
+.tn-ab .cta-pair{margin-top:32px}
+.tn-ab3 .tn-chk li{color:#c9c2b3}
+.tn-ab3 .tn-chk b,.tn-ab3 .tn-chk a{color:var(--ivory)}
+.tn-ab3 h3.tn-ab-h3{color:var(--ivory)}
+.tn-ab-map{position:sticky;top:120px;border-radius:16px;overflow:hidden;border:1px solid var(--line-light);background:#28332e}
+.tn-ab-map iframe{display:block;width:100%;aspect-ratio:4/3.4;border:0;filter:saturate(.85)}
+@media (max-width:1000px){.tn-ab-grid{grid-template-columns:minmax(0,1fr)}.tn-ab-img,.tn-ab-map{position:static}.tn-ab2 .tn-ab-img{order:-1}}
+@media (max-width:520px){.tn-chk2{grid-template-columns:minmax(0,1fr)}}
+.tn-ab3 .tn-kv{color:#c9c2b3;margin-top:18px}.tn-ab3 .tn-kv b{color:#f0b64a}
 </style>
 </head>
 <body>
@@ -953,25 +980,6 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
       <svg viewBox="0 0 425 520" role="group" aria-label="Simplified map of Big Easy Lighting service areas around Lake Pontchartrain"><path class="lake" d="M100.1,267.2 C104.3,249.1 108.4,231.1 125.1,216.7 C141.8,202.3 173.0,189.0 200.1,180.6 C227.2,172.2 260.6,166.1 287.7,166.1 C314.8,166.1 341.9,172.2 362.8,180.6 C383.7,189.0 402.4,201.1 412.8,216.7 C423.2,232.3 424.3,252.7 425.3,274.4 C426.3,296.1 429.4,326.2 419.0,346.7 C408.6,367.2 384.7,386.4 362.8,397.2 C340.9,408.0 314.8,410.5 287.7,411.7 C260.6,412.9 225.1,410.4 200.1,404.4 C175.1,398.4 154.3,388.8 137.6,375.6 C120.9,362.4 106.3,343.1 100.1,325.0 C93.8,306.9 95.9,285.2 100.1,267.2 Z"/><path class="river" d="M0.0,361.1 C10.4,365.9 43.7,380.4 62.5,390.0 C81.3,399.6 98.0,408.1 112.6,418.9 C127.2,429.7 138.6,445.4 150.1,455.0 C161.6,464.6 168.9,474.3 181.4,476.7 C193.9,479.1 210.6,468.2 225.2,469.4 C239.8,470.6 254.3,482.7 268.9,483.9 C283.5,485.1 300.2,480.3 312.7,476.7 C325.2,473.1 331.5,461.0 344.0,462.2 C356.5,463.4 374.3,482.6 387.8,483.9 C401.3,485.2 418.8,472.3 425.0,470.0"/><line class="cause" x1="278.3" y1="411.7" x2="315.8" y2="184.2"/><text class="water-lbl" x="205" y="298" text-anchor="middle">Lake Pontchartrain</text><text class="sm-lbl" x="305" y="250" transform="rotate(-81 305 250)">Causeway</text><text class="sm-lbl" x="6" y="352">Mississippi River</text><a class="town" href="service-areas.html#area-new-orleans" data-city="new-orleans" aria-label="New Orleans"><circle class="halo" cx="330.9" cy="468.7" r="11"/><circle class="dot" cx="330.9" cy="468.7" r="5.5"/><text x="330.9" y="497" text-anchor="middle">New Orleans</text></a><a class="town cur" href="metairie.html" data-city="metairie" aria-current="page" aria-label="Metairie"><circle class="halo" cx="279.6" cy="444.9" r="11"/><circle class="dot" cx="279.6" cy="444.9" r="5.5"/><text x="279.6" y="430" text-anchor="middle">Metairie</text></a><a class="town" href="kenner.html" data-city="kenner" aria-label="Kenner"><circle class="halo" cx="223.9" cy="437.7" r="11"/><circle class="dot" cx="223.9" cy="437.7" r="5.5"/><text x="223.9" y="459" text-anchor="middle">Kenner</text></a><a class="town" href="st-rose.html" data-city="st-rose" aria-label="St. Rose"><circle class="halo" cx="172.0" cy="471.6" r="11"/><circle class="dot" cx="172.0" cy="471.6" r="5.5"/><text x="172.0" y="500" text-anchor="middle">St. Rose</text></a><a class="town" href="laplace.html" data-city="laplace" aria-label="LaPlace"><circle class="halo" cx="74.4" cy="384.9" r="11"/><circle class="dot" cx="74.4" cy="384.9" r="5.5"/><text x="74.4" y="370" text-anchor="middle">LaPlace</text></a><a class="town" href="mandeville.html" data-city="mandeville" aria-label="Mandeville"><circle class="halo" cx="334.0" cy="174.8" r="11"/><circle class="dot" cx="334.0" cy="174.8" r="5.5"/><text x="334.0" y="160" text-anchor="middle">Mandeville</text></a><a class="town" href="covington.html" data-city="covington" aria-label="Covington"><circle class="halo" cx="312.7" cy="90.3" r="11"/><circle class="dot" cx="312.7" cy="90.3" r="5.5"/><text x="301" y="94.5" text-anchor="end">Covington</text></a><a class="town" href="madisonville.html" data-city="madisonville" aria-label="Madisonville"><circle class="halo" cx="277.1" cy="140.8" r="11"/><circle class="dot" cx="277.1" cy="140.8" r="5.5"/><text x="265" y="145" text-anchor="end">Madisonville</text></a><a class="town" href="abita-springs.html" data-city="abita-springs" aria-label="Abita Springs"><circle class="halo" cx="351.5" cy="88.1" r="11"/><circle class="dot" cx="351.5" cy="88.1" r="5.5"/><text x="351.5" y="72" text-anchor="middle">Abita Springs</text></a><a class="town" href="hammond.html" data-city="hammond" aria-label="Hammond"><circle class="halo" cx="86.3" cy="69.3" r="11"/><circle class="dot" cx="86.3" cy="69.3" r="5.5"/><text x="98" y="73.5" text-anchor="start">Hammond</text></a></svg>
       <figcaption>Simplified map, not to scale. Tap a town to see its page.</figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="pad tn-know" aria-labelledby="know-h">
-  <div class="wrap">
-    <div class="rv tn-head"><p class="kicker">About Metairie</p><h2 id="know-h">Get to Know <em>Metairie</em></h2></div>
-    <div class="tn-know-grid">
-    <div class="rv">
-      <p class="lede" style="margin-top:0">Metairie is an unincorporated community in Jefferson Parish, set between New Orleans and Kenner on the south shore of Lake Pontchartrain. It is the parish&#x27;s largest community, with Veterans Memorial Boulevard as its main commercial strip and the Causeway Boulevard area working as the East Bank&#x27;s business district. Its oldest neighborhoods line Metairie Road, which follows a natural ridge that was some of the first ground settled in the area.</p>
-      <p class="tn-sub">Local landmarks</p>
-      <ul class="tn-marks"><li>Lafreniere Park</li><li>Bucktown Marsh Boardwalk</li><li>Metairie Road and Old Metairie</li><li>Veterans Memorial Boulevard</li></ul>
-      <p class="tn-sub">Neighboring communities</p>
-      <ul class="tn-marks"><li class="lk"><a href="kenner.html">Kenner</a></li><li>River Ridge</li><li>Harahan</li><li>Jefferson</li><li class="lk"><a href="service-areas.html#area-new-orleans">New Orleans</a></li></ul>
-    </div>
-    <div class="rv">
-      <p class="tn-sub" style="margin-top:0">Three things to know</p>
-      <ul class="tn-facts"><li><p>The name comes from the French word for a small tenant farm that paid its landlord with a share of the crop.</p></li><li><p>Metairie Road follows the Metairie Ridge, high ground left behind by an ancient branch of the Mississippi River.</p></li><li><p>The Lake Pontchartrain Causeway starts in Metairie and holds the Guinness record for the longest continuous bridge over water.</p></li></ul>
-    </div>
-    </div>
   </div>
 </section>
 
@@ -1044,6 +1052,50 @@ main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
   <div class="wrap grid">
     <div class="side rv"><p class="kicker">Metairie lighting FAQ</p><h2 id="tfaq-h">Common Questions <em>in Metairie</em></h2><p class="lede" style="margin-top:18px">Don't see yours? Call and ask. We're always happy to help.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
     <div class="rv"><details open><summary>How Much Does Outdoor Lighting Installation Cost in Metairie?<span class="x">+</span></summary><p>Outdoor lighting cost in Metairie depends on the number of fixtures, the type of lighting, and how much wiring the layout needs. A small pathway or accent project sits at the lower end, while a full landscape system costs more. A free on-site estimate gives you the most accurate number.</p></details><details><summary>Is Landscape Lighting Worth It?<span class="x">+</span></summary><p>Yes. Landscape lighting improves curb appeal, safety, and security while extending how long you can enjoy your yard at night. In Metairie, well-placed lighting also highlights mature trees and architecture, and it is one of the higher-return outdoor upgrades.</p></details><details><summary>Do You Install Both Residential and Commercial Lighting in Metairie?<span class="x">+</span></summary><p>Yes. We handle residential landscape and outdoor lighting as well as commercial lighting for businesses across Metairie and Jefferson Parish, from homes to storefronts, parking areas, and signage.</p></details><details><summary>How Long Does a Lighting Installation Take?<span class="x">+</span></summary><p>Most outdoor lighting installations take from one to a few days, depending on the number of fixtures and the wiring involved. We give you a clear schedule up front and keep the site clean as we work.</p></details><details><summary>Does Outdoor Lighting Hold Up to Metairie&#x27;s Weather?<span class="x">+</span></summary><p>Yes. We use weather-rated, corrosion-resistant fixtures and proper sealing built for our humid, storm-prone Gulf climate. Low-voltage systems are designed to keep performing through Metairie&#x27;s heat, rain, and humidity.</p></details></div>
+  </div>
+</section>
+
+<section class="pad tn-ab tn-ab1" style="background:var(--ivory-2)" aria-labelledby="ab-h">
+  <div class="wrap tn-ab-grid">
+    <figure class="tn-ab-img rv"><img src="assets/towns/metairie-1.jpg" alt="Sailboat on Lake Pontchartrain at sunset" loading="lazy" width="1400" height="1050"></figure>
+    <div class="rv">
+      <p class="kicker">All about Metairie</p>
+      <h2 id="ab-h">About <em>Metairie</em></h2>
+      <p class="lede">Metairie is an unincorporated community in Jefferson Parish, set between New Orleans and Kenner on the south shore of Lake Pontchartrain. It is the parish&#x27;s largest community, with Veterans Memorial Boulevard as its main commercial strip and the Causeway Boulevard area working as the East Bank&#x27;s business district. Its oldest neighborhoods line Metairie Road, which follows a natural ridge that was some of the first ground settled in the area.</p>
+      <p class="tn-kv"><b>Parish:</b> Jefferson Parish</p>
+      <p class="tn-kv"><b>Landmarks:</b> Lafreniere Park, Bucktown Marsh Boardwalk, Metairie Road and Old Metairie, Veterans Memorial Boulevard</p>
+      <a class="tn-maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Metairie%2C+LA" target="_blank" rel="noopener">View Metairie on Google Maps <svg><use href="#ne"/></svg></a>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad tn-ab tn-ab2" aria-labelledby="todo-h">
+  <div class="wrap tn-ab-grid">
+    <div class="rv">
+      <h2 id="todo-h">Things to Do <em>in Metairie</em></h2>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>Lakeside Shopping Center:</b> Metairie&#x27;s big mall on Veterans Boulevard, anchored by Dillard&#x27;s, Macy&#x27;s, and JCPenney, with more than 100 stores.</span></li><li><svg><use href="#chk"/></svg><span><b>Metairie Mardi Gras Parades:</b> Carnival parades roll down Veterans Boulevard, including the Krewe of Argus on Mardi Gras Day.</span></li><li><svg><use href="#chk"/></svg><span><b>Jefferson Performing Arts Center:</b> The 1,041-seat theater on Airline Drive hosts musicals, concerts, comedy, and holiday shows like The Nutcracker.</span></li><li><svg><use href="#chk"/></svg><span><b>Family Gras:</b> Free carnival-season festival on Veterans Boulevard with parades, local food, a kids&#x27; area, and outdoor concerts.</span></li><li><svg><use href="#chk"/></svg><span><b>Bonnabel Boat Launch and Linear Park:</b> Lakefront spot with a fishing pier, boat ramps, a playground, a dog park, and a walking path.</span></li></ul>
+      <h3 class="tn-ab-h3">Notable Residents</h3>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>Sal Khan:</b> Founder of Khan Academy, born in Metairie and a 1994 graduate of Grace King High School.</span></li><li><svg><use href="#chk"/></svg><span><b>Ellen DeGeneres:</b> Comedian and longtime talk show host who was born and raised in Metairie.</span></li><li><svg><use href="#chk"/></svg><span><b>Ashley Scott:</b> Actress known for Jericho, Birds of Prey, and The Last of Us, born in Metairie.</span></li><li><svg><use href="#chk"/></svg><span><b>Peter Gennaro:</b> Broadway dancer and choreographer born in Metairie, known for his work on West Side Story.</span></li></ul>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+    <figure class="tn-ab-img rv"><img src="assets/towns/metairie-2.jpg" alt="Ducks swimming in a park pond" loading="lazy" width="1400" height="1050"></figure>
+  </div>
+</section>
+
+<section class="pad dark tn-ab tn-ab3" aria-labelledby="ff-h">
+  <div class="wrap tn-ab-grid">
+    <div class="tn-ab-map rv"><iframe title="Map of Metairie, Louisiana" src="https://maps.google.com/maps?q=Metairie%2C+LA&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="rv">
+      <h2 id="ff-h">Fun Facts <em>About Metairie</em></h2>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span>The name comes from the French word for a small tenant farm that paid its landlord with a share of the crop.</span></li><li><svg><use href="#chk"/></svg><span>Metairie Road follows the Metairie Ridge, high ground left behind by an ancient branch of the Mississippi River.</span></li><li><svg><use href="#chk"/></svg><span>The Lake Pontchartrain Causeway starts in Metairie and holds the Guinness record for the longest continuous bridge over water.</span></li></ul>
+      <h3 class="tn-ab-h3">Nearby Communities</h3>
+      <ul class="tn-chk tn-chk2"><li><svg><use href="#chk"/></svg><span><a href="kenner.html">Kenner</a></span></li><li><svg><use href="#chk"/></svg><span>River Ridge</span></li><li><svg><use href="#chk"/></svg><span>Harahan</span></li><li><svg><use href="#chk"/></svg><span>Jefferson</span></li><li><svg><use href="#chk"/></svg><span><a href="service-areas.html#area-new-orleans">New Orleans</a></span></li></ul>
+      <h3 class="tn-ab-h3">Driving Directions</h3>
+      <ul class="tn-chk"><li><svg><use href="#chk"/></svg><span><b>From Downtown New Orleans:</b> Take I-10 West into Metairie, then exit at Causeway Boulevard (exit 228) or Veterans Boulevard (exit 225).</span></li><li><svg><use href="#chk"/></svg><span><b>From Louis Armstrong New Orleans International Airport (MSY):</b> Take I-10 East from the Loyola Drive interchange (exit 221), then exit at Veterans Boulevard or Causeway Boulevard.</span></li><li><svg><use href="#chk"/></svg><span><b>From Mandeville and the North Shore:</b> Cross the Lake Pontchartrain Causeway southbound; it lands on Causeway Boulevard in Metairie.</span></li></ul>
+      <p class="tn-kv"><b>Public transit:</b> Jefferson Transit (JeT) buses serve Metairie, including the E1 Veterans-Airport route along Veterans Boulevard between the airport and New Orleans.</p>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
   </div>
 </section>
 
