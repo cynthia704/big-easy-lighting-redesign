@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Service Areas Around New Orleans and the Northshore | Big Easy Lighting</title>
-<meta name="description" content="Big Easy Lighting serves New Orleans, Metairie, Kenner, St. Rose, LaPlace, Mandeville, Covington, Madisonville, Abita Springs, and Hammond. Free estimates: (504) 784-6858.">
+<title>Kenner Outdoor Lighting | Big Easy Lighting</title>
+<meta name="description" content="Big Easy Lighting designs and installs outdoor and landscape lighting in Kenner, LA, for homes and businesses. Free estimate: (504) 784-6858.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -796,6 +796,41 @@ body.modal-open{overflow:hidden}
   .sa-map .water-lbl{font-size:20px}
   .sa-map .sm-lbl{font-size:12px}
 }
+
+/* ===== Town pages (tn-) ===== */
+@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+main .rp-hero h1{font-size:clamp(2rem,3.4vw,3.1rem)}
+.tn-local .grid{align-items:center}
+.tn-map .town{opacity:.55;transition:opacity .3s}
+.tn-map .town:hover,.tn-map .town:focus-visible{opacity:1}
+.tn-map .town.cur{opacity:1}
+.tn-map .town.cur circle.halo{r:20;fill:rgba(255,151,0,.4)}
+.tn-map .town.cur circle.dot{fill:#fff3dc;r:7}
+.tn-map .town.cur text{fill:#ffcf7a;font-weight:700}
+.tn-head{max-width:760px;margin-bottom:36px}
+.tn-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.tn-col{padding:26px 28px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.tn-col-h{margin:0 0 6px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.tn-links{list-style:none;margin:0;padding:0}
+.tn-links a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font:400 1.35rem/1.2 var(--serif);transition:color .25s,padding .3s var(--ease)}
+.tn-links li:last-child a{border-bottom:0}
+.tn-links a svg{width:18px;height:18px;flex:none;color:var(--brass);transition:transform .3s var(--ease)}
+.tn-links a:hover{color:var(--brass);padding-left:6px}
+.tn-links a:hover svg{transform:translateX(4px)}
+.tn-note{margin-top:14px;padding:20px;border-radius:12px;background:var(--iron);color:var(--ivory);display:flex;flex-direction:column;gap:8px}
+.tn-note h3{font-size:1.35rem}
+.tn-note p{margin:0;color:#c9c2b3;font-size:15px}
+.tn-note .btn{align-self:flex-start;margin-top:6px}
+.tn-note .btn svg{width:18px;height:18px}
+.tn-oth{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px 48px;align-items:center}
+.tn-oth .sv-all{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.tn-oth .sv-all svg{width:15px;height:15px}
+.tn-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tn-chips a{display:inline-block;padding:10px 16px;border-radius:40px;background:#fff;border:1px solid var(--line);color:var(--ink);text-decoration:none;font:600 14.5px var(--sans);transition:background .25s,border-color .25s,color .25s}
+.tn-chips a:hover{background:var(--iron);border-color:var(--iron);color:var(--ivory)}
+@media (max-width:1180px){.tn-oth{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:1000px){.tn-cols{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.tn-note .btn{align-self:stretch;justify-content:center}.tn-col{padding:20px}}
 </style>
 </head>
 <body>
@@ -814,112 +849,76 @@ body.modal-open{overflow:hidden}
 
 <header class="hdr">
   <div class="wrap">
-    <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html" aria-current="page">Service Areas</a></nav>
+    <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html" aria-current="true">Service Areas</a></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
     <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html" aria-current="page">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html" aria-current="true">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
 
 <section class="rp-hero" aria-labelledby="h1">
-  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/curb.jpg" alt="" width="950" height="450" fetchpriority="high"></div>
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/curb.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Service Areas</span></nav>
-    <p class="kicker fade-up">Service areas</p>
-    <h1 id="h1" class="fade-up d1">Outdoor Lighting Service Areas Around <em>New&nbsp;Orleans</em></h1>
-    <p class="lede fade-up d2">Based in New Orleans and lighting homes and businesses in 10 communities across Orleans, Jefferson, St. Charles, St. John the Baptist, St. Tammany, and Tangipahoa parishes.</p>
-    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>10</b> communities</span><span><b>Both</b> sides of the lake</span><span><b>Mon–Fri</b> 8 AM–6 PM</span></div></div>
-    <ul class="rp-jump fade-up d3" aria-label="Jump to a region">
-      <li><a href="#region-south">Southshore</a></li><li><a href="#region-river">River Parishes</a></li><li><a href="#region-north">Northshore</a></li>
-    </ul>
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="service-areas.html">Service Areas</a><span aria-hidden="true">/</span><span aria-current="page">Kenner</span></nav>
+    <p class="kicker fade-up">Kenner · Jefferson Parish</p>
+    <h1 id="h1" class="fade-up d1">Lighting Service Contractor Kenner:<br class="sv-br"> <em>Outstanding Lighting Services by Big Easy Lighting</em></h1>
+    <p class="lede fade-up d2">Kenner sits in Jefferson Parish along Lake Pontchartrain, from the historic Rivertown district to its busy commercial corridors. We install residential and commercial lighting that improves curb appeal, safety, and security across the city.</p>
+    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>Southshore</b> service area</span><span><b>Free</b> estimates</span><span><b>Homes</b> &amp; businesses</span></div></div>
   </div>
 </section>
 
-<section class="pad dark sa-mapsec" aria-labelledby="map-h">
+<section class="pad dark sa-mapsec tn-local" aria-labelledby="local-h">
   <div class="wrap grid">
-    <figure class="sa-map rv">
-      <svg viewBox="0 0 425 520" role="group" aria-label="Simplified map of Big Easy Lighting service areas around Lake Pontchartrain"><path class="lake" d="M100.1,267.2 C104.3,249.1 108.4,231.1 125.1,216.7 C141.8,202.3 173.0,189.0 200.1,180.6 C227.2,172.2 260.6,166.1 287.7,166.1 C314.8,166.1 341.9,172.2 362.8,180.6 C383.7,189.0 402.4,201.1 412.8,216.7 C423.2,232.3 424.3,252.7 425.3,274.4 C426.3,296.1 429.4,326.2 419.0,346.7 C408.6,367.2 384.7,386.4 362.8,397.2 C340.9,408.0 314.8,410.5 287.7,411.7 C260.6,412.9 225.1,410.4 200.1,404.4 C175.1,398.4 154.3,388.8 137.6,375.6 C120.9,362.4 106.3,343.1 100.1,325.0 C93.8,306.9 95.9,285.2 100.1,267.2 Z"/><path class="river" d="M0.0,361.1 C10.4,365.9 43.7,380.4 62.5,390.0 C81.3,399.6 98.0,408.1 112.6,418.9 C127.2,429.7 138.6,445.4 150.1,455.0 C161.6,464.6 168.9,474.3 181.4,476.7 C193.9,479.1 210.6,468.2 225.2,469.4 C239.8,470.6 254.3,482.7 268.9,483.9 C283.5,485.1 300.2,480.3 312.7,476.7 C325.2,473.1 331.5,461.0 344.0,462.2 C356.5,463.4 374.3,482.6 387.8,483.9 C401.3,485.2 418.8,472.3 425.0,470.0"/><line class="cause" x1="278.3" y1="411.7" x2="315.8" y2="184.2"/><text class="water-lbl" x="205" y="298" text-anchor="middle">Lake Pontchartrain</text><text class="sm-lbl" x="305" y="250" transform="rotate(-81 305 250)">Causeway</text><text class="sm-lbl" x="6" y="352">Mississippi River</text><a class="town home" href="#area-new-orleans" data-city="new-orleans" aria-label="New Orleans"><circle class="halo" cx="330.9" cy="468.7" r="11"/><circle class="dot" cx="330.9" cy="468.7" r="5.5"/><text x="330.9" y="497" text-anchor="middle">New Orleans</text></a><a class="town" href="#area-metairie" data-city="metairie" aria-label="Metairie"><circle class="halo" cx="279.6" cy="444.9" r="11"/><circle class="dot" cx="279.6" cy="444.9" r="5.5"/><text x="279.6" y="430" text-anchor="middle">Metairie</text></a><a class="town" href="#area-kenner" data-city="kenner" aria-label="Kenner"><circle class="halo" cx="223.9" cy="437.7" r="11"/><circle class="dot" cx="223.9" cy="437.7" r="5.5"/><text x="223.9" y="459" text-anchor="middle">Kenner</text></a><a class="town" href="#area-st-rose" data-city="st-rose" aria-label="St. Rose"><circle class="halo" cx="172.0" cy="471.6" r="11"/><circle class="dot" cx="172.0" cy="471.6" r="5.5"/><text x="172.0" y="500" text-anchor="middle">St. Rose</text></a><a class="town" href="#area-laplace" data-city="laplace" aria-label="LaPlace"><circle class="halo" cx="74.4" cy="384.9" r="11"/><circle class="dot" cx="74.4" cy="384.9" r="5.5"/><text x="74.4" y="370" text-anchor="middle">LaPlace</text></a><a class="town" href="#area-mandeville" data-city="mandeville" aria-label="Mandeville"><circle class="halo" cx="334.0" cy="174.8" r="11"/><circle class="dot" cx="334.0" cy="174.8" r="5.5"/><text x="334.0" y="160" text-anchor="middle">Mandeville</text></a><a class="town" href="#area-covington" data-city="covington" aria-label="Covington"><circle class="halo" cx="312.7" cy="90.3" r="11"/><circle class="dot" cx="312.7" cy="90.3" r="5.5"/><text x="301" y="94.5" text-anchor="end">Covington</text></a><a class="town" href="#area-madisonville" data-city="madisonville" aria-label="Madisonville"><circle class="halo" cx="277.1" cy="140.8" r="11"/><circle class="dot" cx="277.1" cy="140.8" r="5.5"/><text x="265" y="145" text-anchor="end">Madisonville</text></a><a class="town" href="#area-abita-springs" data-city="abita-springs" aria-label="Abita Springs"><circle class="halo" cx="351.5" cy="88.1" r="11"/><circle class="dot" cx="351.5" cy="88.1" r="5.5"/><text x="351.5" y="72" text-anchor="middle">Abita Springs</text></a><a class="town" href="#area-hammond" data-city="hammond" aria-label="Hammond"><circle class="halo" cx="86.3" cy="69.3" r="11"/><circle class="dot" cx="86.3" cy="69.3" r="5.5"/><text x="98" y="73.5" text-anchor="start">Hammond</text></a></svg>
-      <figcaption>Simplified map, not to scale. Tap a town to jump to it.</figcaption>
-    </figure>
     <div class="rv">
-      <p class="kicker">Where we work</p>
-      <h2 id="map-h">Both Sides of <em>the Lake</em></h2>
-      <p class="lede" style="margin-top:18px">From Hammond down to St. Rose, and from Covington across the Causeway to New Orleans. Same crew, same standards, wherever your property is.</p>
-      <ul class="sa-legend">
-        <li><b>Southshore</b><span>New Orleans · Metairie · Kenner</span></li>
-        <li><b>River Parishes</b><span>St. Rose · LaPlace</span></li>
-        <li><b>Northshore</b><span>Mandeville · Covington · Madisonville · Abita Springs · Hammond</span></li>
-      </ul>
+      <p class="kicker">Lighting in Kenner</p>
+      <h2 id="local-h">Planned Around <em>Kenner Properties</em></h2>
+      <p class="lede" style="margin-top:18px">Whether it is landscape uplighting for a home or facade and parking-lot lighting for a business, we plan each system around how Kenner properties are used and around our humid, storm-prone Gulf climate.</p>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
     </div>
+    <figure class="sa-map tn-map rv">
+      <svg viewBox="0 0 425 520" role="group" aria-label="Simplified map of Big Easy Lighting service areas around Lake Pontchartrain"><path class="lake" d="M100.1,267.2 C104.3,249.1 108.4,231.1 125.1,216.7 C141.8,202.3 173.0,189.0 200.1,180.6 C227.2,172.2 260.6,166.1 287.7,166.1 C314.8,166.1 341.9,172.2 362.8,180.6 C383.7,189.0 402.4,201.1 412.8,216.7 C423.2,232.3 424.3,252.7 425.3,274.4 C426.3,296.1 429.4,326.2 419.0,346.7 C408.6,367.2 384.7,386.4 362.8,397.2 C340.9,408.0 314.8,410.5 287.7,411.7 C260.6,412.9 225.1,410.4 200.1,404.4 C175.1,398.4 154.3,388.8 137.6,375.6 C120.9,362.4 106.3,343.1 100.1,325.0 C93.8,306.9 95.9,285.2 100.1,267.2 Z"/><path class="river" d="M0.0,361.1 C10.4,365.9 43.7,380.4 62.5,390.0 C81.3,399.6 98.0,408.1 112.6,418.9 C127.2,429.7 138.6,445.4 150.1,455.0 C161.6,464.6 168.9,474.3 181.4,476.7 C193.9,479.1 210.6,468.2 225.2,469.4 C239.8,470.6 254.3,482.7 268.9,483.9 C283.5,485.1 300.2,480.3 312.7,476.7 C325.2,473.1 331.5,461.0 344.0,462.2 C356.5,463.4 374.3,482.6 387.8,483.9 C401.3,485.2 418.8,472.3 425.0,470.0"/><line class="cause" x1="278.3" y1="411.7" x2="315.8" y2="184.2"/><text class="water-lbl" x="205" y="298" text-anchor="middle">Lake Pontchartrain</text><text class="sm-lbl" x="305" y="250" transform="rotate(-81 305 250)">Causeway</text><text class="sm-lbl" x="6" y="352">Mississippi River</text><a class="town" href="service-areas.html#area-new-orleans" data-city="new-orleans" aria-label="New Orleans"><circle class="halo" cx="330.9" cy="468.7" r="11"/><circle class="dot" cx="330.9" cy="468.7" r="5.5"/><text x="330.9" y="497" text-anchor="middle">New Orleans</text></a><a class="town" href="metairie.html" data-city="metairie" aria-label="Metairie"><circle class="halo" cx="279.6" cy="444.9" r="11"/><circle class="dot" cx="279.6" cy="444.9" r="5.5"/><text x="279.6" y="430" text-anchor="middle">Metairie</text></a><a class="town cur" href="kenner.html" data-city="kenner" aria-current="page" aria-label="Kenner"><circle class="halo" cx="223.9" cy="437.7" r="11"/><circle class="dot" cx="223.9" cy="437.7" r="5.5"/><text x="223.9" y="459" text-anchor="middle">Kenner</text></a><a class="town" href="st-rose.html" data-city="st-rose" aria-label="St. Rose"><circle class="halo" cx="172.0" cy="471.6" r="11"/><circle class="dot" cx="172.0" cy="471.6" r="5.5"/><text x="172.0" y="500" text-anchor="middle">St. Rose</text></a><a class="town" href="laplace.html" data-city="laplace" aria-label="LaPlace"><circle class="halo" cx="74.4" cy="384.9" r="11"/><circle class="dot" cx="74.4" cy="384.9" r="5.5"/><text x="74.4" y="370" text-anchor="middle">LaPlace</text></a><a class="town" href="mandeville.html" data-city="mandeville" aria-label="Mandeville"><circle class="halo" cx="334.0" cy="174.8" r="11"/><circle class="dot" cx="334.0" cy="174.8" r="5.5"/><text x="334.0" y="160" text-anchor="middle">Mandeville</text></a><a class="town" href="covington.html" data-city="covington" aria-label="Covington"><circle class="halo" cx="312.7" cy="90.3" r="11"/><circle class="dot" cx="312.7" cy="90.3" r="5.5"/><text x="301" y="94.5" text-anchor="end">Covington</text></a><a class="town" href="madisonville.html" data-city="madisonville" aria-label="Madisonville"><circle class="halo" cx="277.1" cy="140.8" r="11"/><circle class="dot" cx="277.1" cy="140.8" r="5.5"/><text x="265" y="145" text-anchor="end">Madisonville</text></a><a class="town" href="abita-springs.html" data-city="abita-springs" aria-label="Abita Springs"><circle class="halo" cx="351.5" cy="88.1" r="11"/><circle class="dot" cx="351.5" cy="88.1" r="5.5"/><text x="351.5" y="72" text-anchor="middle">Abita Springs</text></a><a class="town" href="hammond.html" data-city="hammond" aria-label="Hammond"><circle class="halo" cx="86.3" cy="69.3" r="11"/><circle class="dot" cx="86.3" cy="69.3" r="5.5"/><text x="98" y="73.5" text-anchor="start">Hammond</text></a></svg>
+      <figcaption>Simplified map, not to scale. Tap a town to see its page.</figcaption>
+    </figure>
   </div>
 </section>
 
-<section class="pad" aria-labelledby="towns-h">
+<section class="pad tn-svcs" aria-labelledby="svc-h">
   <div class="wrap">
-    <div class="rv" style="max-width:760px;margin-bottom:46px"><p class="kicker">Town by town</p><h2 id="towns-h">Find Your <em>Community</em></h2><p class="lede" style="margin-top:18px">Pick your town for local details, or get a free estimate and we'll come to you.</p></div>
-    <div class="sa-regions">
-      <div class="sa-region" id="region-south">
-        <div class="rh"><h3>Southshore</h3><p>Orleans &amp; Jefferson parishes</p></div>
-        <div class="sa-cards">
-          <a class="sa-card home rv" id="area-new-orleans" data-city="new-orleans" href="#estimate" data-estimate><span class="pin"><svg><use href="#pinx"/></svg></span><h4>New Orleans</h4><span class="par">Orleans Parish · Home base</span><p>Our home base. Landscape, curb appeal, and commercial lighting all over the city.</p><span class="go">Get a free estimate <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-metairie" data-city="metairie" href="metairie.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Metairie</h4><span class="par">Jefferson Parish</span><p>Custom lighting for Metairie homes and businesses, designed with purpose, function, and looks in mind.</p><span class="go">Lighting in Metairie <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-kenner" data-city="kenner" href="kenner.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Kenner</h4><span class="par">Jefferson Parish</span><p>Low-voltage landscape systems and exterior lighting that add security to Kenner homes and businesses.</p><span class="go">Lighting in Kenner <svg><use href="#arr"/></svg></span></a>
-        </div>
-      </div>
-      <div class="sa-region" id="region-river">
-        <div class="rh"><h3>River Parishes</h3><p>St. Charles &amp; St. John the Baptist parishes</p></div>
-        <div class="sa-cards">
-          <a class="sa-card rv" id="area-st-rose" data-city="st-rose" href="st-rose.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>St Rose</h4><span class="par">St. Charles Parish</span><p>From simple porch lighting to commercial building lighting, installed properly and safely.</p><span class="go">Lighting in St. Rose <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-laplace" data-city="laplace" href="laplace.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>LaPlace</h4><span class="par">St. John the Baptist Parish</span><p>Shop, street, and home lighting for a growing LaPlace, including LED lighting for wide public areas.</p><span class="go">Lighting in LaPlace <svg><use href="#arr"/></svg></span></a>
-        </div>
-      </div>
-      <div class="sa-region" id="region-north">
-        <div class="rh"><h3>Northshore</h3><p>St. Tammany &amp; Tangipahoa parishes</p></div>
-        <div class="sa-cards">
-          <a class="sa-card rv" id="area-mandeville" data-city="mandeville" href="mandeville.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Mandeville</h4><span class="par">St. Tammany Parish</span><p>Residential and commercial projects, big or small, simple or complex.</p><span class="go">Lighting in Mandeville <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-covington" data-city="covington" href="covington.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Covington</h4><span class="par">St. Tammany Parish</span><p>Installation, repairs, and maintenance, with a free consultation to assess your property first.</p><span class="go">Lighting in Covington <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-madisonville" data-city="madisonville" href="madisonville.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Madisonville</h4><span class="par">St. Tammany Parish</span><p>Outdoor, landscape, and repair work for Madisonville homes, handled as one complete project.</p><span class="go">Lighting in Madisonville <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-abita-springs" data-city="abita-springs" href="abita-springs.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Abita Springs</h4><span class="par">St. Tammany Parish</span><p>Lighting design, installation, and repairs for homes and businesses in and around Abita.</p><span class="go">Lighting in Abita Springs <svg><use href="#arr"/></svg></span></a>
-          <a class="sa-card rv" id="area-hammond" data-city="hammond" href="hammond.html"><span class="pin"><svg><use href="#pinx"/></svg></span><h4>Hammond</h4><span class="par">Tangipahoa Parish</span><p>Installation, maintenance, retrofits, and repair in the largest city in Tangipahoa Parish.</p><span class="go">Lighting in Hammond <svg><use href="#arr"/></svg></span></a>
-        </div>
-      </div>
+    <div class="rv tn-head"><p class="kicker">Our services</p><h2 id="svc-h">What We Light <em>in Kenner</em></h2></div>
+    <div class="tn-cols">
+      <div class="tn-col rv"><p class="tn-col-h">For homes</p><ul class="tn-links"><li><a href="landscape-lighting.html"><span>Landscape Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="pathway-lighting.html"><span>Pathway Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="curb-appeal-lighting.html"><span>Curb Appeal Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="deck-and-patio-lighting.html"><span>Deck &amp; Patio Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="festive-string-lighting.html"><span>Festive String Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="sphere-lights.html"><span>Sphere Lights</span><svg><use href="#arr"/></svg></a></li><li><a href="color-changing-lighting.html"><span>Color-Changing Lighting</span><svg><use href="#arr"/></svg></a></li></ul></div>
+      <div class="tn-col rv"><p class="tn-col-h">For businesses</p><ul class="tn-links"><li><a href="outdoor-lighting.html"><span>Outdoor Lighting</span><svg><use href="#arr"/></svg></a></li><li><a href="led-lighting-systems.html"><span>LED Lighting Systems</span><svg><use href="#arr"/></svg></a></li><li><a href="garden-lights.html"><span>Garden Lights</span><svg><use href="#arr"/></svg></a></li><li><a href="up-down-lights.html"><span>Up/Down Lights</span><svg><use href="#arr"/></svg></a></li></ul>
+        <div class="tn-note"><h3>Not Sure Where to Start?</h3><p>Tell us about the property and we'll recommend the right mix.</p><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a></div></div>
     </div>
   </div>
 </section>
 
 <section class="sa-samesec" style="background:var(--ivory-2)" aria-labelledby="same-h">
   <div class="wrap">
-    <h2 id="same-h" class="sr-only">What Every Area Gets</h2>
+    <h2 id="same-h" class="sr-only">What Every Kenner Project Gets</h2>
     <ul class="sa-same" style="margin:0;padding:0">
       <li><svg><use href="#moon"/></svg><div><b>Free Evening Demo</b><span>See it lit on your property first</span></div></li>
-      <li><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><div><b>Local Permits Handled</b><span>Built to local codes in every parish</span></div></li>
+      <li><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><div><b>Local Permits Handled</b><span>Built to local codes and regulations</span></div></li>
       <li><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><div><b>Repair and Maintenance</b><span>We keep what we install running</span></div></li>
-      <li><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 7.8 7 9 4-1.2 7-4.6 7-9V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>100% Satisfaction</b><span>The same guarantee everywhere</span></div></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 7.8 7 9 4-1.2 7-4.6 7-9V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>100% Satisfaction</b><span>Our guarantee on every job</span></div></li>
     </ul>
   </div>
 </section>
 
-<section class="pad" aria-labelledby="notlisted-h" style="padding-bottom:0">
-  <div class="wrap">
-    <div class="sa-cta rv">
-      <div><p class="kicker">Nearby but not listed?</p><h2 id="notlisted-h">Don't See Your <em>Town?</em></h2><p>We also work in other communities around these areas. Call or request a free estimate and we'll let you know if we cover your address.</p></div>
-      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
-    </div>
+<section class="pad rp-faq" aria-labelledby="tfaq-h">
+  <div class="wrap grid">
+    <div class="side rv"><p class="kicker">Kenner lighting FAQ</p><h2 id="tfaq-h">Common Questions <em>in Kenner</em></h2><p class="lede" style="margin-top:18px">Don't see yours? Call and ask. We're always happy to help.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
+    <div class="rv"><details open><summary>How Much Does Outdoor Lighting Installation Cost in Kenner?<span class="x">+</span></summary><p>Outdoor lighting cost in Kenner depends on the number of fixtures, the type of lighting, and how much wiring the layout needs. A small pathway or accent project sits at the lower end, while a full landscape system costs more. A free on-site estimate gives you the most accurate number.</p></details><details><summary>Is Landscape Lighting Worth It?<span class="x">+</span></summary><p>Yes. Landscape lighting improves curb appeal, safety, and security while extending how long you can enjoy your yard at night. In Kenner, well-placed lighting also highlights mature trees and architecture, and it is one of the higher-return outdoor upgrades.</p></details><details><summary>Do You Install Both Residential and Commercial Lighting in Kenner?<span class="x">+</span></summary><p>Yes. We handle residential landscape and outdoor lighting as well as commercial lighting for businesses across Kenner and Jefferson Parish, from homes to storefronts, parking areas, and signage.</p></details><details><summary>How Long Does a Lighting Installation Take?<span class="x">+</span></summary><p>Most outdoor lighting installations take from one to a few days, depending on the number of fixtures and the wiring involved. We give you a clear schedule up front and keep the site clean as we work.</p></details><details><summary>Does Outdoor Lighting Hold Up to Kenner&#x27;s Weather?<span class="x">+</span></summary><p>Yes. We use weather-rated, corrosion-resistant fixtures and proper sealing built for our humid, storm-prone Gulf climate. Low-voltage systems are designed to keep performing through Kenner&#x27;s heat, rain, and humidity.</p></details></div>
   </div>
 </section>
 
-<section class="pad rp-faq" aria-labelledby="afaq-h">
-  <div class="wrap grid">
-    <div class="side rv"><p class="kicker">Service area FAQ</p><h2 id="afaq-h">Questions About <em>Where We Work</em></h2><p class="lede" style="margin-top:18px">Still not sure? Call and ask. It takes a minute.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
-    <div class="rv">
-      <details open><summary>Do You Serve My Area?<span class="x">+</span></summary><p>We're based in New Orleans and work across the Southshore, the River Parishes, and the Northshore, from Hammond to St. Rose. If your town isn't listed, call us and ask. We also work in nearby communities.</p></details>
-      <details><summary>Is the Estimate Free Everywhere You Work?<span class="x">+</span></summary><p>Yes. Every project starts with a free, no-obligation estimate, no matter which side of the lake you're on.</p></details>
-      <details><summary>Do You Handle Permits in Every Parish?<span class="x">+</span></summary><p>Yes. We pull the permits and schedule the inspections, and every system we install meets local codes and regulations.</p></details>
-      <details><summary>Do You Light Both Homes and Businesses in Each Area?<span class="x">+</span></summary><p>Yes. We handle residential and commercial lighting in every community we serve, from porch and landscape lighting to parking lots and storefronts.</p></details>
-    </div>
+<section class="pad tn-others" style="background:var(--ivory-2)" aria-labelledby="oth-h">
+  <div class="wrap tn-oth">
+    <div class="rv"><p class="kicker">Nearby and beyond</p><h2 id="oth-h">Other Areas <em>We Serve</em></h2><a class="sv-all" href="service-areas.html">All service areas <svg><use href="#arr"/></svg></a></div>
+    <ul class="tn-chips rv"><li><a href="service-areas.html#area-new-orleans">New Orleans</a></li><li><a href="metairie.html">Metairie</a></li><li><a href="st-rose.html">St. Rose</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="covington.html">Covington</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="abita-springs.html">Abita Springs</a></li><li><a href="hammond.html">Hammond</a></li></ul>
   </div>
 </section>
 
