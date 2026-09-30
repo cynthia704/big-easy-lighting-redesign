@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Residential Outdoor Lighting in New Orleans | Big Easy Lighting</title>
-<meta name="description" content="Landscape, pathway, patio, string, sphere, and color-changing lighting for New Orleans homes. Designed and installed by Big Easy Lighting. Free estimates: (504) 784-6858.">
+<title>Pathway Lighting in New Orleans, LA | Big Easy Lighting</title>
+<meta name="description" content="Pathway lighting for New Orleans, LA homes: safer walkways, steps, and entries with weather-rated fixtures. Free design consultation and estimate: (504) 784-6858.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/hero-house.jpg">
+<link rel="preload" as="image" href="assets/pathway.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -638,6 +638,220 @@ body.modal-open{overflow:hidden}
   .rp-steps::before,.rp-steps::after{display:none}
 }
 @media (prefers-reduced-motion:reduce){.rp-steps::after{width:100%}.rp-hero-bg img{transform:none}}
+
+/* ===== Commercial page (cp-) ===== */
+.cp-svcs .head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:46px}
+.cp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cp-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;scroll-margin-top:120px;transition:transform .4s var(--ease),box-shadow .4s}
+.cp-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(29,43,37,.45)}
+.cp-card .img{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--iron)}
+.cp-card .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.cp-card:hover .img img{transform:scale(1.06)}
+.cp-card .img .n{position:absolute;top:16px;left:16px;font:italic 400 1.3rem var(--serif);color:var(--ivory);background:rgba(15,22,19,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);width:46px;height:46px;border-radius:50%;display:grid;place-items:center}
+.cp-card .body{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cp-card h3{font-size:clamp(1.7rem,2.4vw,2.1rem)}
+.cp-card p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:4px 0 0}
+.cp-tags li{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--ivory-2);color:var(--ink)}
+.cp-card .more{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.cp-card .more svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.cp-card:hover .more svg{transform:translateX(4px)}
+.cp-svcs .cta-pair{margin-top:40px}
+
+.cp-props{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.cp-photo{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.cp-photo img{width:100%;height:100%;object-fit:cover}
+.cp-photo figcaption{position:absolute;left:18px;bottom:18px;right:18px;padding:14px 16px;border-radius:10px;background:rgba(15,22,19,.62);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:13.5px;color:#d9d2c3}
+.cp-photo figcaption b{color:var(--ivory)}
+.cp-types{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cp-types li{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line-light);border-radius:10px;background:rgba(245,240,230,.04);font:400 1.2rem/1.2 var(--serif);transition:background .3s,border-color .3s}
+.cp-types li:hover{background:rgba(255,151,0,.1);border-color:#e9b25a}
+.cp-types svg{width:22px;height:22px;color:#f0b64a;flex:none}
+.cp-types li.more{font:600 13.5px var(--sans);color:#c9c2b3;border-style:dashed}
+
+.cp-why .head{max-width:760px;margin-bottom:46px}
+.cp-why .grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(30px,5vw,70px);align-items:start}
+.cp-bens{display:grid;grid-template-columns:1fr 1fr;gap:40px 36px;counter-reset:ben}
+.cp-ben{position:relative;padding-top:18px;border-top:2px solid var(--line)}
+.cp-ben::before{counter-increment:ben;content:"0" counter(ben);display:block;font:italic 400 3.2rem/1 var(--serif);color:transparent;-webkit-text-stroke:1px var(--brass);margin-bottom:14px}
+.cp-ben h3{font-size:1.55rem;margin-bottom:8px}
+.cp-ben p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.cp-apps{position:sticky;top:130px;background:var(--iron);color:var(--ivory);border-radius:14px;padding:30px 28px;box-shadow:0 30px 60px -30px rgba(29,43,37,.6)}
+.cp-apps h3{font-size:1.6rem;margin-bottom:18px}
+.cp-apps ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:12px}
+.cp-apps li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#e4dccd}
+.cp-apps li svg{width:18px;height:18px;color:var(--amber);flex:none;margin-top:3px}
+.cp-apps .cta-pair{margin-top:0;flex-direction:column;align-items:stretch}
+.cp-apps .cta-pair .btn{justify-content:center}
+
+.cp-life{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;position:relative}
+.cp-life::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line-light)}
+.cp-life::after{content:"";position:absolute;left:0;top:27px;height:2px;width:0;background:var(--amber);box-shadow:0 0 14px var(--glow);transition:width 2s var(--ease)}
+.cp-life.in::after{width:100%}
+.cp-life li{position:relative}
+.cp-life .ic{position:relative;z-index:1;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--iron-2);border:2px solid var(--line-light);color:#c9c2b3;margin-bottom:20px;transition:background .5s,border-color .5s,color .5s,box-shadow .5s}
+.cp-life .ic svg{width:22px;height:22px}
+.cp-life.in .ic{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 0 8px rgba(255,151,0,.14)}
+.cp-life.in li:nth-child(2) .ic{transition-delay:.4s}.cp-life.in li:nth-child(3) .ic{transition-delay:.8s}.cp-life.in li:nth-child(4) .ic{transition-delay:1.2s}.cp-life.in li:nth-child(5) .ic{transition-delay:1.6s}
+.cp-life h3{font-size:1.35rem;margin-bottom:8px}
+.cp-life p{margin:0;color:#c9c2b3;font-size:14.5px}
+.cp-lifesec .cta-pair{margin-top:44px}
+
+@media (max-width:1000px){
+  .cp-props,.cp-why .grid{grid-template-columns:1fr}
+  .cp-photo{aspect-ratio:16/10}
+  .cp-apps{position:static}
+  .cp-life{grid-template-columns:1fr 1fr;gap:34px 22px}
+  .cp-life::before,.cp-life::after{display:none}
+}
+@media (max-width:760px){
+  .cp-svcs .head{grid-template-columns:1fr}
+  .cp-grid,.cp-types,.cp-bens,.cp-life{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.cp-life::after{width:100%}}
+
+/* ===== Service page (sv-) ===== */
+@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+@media (min-width:761px){.rp-hero h1{max-width:none}.sv-l2{white-space:nowrap}}
+@media (max-width:760px){.sv-br{display:none}}
+.sv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px 48px;flex-wrap:wrap;margin-bottom:40px}
+.sv-head>div{flex:1 1 auto;min-width:0}
+.sv-head>p{margin:0;flex:0 1 380px;color:var(--ink-dim);font-size:16px}
+.sv-why-head{margin-bottom:clamp(30px,4vw,48px)}
+.dark .sv-head>p{color:#c9c2b3}
+
+.sv-why-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(36px,6vw,90px);align-items:start}
+.sv-benefits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.sv-benefits li{display:flex;gap:16px;padding:26px 22px 26px 0;border-bottom:1px solid var(--line)}
+.sv-benefits li:nth-child(even){padding-left:22px;padding-right:0;border-left:1px solid var(--line)}
+.sv-bn{font:italic 400 1.9rem/1 var(--serif);color:var(--brass);flex:none}
+.sv-benefits h3{font-size:1.3rem;margin-bottom:6px}
+.sv-benefits p{margin:0;color:var(--ink-dim);font-size:15px}
+
+.sv-bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:280px;gap:14px}
+.sv-tile{position:relative;display:block;overflow:hidden;border-radius:14px;color:var(--ivory);text-decoration:none;isolation:isolate}
+.sv-wide{grid-column:span 2}
+.sv-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
+.sv-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(12,18,15,.92) 0%,rgba(12,18,15,.45) 45%,rgba(12,18,15,.05) 75%);transition:background .5s}
+.sv-tile:hover img{transform:scale(1.06)}
+.sv-tx{position:absolute;left:22px;right:22px;bottom:20px}
+.sv-tile h3{font-size:1.55rem}
+.sv-tile p{margin:6px 0 0;font-size:14.5px;line-height:1.45;color:#d4cdbf}
+.sv-go{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font:700 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#f0b64a}
+.sv-go svg{width:15px;height:15px;transition:transform .3s var(--ease)}
+.sv-tile:hover .sv-go svg{transform:translateX(4px)}
+
+.sv-tech-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(24px,3vw,44px);align-items:start}
+.sv-tlist{display:flex;flex-direction:column;border-top:1px solid var(--line-light)}
+.sv-tlist button{position:relative;text-align:left;padding:13px 16px 13px 22px;background:transparent;border:0;border-bottom:1px solid var(--line-light);color:#c9c2b3;font:500 16px var(--sans);cursor:pointer;transition:color .25s,background .25s}
+.sv-tlist button::before{content:"";position:absolute;left:0;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:rgba(245,240,230,.2);transition:background .3s,box-shadow .3s}
+.sv-tlist button:hover{color:var(--ivory);background:rgba(245,240,230,.03)}
+.sv-tlist button[aria-selected="true"]{color:var(--ivory);font-weight:700}
+.sv-tlist button[aria-selected="true"]::before{background:var(--amber);box-shadow:0 0 12px 3px rgba(255,151,0,.55)}
+.sv-tlist button:focus-visible{outline:2px solid var(--amber);outline-offset:-2px}
+.sv-stage{position:sticky;top:110px;margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line-light);background:#0b1210}
+.sv-scene{display:block;width:100%;height:auto}
+.sv-scene .tq{opacity:0;transition:opacity .7s var(--ease)}
+.sv-scene .tq.on{opacity:1}
+.sv-stage figcaption{display:flex;flex-direction:column;gap:6px;padding:20px 24px 22px;border-top:1px solid var(--line-light);min-height:112px}
+.sv-tname{font:400 1.6rem/1.15 var(--serif);color:#f0b64a}
+.sv-tdesc{color:#d4cdbf;font-size:15.5px}
+
+.sv-proc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,90px);align-items:start}
+.sv-proc-side{position:sticky;top:120px}
+.sv-timeline{list-style:none;margin:0;padding:0 0 0 40px;position:relative}
+.sv-timeline::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.sv-timeline::after{content:"";position:absolute;left:11px;top:8px;width:2px;height:var(--prog,0%);max-height:calc(100% - 16px);background:linear-gradient(var(--amber),#ffcf7a);box-shadow:0 0 12px rgba(255,151,0,.6);transition:height .2s linear}
+.sv-timeline>li{position:relative;padding-bottom:34px}
+.sv-timeline>li:last-child{padding-bottom:0}
+.sv-node{position:absolute;left:-40px;top:2px;width:24px;height:24px;border-radius:50%;background:var(--ivory);border:2px solid var(--line);transition:border-color .4s,background .4s,box-shadow .4s}
+.sv-timeline>li.lit .sv-node{border-color:var(--amber);background:var(--amber);box-shadow:0 0 16px 3px rgba(255,151,0,.45)}
+.sv-step{margin:0 0 4px;font:600 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.sv-timeline h3{font-size:1.55rem;margin-bottom:8px}
+.sv-timeline p{margin:0;color:var(--ink-dim)}
+.sv-design{margin:14px 0 0;padding:16px 18px 16px 34px;border-radius:10px;background:var(--ivory-2);border:1px solid var(--line);display:grid;gap:6px;font-size:15px;color:var(--ink-dim)}
+.sv-design li::marker{color:var(--brass)}
+
+.sv-gulf{position:relative;overflow:hidden;isolation:isolate}
+.sv-gulf-bg{position:absolute;inset:0;z-index:-1}
+.sv-gulf-bg img{width:100%;height:100%;object-fit:cover;opacity:.28}
+.sv-gulf-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--iron) 20%,rgba(29,43,37,.72))}
+.sv-specs{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.sv-specs li{padding:26px 24px;border-radius:14px;background:rgba(15,22,19,.55);border:1px solid var(--line-light);backdrop-filter:blur(6px)}
+.sv-specs b{display:block;font:400 2.6rem/1 var(--serif);color:#f0b64a;text-shadow:0 0 30px rgba(255,151,0,.35);margin-bottom:14px}
+.sv-specs h3{font-size:1.35rem;margin-bottom:6px}
+.sv-specs p{margin:0;color:#c9c2b3;font-size:15px}
+
+.sv-review{display:grid;grid-template-columns:auto minmax(0,820px);justify-content:center;gap:clamp(24px,4vw,56px);margin:0}
+.sv-q{font:italic 400 clamp(7rem,12vw,10rem)/.7 var(--serif);color:var(--amber);text-shadow:0 0 50px rgba(255,151,0,.35)}
+.sv-review blockquote{margin:0;font:400 clamp(1.3rem,2vw,1.75rem)/1.45 var(--serif)}
+.sv-review figcaption{margin-top:22px;display:flex;align-items:center;gap:14px;font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+
+.sv-all{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.sv-all svg{width:15px;height:15px}
+.sv-rel{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.sv-rel a{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink)}
+.sv-rel img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;transition:transform .8s var(--ease),box-shadow .4s}
+.sv-rel a:hover img{transform:translateY(-4px);box-shadow:0 20px 34px -22px rgba(29,43,37,.6)}
+.sv-rel h3{font-size:1.15rem;line-height:1.2}
+.sv-rel a:hover h3{color:var(--brass)}
+
+@media (max-width:1000px){
+  .sv-why-grid,.sv-proc-grid,.sv-tech-grid{grid-template-columns:minmax(0,1fr)}
+  .sv-proc-side,.sv-stage{position:static}
+  .sv-bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:240px}
+  .sv-rel{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sv-tlist{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;border-top:0;gap:8px;padding-bottom:6px;scrollbar-width:none;order:2}
+  .sv-tlist::-webkit-scrollbar{display:none}
+  .sv-tlist button{flex:none;border:1px solid var(--line-light);border-radius:40px;padding:10px 16px 10px 30px;font-size:14.5px}
+  .sv-tlist button::before{left:13px}
+  .sv-stage{order:1}
+}
+@media (max-width:760px){
+  .sv-benefits{grid-template-columns:minmax(0,1fr)}
+  .sv-benefits li,.sv-benefits li:nth-child(even){padding:22px 0;border-left:0}
+  .sv-bento{grid-template-columns:minmax(0,1fr);grid-auto-rows:230px}
+  .sv-wide{grid-column:auto}
+  .sv-specs{grid-template-columns:minmax(0,1fr)}
+  .sv-rel{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sv-review{grid-template-columns:minmax(0,1fr);gap:4px}
+  .sv-q{height:64px}
+  .sv-tlist{margin:0 -16px;padding:0 16px 6px}
+}
+@media (prefers-reduced-motion:reduce){.sv-scene .tq,.sv-timeline::after{transition:none}}
+
+.hdr nav a[aria-current="true"]::after{right:0}
+
+/* ===== Pathway page extras (pw-) ===== */
+.sv-bento-2{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:320px}
+.pw-no{display:block;font:italic 400 1.3rem/1 var(--serif);color:#f0b64a;margin-bottom:6px}
+.pw-ctrls{display:flex;flex-direction:column;gap:26px}
+.pw-lbl{margin:0 0 10px;font:600 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e9b25a}
+.pw-group{display:flex;flex-wrap:wrap;gap:8px}
+.pw-group .pw-lbl{flex-basis:100%}
+.pw-group button{min-height:44px;padding:0 18px;border-radius:40px;border:1px solid var(--line-light);background:transparent;color:#d4cdbf;font:600 14.5px var(--sans);cursor:pointer;transition:background .25s,border-color .25s,color .25s}
+.pw-group button:hover{color:var(--ivory);border-color:rgba(245,240,230,.5)}
+.pw-group button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#1b1206}
+.pw-group button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.pw-ctrls .cta-pair{margin-top:6px}
+.pw-scene .pw-pools ellipse{animation:pwIn .5s var(--ease) both}
+@keyframes pwIn{from{opacity:0}}
+.pw-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pw-cards li{padding:28px 24px;border-radius:14px;background:#fff;border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s}
+.pw-cards li:hover{transform:translateY(-3px);box-shadow:0 22px 40px -26px rgba(29,43,37,.45)}
+.pw-ico{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--iron);color:#f0b64a;margin-bottom:18px}
+.pw-ico svg{width:21px;height:21px}
+.pw-cards h3{font-size:1.4rem;margin-bottom:8px}
+.pw-cards p{margin:0;color:var(--ink-dim);font-size:15px}
+@media (max-width:1000px){
+  .pw-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pw-plan .sv-tech-grid .pw-ctrls{order:2}
+}
+@media (max-width:760px){
+  .sv-bento-2{grid-template-columns:minmax(0,1fr);grid-auto-rows:260px}
+  .pw-cards{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.pw-scene .pw-pools ellipse{animation:none}}
 </style>
 </head>
 <body>
@@ -655,111 +869,161 @@ body.modal-open{overflow:hidden}
 
 <header class="hdr">
   <div class="wrap">
-    <nav aria-label="Primary"><a href="residential.html" aria-current="page">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a></nav>
+    <nav aria-label="Primary"><a href="residential.html" aria-current="true">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
     <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html" aria-current="page">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html" aria-current="true">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
 
 <section class="rp-hero" aria-labelledby="h1">
-  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/hero-house.jpg" alt="" width="1812" height="1200" fetchpriority="high"></div>
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/pathway.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Residential</span></nav>
-    <p class="kicker fade-up">Residential lighting</p>
-    <h1 id="h1" class="fade-up d1">Residential Outdoor Lighting for New&nbsp;Orleans <em>Homes</em></h1>
-    <p class="lede fade-up d2">Landscape, pathway, patio, and holiday lighting, designed around how you use your yard and installed by our team. Every project starts with a free estimate.</p>
-    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>100%</b> satisfaction guarantee</span><span><b>Permits</b> handled for you</span><span><b>Mon–Fri</b> 8 AM–6 PM</span></div></div>
-    <ul class="rp-jump fade-up d3" aria-label="Jump to a service">
-      <li><a href="#svc-landscape">Landscape</a></li><li><a href="#svc-pathway">Pathway</a></li><li><a href="#svc-curb">Curb Appeal</a></li><li><a href="#svc-patio">Deck &amp; Patio</a></li><li><a href="#svc-string">Festive String</a></li><li><a href="#svc-sphere">Sphere</a></li><li><a href="#svc-color">Color-Changing</a></li>
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="residential.html">Residential</a><span aria-hidden="true">/</span><span aria-current="page">Pathway Lighting</span></nav>
+    <p class="kicker fade-up">Residential service</p>
+    <h1 id="h1" class="fade-up d1">Pathway Lighting Service New&nbsp;Orleans:<br class="sv-br"> <em>Illuminate Your Sidewalk and Highlight Your Garden With Quality Landscape Lighting</em></h1>
+    <p class="lede fade-up d2">Creative path lighting for walkways, steps, and entries at homes and businesses. The design consultation is free, and no project is too small or too big.</p>
+    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div><div class="rp-trust"><span><b>Free</b> design consultation</span><span><b>Any</b> size project</span><span><b>Built</b> for the Gulf</span></div></div>
+  </div>
+</section>
+
+<section class="pad sv-why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="rv sv-why-head"><p class="kicker">Why light the path</p><h2 id="why-h">A Safer Walk and a <em>Better First Impression</em></h2></div>
+    <div class="sv-why-grid">
+    <div class="rv">
+      <p class="lede">Paths that lead to your entry or your outdoor living space should feel safe and welcoming. Proper lighting makes them easy to navigate whenever it's dark.</p>
+      <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    </div>
+    <ul class="sv-benefits">
+      <li class="rv"><span class="sv-bn">01</span><div><h3>A Bigger Outdoor Space</h3><p>Lighting opens up the yard, so guests can see where the path leads and what's around it.</p></div></li>
+      <li class="rv"><span class="sv-bn">02</span><div><h3>Curb Appeal and Value</h3><p>Well-placed path lights bring out the garden and the details along the walk.</p></div></li>
+      <li class="rv"><span class="sv-bn">03</span><div><h3>Safety and Security</h3><p>See anything in the way, and keep dark corners from giving intruders cover.</p></div></li>
+      <li class="rv"><span class="sv-bn">04</span><div><h3>Fewer Trips and Slips</h3><p>Lit steps and walkways help prevent accidents in the tricky spots.</p></div></li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pad sv-types" style="background:var(--ivory-2)" aria-labelledby="types-h">
+  <div class="wrap">
+    <div class="sv-head rv"><div><p class="kicker">What we install</p><h2 id="types-h">Four Ways to <em>Light a Path</em></h2></div><p>We design with an artistic flair, accenting the path itself and the landscape around it.</p></div>
+    <div class="sv-bento sv-bento-2">
+      <div class="sv-tile rv"><img src="assets/curb.jpg" alt="Post-style path lights along a front walk" loading="lazy"><div class="sv-tx"><span class="pw-no">01</span><h3>Traditional Path Light</h3><p>The classic low-voltage post with a top hat, customizable down to sculpted fixture shapes. A favorite for the walk to the front door.</p></div></div>
+      <div class="sv-tile rv"><img src="assets/landscape.jpg" alt="Soft light falling on a yard from a tree above" loading="lazy"><div class="sv-tx"><span class="pw-no">02</span><h3>Moonlighting</h3><p>Fixtures mounted high in a tree or under the roof soffit bathe the path in soft light from above.</p></div></div>
+      <div class="sv-tile rv"><img src="assets/pathway.jpg" alt="Walkway lined with low path lights" loading="lazy"><div class="sv-tx"><span class="pw-no">03</span><h3>Directional Path Light</h3><p>A swiveling head lets us aim the light exactly where the path needs it.</p></div></div>
+      <div class="sv-tile rv"><img src="assets/garden.jpg" alt="Garden path lit with low LED lights" loading="lazy"><div class="sv-tx"><span class="pw-no">04</span><h3>Non-Traditional Path Lights</h3><p>Modern LED lights placed along a garden path to light the walk and the terrain around it.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad dark sv-tech pw-plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div class="sv-head rv"><div><p class="kicker">Plan your path</p><h2 id="plan-h">See How Spacing <em>Changes the Walk</em></h2></div><p>Pick a layout and a spacing to see why we design for even, overlapping pools of light.</p></div>
+    <div class="sv-tech-grid">
+      <div class="pw-ctrls">
+        <div class="pw-group" role="group" aria-labelledby="pw-l-lbl"><p class="pw-lbl" id="pw-l-lbl">Layout</p>
+          <button type="button" aria-pressed="true" data-layout="stagger">Staggered</button><button type="button" aria-pressed="false" data-layout="parallel">Parallel</button><button type="button" aria-pressed="false" data-layout="well">Well Lights</button>
+        </div>
+        <div class="pw-group" role="group" aria-labelledby="pw-s-lbl"><p class="pw-lbl" id="pw-s-lbl">Spacing</p>
+          <button type="button" aria-pressed="false" data-space="close">Too Close</button><button type="button" aria-pressed="true" data-space="even">Even</button><button type="button" aria-pressed="false" data-space="wide">Too Far</button>
+        </div>
+        <div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+      </div>
+      <figure class="sv-stage rv" aria-live="polite">
+        <svg class="sv-scene pw-scene" viewBox="0 0 600 380" role="img" aria-label="Illustration of a front walk at night leading to a lit door, with path lights placed by the chosen layout and spacing">
+  <defs>
+    <linearGradient id="pwSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1210"/><stop offset="1" stop-color="#101915"/></linearGradient>
+    <linearGradient id="pwWalk" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2a2f2b"/><stop offset="1" stop-color="#1c211e"/></linearGradient>
+    <radialGradient id="pwPool"><stop offset="0" stop-color="#ffd58a" stop-opacity=".85"/><stop offset=".45" stop-color="#ffb54a" stop-opacity=".4"/><stop offset="1" stop-color="#ffb54a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="pwBulb"><stop offset="0" stop-color="#fff3d6"/><stop offset=".4" stop-color="#ffcf7a" stop-opacity=".8"/><stop offset="1" stop-color="#ffb54a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pwUp" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffcf7a" stop-opacity=".55"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/></linearGradient>
+    <radialGradient id="pwDoor" cx=".5" cy="1" r=".9"><stop offset="0" stop-color="#ffcf7a" stop-opacity=".9"/><stop offset="1" stop-color="#ffcf7a" stop-opacity=".15"/></radialGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#pwSky)"/>
+  <g fill="#e9e2d4" opacity=".5"><circle cx="70" cy="30" r="1.1"/><circle cx="520" cy="24" r="1.2"/><circle cx="460" cy="60" r=".9"/><circle cx="120" cy="70" r="1"/></g>
+  <rect x="0" y="118" width="600" height="262" fill="#111a16"/>
+  <g fill="#18231e"><ellipse cx="90" cy="150" rx="120" ry="26"/><ellipse cx="520" cy="152" rx="130" ry="28"/></g>
+  <rect x="170" y="40" width="260" height="82" fill="#222c27"/>
+  <path d="M160 44 300 6 440 44Z" fill="#1b2420"/>
+  <rect x="210" y="62" width="30" height="30" rx="2" fill="#1a2420"/><rect x="360" y="62" width="30" height="30" rx="2" fill="#1a2420"/>
+  <rect x="284" y="72" width="32" height="50" rx="2" fill="url(#pwDoor)"/>
+  <rect x="289" y="77" width="22" height="45" rx="1" fill="#3a2a10" opacity=".55"/>
+  <rect x="278" y="120" width="44" height="4" fill="#2f3833"/>
+  <path d="M230 380 370 380 318 124 282 124Z" fill="url(#pwWalk)"/>
+  <g stroke="#343b36" stroke-width="1"><path d="M246 330H354M259 285H341M268 245H332M276 210H324M283 180H317M289 152H311"/></g>
+  <g id="pw-lights"></g>
+</svg>
+
+        <figcaption><b class="sv-tname pw-name">Staggered, Even Spacing</b><span class="sv-tdesc pw-desc">Lights alternate sides of the walk, so it never looks like a landing strip. Overlapping pools, no dark gaps. This is what we design for.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="pad pw-sys" aria-labelledby="sys-h">
+  <div class="wrap">
+    <div class="sv-head rv"><div><p class="kicker">Every system we install</p><h2 id="sys-h">Built Around <em>How You Use the Path</em></h2></div><p>We balance brightness for your purpose: curb appeal, safety, or a bit of both.</p></div>
+    <ul class="pw-cards">
+      <li class="rv"><span class="pw-ico"><svg viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Energy Efficient</h3><p>A low-voltage system tuned to the lighting result you want.</p></li>
+      <li class="rv"><span class="pw-ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Versatile Design</h3><p>Custom layouts that suit any landscape and the material of your path.</p></li>
+      <li class="rv"><span class="pw-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M14.5 9.2c-.5-.8-1.4-1.2-2.5-1.2-1.5 0-2.5.8-2.5 1.9 0 2.6 5.2 1.4 5.2 4.1 0 1.1-1.1 2-2.7 2-1.2 0-2.2-.5-2.7-1.3M12 6.5V8M12 16v1.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Budget Friendly</h3><p>A range of fixtures to fit your budget and keep electric bills low.</p></li>
+      <li class="rv"><span class="pw-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="15" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 4v4M5.5 7l2.2 2.2M18.5 7l-2.2 2.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Practical Choices</h3><p>Small well lights where posts would get knocked over or block the mower.</p></li>
     </ul>
   </div>
 </section>
 
-<section class="pad rp-svcs" id="services" aria-labelledby="svc-h">
+<section class="pad dark sv-gulf" aria-labelledby="gulf-h">
+  <div class="sv-gulf-bg" aria-hidden="true"><img src="assets/garden.jpg" alt="" loading="lazy"></div>
   <div class="wrap">
-    <div class="head">
-      <div class="rv"><p class="kicker">Seven services</p><h2 id="svc-h">Pick the Lighting That <em>Fits Your Home</em></h2></div>
-      <p class="lede rv" style="margin:0;max-width:40ch">Most yards use a mix. Tap any service to see the full details, or get a free estimate and we'll recommend the right combination.</p>
-    </div>
-    <div class="rp-grid">
-      <ol class="rp-list">
-        <li class="rp-row on" id="svc-landscape" data-i="0"><a class="rp-link" href="landscape-lighting.html"><div class="thumb"><img src="assets/landscape.jpg" alt="Garden path and tree lit at night" loading="lazy"></div><span class="n">01</span><div><h3>Landscape Lighting</h3><p>Uplit trees, glowing garden beds, and architecture that stands out from the street. Wall lights, uplights, path lights, and sensor lights, designed as one system.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-pathway" data-i="1"><a class="rp-link" href="pathway-lighting.html"><div class="thumb"><img src="assets/pathway.jpg" alt="Walkway lined with path lights" loading="lazy"></div><span class="n">02</span><div><h3>Pathway Lighting</h3><p>Safer walks from the driveway to the door, with light that sets the mood. Free design consultation, and no project is too small.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-curb" data-i="2"><a class="rp-link" href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/"><div class="thumb"><img src="assets/curb.jpg" alt="Home and pool lit at dusk" loading="lazy"></div><span class="n">03</span><div><h3>Curb Appeal Lighting</h3><p>Accent the architecture, entryway, and landscaping so your home looks inviting and secure after dark.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-patio" data-i="3"><a class="rp-link" href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/"><div class="thumb"><img src="assets/patio.jpg" alt="Covered patio under warm lights" loading="lazy"></div><span class="n">04</span><div><h3>Deck &amp; Patio Lighting</h3><p>Comfortable, secure, attractive light for outdoor dinners, lounging, and late nights on the deck.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-string" data-i="4"><a class="rp-link" href="https://www.bigeasylighting.com/residential/festive-string-lighting/"><div class="thumb"><img src="assets/string2.jpg" alt="String lights along a deck rail" loading="lazy"></div><span class="n">05</span><div><h3>Festive String Lighting</h3><p>Café-style strands for porches, courtyards, and backyards, installed safely and to local building codes.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-sphere" data-i="5"><a class="rp-link" href="https://www.bigeasylighting.com/residential/sphere-lights/"><div class="thumb"><img src="assets/sphere.jpg" alt="Glowing sphere lights on a lawn" loading="lazy"></div><span class="n">06</span><div><h3>Sphere Lights</h3><p>Glowing globes that turn a lawn or garden into a scene, with installation, repair, and maintenance.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-        <li class="rp-row" id="svc-color" data-i="6"><a class="rp-link" href="https://www.bigeasylighting.com/residential/color-changing-lighting/"><div class="thumb"><img src="assets/color.jpg" alt="Courtyard garden lighting" loading="lazy"></div><span class="n">07</span><div><h3>Color-Changing Lighting</h3><p>Programmable lights you can adjust remotely. Purple, green, and gold for Mardi Gras, warm white the rest of the year. For new builds or existing homes.</p></div><span class="go"><svg><use href="#arr"/></svg></span></a></li>
-      </ol>
-      <figure class="rp-frame" aria-hidden="true" style="margin:0">
-        <img class="show" src="assets/landscape.jpg" alt="" loading="lazy"><img src="assets/pathway.jpg" alt="" loading="lazy"><img src="assets/curb.jpg" alt="" loading="lazy"><img src="assets/patio.jpg" alt="" loading="lazy"><img src="assets/string2.jpg" alt="" loading="lazy"><img src="assets/sphere.jpg" alt="" loading="lazy"><img src="assets/color.jpg" alt="" loading="lazy">
-        <figcaption>Landscape Lighting</figcaption>
-      </figure>
-    </div>
-    <div class="cta-pair rv"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div>
+    <div class="rv"><p class="kicker">Built for New Orleans</p><h2 id="gulf-h">Ready for Heavy Rain and <em>Gulf Humidity</em></h2><p class="lede" style="margin-top:18px;max-width:700px">Our walkways deal with heavy rain, humidity, and the occasional storm, so we choose fixtures and placement that last.</p></div>
+    <ul class="sv-specs">
+      <li class="rv"><b>LED</b><h3>Low-Voltage LED</h3><p>Low-voltage LED path lights last longest in our humid, rainy climate.</p></li>
+      <li class="rv"><b>Sealed</b><h3>Weather-Rated Housings</h3><p>Corrosion-resistant, weather-rated fixtures that stand up to Gulf weather.</p></li>
+      <li class="rv"><b>Drainage</b><h3>Smart Placement</h3><p>Fixtures placed with drainage in mind, so the lighting keeps working after a downpour.</p></li>
+    </ul>
   </div>
 </section>
 
-<section class="pad dark rp-fit" aria-labelledby="fit-h">
+<section class="pad" aria-labelledby="rev-h">
   <div class="wrap">
-    <div class="head rv"><p class="kicker">Not sure where to start?</p><h2 id="fit-h">Start With <em>Your Goal</em></h2><p class="lede" style="margin-top:18px">Pick what matters most. We'll point you to the services that usually fit, and the free estimate covers the rest.</p></div>
-    <div class="rp-tabs rv">
-      <div class="rp-tablist" role="tablist" aria-label="Lighting goals">
-        <button role="tab" id="g1" aria-controls="gp1" aria-selected="true"><span class="ix">1</span>Safer Walkways at Night</button>
-        <button role="tab" id="g2" aria-controls="gp2" aria-selected="false" tabindex="-1"><span class="ix">2</span>More Curb Appeal</button>
-        <button role="tab" id="g3" aria-controls="gp3" aria-selected="false" tabindex="-1"><span class="ix">3</span>Evenings Outside</button>
-        <button role="tab" id="g4" aria-controls="gp4" aria-selected="false" tabindex="-1"><span class="ix">4</span>Holidays and Mardi Gras</button>
-        <button role="tab" id="g5" aria-controls="gp5" aria-selected="false" tabindex="-1"><span class="ix">5</span>Show Off the Garden</button>
+    <h2 id="rev-h" class="sr-only">A Pathway Lighting Review</h2>
+    <figure class="sv-review rv">
+      <div class="sv-q" aria-hidden="true">“</div>
+      <div>
+        <blockquote>We loved our lights, so we added some additional pathway light fixtures. Once again, we're very pleased with Big Easy Lighting's customer service and would highly recommend them for any outdoor lighting needs.</blockquote>
+        <figcaption><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>Carol Burditt</figcaption>
       </div>
-      <div class="rp-panel" role="tabpanel" id="gp1" aria-labelledby="g1"><div class="txt"><h3>Safer Walkways at Night</h3><p>Low, even light along walks, steps, and the driveway so nobody trips on the way in, and the house feels secure.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="pathway-lighting.html">Pathway Lighting →</a></li><li><a href="landscape-lighting.html">Landscape Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/curb-lights.jpg" alt="Stone steps lit by warm step lights" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp2" aria-labelledby="g2" hidden><div class="txt"><h3>More Curb Appeal</h3><p>Light the architecture and the entryway so your home reads from the street and looks cared for after dark.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/">Curb Appeal Lighting →</a></li><li><a href="landscape-lighting.html">Landscape Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/updown.jpg" alt="Home exterior with wall lights" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp3" aria-labelledby="g3" hidden><div class="txt"><h3>Evenings Outside</h3><p>Warm, glare-free light for dinners on the deck, the pool, and late nights with friends.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/">Deck &amp; Patio Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/festive-string-lighting/">Festive String Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/pool.jpg" alt="Backyard pool lit at night" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp4" aria-labelledby="g4" hidden><div class="txt"><h3>Holidays and Mardi Gras</h3><p>Switch to purple, green, and gold for Mardi Gras or any holiday, then back to warm white, without climbing a ladder.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="https://www.bigeasylighting.com/residential/color-changing-lighting/">Color-Changing Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/festive-string-lighting/">Festive String Lighting →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/string.jpg" alt="Warm string light bulbs at night" loading="lazy"></div></div>
-      <div class="rp-panel" role="tabpanel" id="gp5" aria-labelledby="g5" hidden><div class="txt"><h3>Show Off the Garden</h3><p>Uplight live oaks and palms, wash the planting beds, and add glowing spheres to the lawn.</p><span class="lbl">Usually a fit</span><ul class="rp-recs"><li><a href="landscape-lighting.html">Landscape Lighting →</a></li><li><a href="https://www.bigeasylighting.com/residential/sphere-lights/">Sphere Lights →</a></li></ul><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div><div class="ph"><img src="assets/garden.jpg" alt="Palm trees and planting beds uplit at dusk" loading="lazy"></div></div>
-    </div>
+    </figure>
   </div>
 </section>
 
-<section class="pad rp-incl" style="background:var(--ivory-2)" aria-labelledby="inc-h">
-  <div class="wrap">
-    <div class="head"><div class="rv"><p class="kicker">Every home project</p><h2 id="inc-h">What Comes <em>Standard</em></h2></div><p class="lede rv" style="margin:0">No surprise add-ons. These come with every residential project, from a few path lights to a full-property system.</p></div>
-    <div class="rp-cards">
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20 15.5 8.5M14 4l6 6-3 3-6-6 3-3ZM4 20l1.5-4.5L8.5 18.5 4 20Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Free Design Consultation</h3><p>We walk the property, talk through what you want to see, and map where each fixture goes.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg><use href="#moon"/></svg></span><h3>Free Evening Demo</h3><p>We set fixtures up on your property after dark so you see the real effect before you decide.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 4h6v3H9zM8.5 12h7M8.5 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><h3>Permits and Inspections</h3><p>We pull the permits and schedule the inspections, so you don't deal with the paperwork.</p></article>
-      <article class="rp-card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><h3>Ongoing Maintenance</h3><p>Cleaning, bulb checks, and fixture adjustments to keep your system looking like day one.</p></article>
-    </div>
-    <ol class="rp-steps">
-      <li><span class="dot">1</span><h3>Consultation &amp; Site Survey</h3><p>We meet on site, talk through your goals, check your current lighting, and survey the property for fixture placement.</p></li>
-      <li><span class="dot">2</span><h3>Design &amp; Engineering</h3><p>A custom lighting plan built to your needs and budget. We handle the permits and inspections.</p></li>
-      <li><span class="dot">3</span><h3>Installation &amp; Service</h3><p>We install promptly and efficiently, then offer ongoing maintenance to keep the system in peak condition.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="pad dark rp-quotes" aria-labelledby="q-h">
-  <div class="wrap">
-    <div class="rv"><p class="kicker">From homeowners</p><h2 id="q-h">Lit Yards, <em>Happy Neighbors</em></h2></div>
-    <div class="pair">
-      <figure class="rp-q rv"><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“They transformed our entire lot and my family and I could enjoy being in our pool late with all the beautiful lighting.”</blockquote><figcaption>Edward Bergeron</figcaption></figure>
-      <figure class="rp-q rv"><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“We loved our lights, so we added some additional pathway light fixtures.”</blockquote><figcaption>Carol Burditt</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="pad rp-faq" aria-labelledby="rfaq-h">
+<section class="pad rp-faq" style="padding-top:0" aria-labelledby="pfaq-h">
   <div class="wrap grid">
-    <div class="side rv"><p class="kicker">Residential FAQ</p><h2 id="rfaq-h">Questions Homeowners <em>Ask First</em></h2><p class="lede" style="margin-top:18px">Something else on your mind? Call us or request a free estimate.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
+    <div class="side rv"><p class="kicker">Pathway lighting FAQ</p><h2 id="pfaq-h">Questions About <em>Pathway Lighting</em></h2><p class="lede" style="margin-top:18px">Don't see yours? Call and ask. We're always happy to help.</p><div class="cta-pair"><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></div>
     <div class="rv">
-      <details open><summary>How Much Does Residential Outdoor Lighting Cost?<span class="x">+</span></summary><p>It depends on the size of the yard, the number of fixtures, and the design. A few accent lights cost far less than a full-property system. A free on-site estimate gives you an accurate number for your home.</p></details>
-      <details><summary>What Is Low-Voltage Landscape Lighting?<span class="x">+</span></summary><p>A transformer steps household power down to 12 volts. That makes the system safer, energy efficient, and easy to expand later.</p></details>
-      <details><summary>Can I Add More Lights Later?<span class="x">+</span></summary><p>Yes. Low-voltage systems are easy to expand, so you can start with the front of the house and add the backyard later.</p></details>
-      <details><summary>Will It Survive New Orleans Storms and Humidity?<span class="x">+</span></summary><p>Yes. We install corrosion-resistant, weather-rated fixtures with sealed connections built for our humid, storm-prone Gulf climate.</p></details>
-      <details><summary>Do You Maintain the System After Install?<span class="x">+</span></summary><p>Yes. Maintenance includes removing hard water deposits, cleaning bulbs, and adjusting fixtures so everything keeps performing.</p></details>
+      <details open><summary>How Much Does Pathway Lighting Cost in New Orleans?<span class="x">+</span></summary><p>Pathway lighting cost depends on the length of the path and the number of fixtures. A short entry walk costs less than a long driveway or garden path. A free on-site estimate gives you the exact number.</p></details>
+      <details><summary>How Far Apart Should Pathway Lights Be Spaced?<span class="x">+</span></summary><p>Spacing depends on the fixture and the brightness you want, but path lights are typically placed several feet apart to create even, overlapping pools of light without harsh dark gaps. We design the spacing for your specific walkway.</p></details>
+      <details><summary>Is Pathway Lighting Worth It?<span class="x">+</span></summary><p>Yes. Pathway lighting improves safety on steps and walkways, deters intruders, and adds curb appeal, making it one of the most practical outdoor lighting upgrades for a New Orleans home.</p></details>
+      <details><summary>What Type of Pathway Lighting Lasts Longest in New Orleans?<span class="x">+</span></summary><p>Low-voltage LED path lights with corrosion-resistant, weather-rated housings last longest in our humid, rainy climate. We choose fixtures and placement that stand up to Gulf weather.</p></details>
+      <details><summary>Can Pathway Lighting Be Added to an Existing Yard?<span class="x">+</span></summary><p>Yes. Low-voltage pathway lighting can be added to most existing yards with minimal disruption, since the wiring is shallow and the transformer ties into a standard outlet. We plan the route to fit your landscape.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="pad sv-more" style="background:var(--ivory-2)" aria-labelledby="more-h">
+  <div class="wrap">
+    <div class="sv-head rv"><div><p class="kicker">More for your home</p><h2 id="more-h">Other Residential <em>Lighting Services</em></h2></div><a class="sv-all" href="residential.html">All residential services <svg><use href="#arr"/></svg></a></div>
+    <div class="sv-rel">
+      <a class="rv" href="landscape-lighting.html"><img src="assets/landscape.jpg" alt="" loading="lazy"><h3>Landscape Lighting</h3></a>
+      <a class="rv" href="https://www.bigeasylighting.com/residential/curb-appeal-lighting/"><img src="assets/curb.jpg" alt="" loading="lazy"><h3>Curb Appeal Lighting</h3></a>
+      <a class="rv" href="https://www.bigeasylighting.com/residential/deck-and-patio-lighting/"><img src="assets/patio.jpg" alt="" loading="lazy"><h3>Deck &amp; Patio Lighting</h3></a>
+      <a class="rv" href="https://www.bigeasylighting.com/residential/festive-string-lighting/"><img src="assets/string.jpg" alt="" loading="lazy"><h3>Festive String Lighting</h3></a>
+      <a class="rv" href="https://www.bigeasylighting.com/residential/sphere-lights/"><img src="assets/sphere.jpg" alt="" loading="lazy"><h3>Sphere Lights</h3></a>
+      <a class="rv" href="https://www.bigeasylighting.com/residential/color-changing-lighting/"><img src="assets/color.jpg" alt="" loading="lazy"><h3>Color-Changing Lighting</h3></a>
     </div>
   </div>
 </section>
@@ -880,7 +1144,7 @@ body.modal-open{overflow:hidden}
   dr.addEventListener('click',function(e){if(e.target.closest('a')){dr.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
   // reveals
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
-  document.querySelectorAll('.rv,.rp-steps').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
+  document.querySelectorAll('.rv,.rp-steps,.cp-life,.ab-track').forEach(function(el){reduced?el.classList.add('in'):io.observe(el)});
   // services: highlight a row and swap the arched preview (hover, focus, or scroll position)
   var rows=[].slice.call(document.querySelectorAll('.rp-row')),frame=document.querySelector('.rp-frame'),imgs=frame?frame.querySelectorAll('img'):[],cap=frame?frame.querySelector('figcaption'):null;
   function act(i){rows.forEach(function(r,j){r.classList.toggle('on',j===i)});[].forEach.call(imgs,function(im,j){im.classList.toggle('show',j===i)});if(cap)cap.textContent=rows[i].querySelector('h3').textContent}
@@ -1075,6 +1339,116 @@ body.modal-open{overflow:hidden}
     }
   });
 })();
+</script>
+<script>
+/* Service page: technique explorer + process timeline that lights up as you scroll */
+(function(){
+  var DESC={
+    up:['Uplighting','A fixture at the base aims up into a tree, so it glows from below. The classic look for live oaks and palms.'],
+    accent:['Accent or Spot Lighting','A narrow beam picks out one focal point, like a statue, a fountain, or an architectural detail.'],
+    graze:['Grazing','A fixture set close to a wall aims straight up along it, pulling out the texture of brick, stone, or stucco.'],
+    shadow:['Shadowing','Light placed in front of a plant throws its shadow onto the wall behind it, adding drama and movement.'],
+    silo:['Silhouetting','The wall behind a plant is lit while the plant stays dark, so its outline stands out against the glow.'],
+    cross:['Cross Lighting','Two fixtures light a tree from different sides, so it reads as fully three-dimensional.'],
+    down:['Downlighting or Area Lighting','Lights mounted high on an eave or wall wash the ground below with even light for patios, steps, and drives.'],
+    moon:['Moonlighting','Fixtures set high in a tree point down through the branches, casting soft, dappled light like a full moon.'],
+    spread:['Spread or Diffused Lighting','Low, wide fixtures spread a soft pool of light across garden beds and ground cover.'],
+    pool:['Pool and Fountain Lighting','Underwater and water-feature lights make pools and fountains glow after dark.']
+  };
+  var tabs=[].slice.call(document.querySelectorAll('.sv-tlist [role=tab]'));
+  var groups=[].slice.call(document.querySelectorAll('.sv-scene .tq'));
+  var nameEl=document.querySelector('.sv-tname'), descEl=document.querySelector('.sv-tdesc');
+  function pick(btn,focus){
+    var t=btn.getAttribute('data-t');
+    tabs.forEach(function(b){ var on=b===btn; b.setAttribute('aria-selected',String(on)); b.tabIndex=on?0:-1; });
+    groups.forEach(function(g){ g.classList.toggle('on', g.getAttribute('data-t')===t); });
+    if(DESC[t]){ nameEl.textContent=DESC[t][0]; descEl.textContent=DESC[t][1]; }
+    if(focus) btn.focus();
+    if(window.innerWidth<=1000 && btn.scrollIntoView) btn.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){ pick(b); });
+    b.addEventListener('keydown',function(e){
+      var k={ArrowDown:1,ArrowRight:1,ArrowUp:-1,ArrowLeft:-1}[e.key];
+      if(e.key==='Home'){ e.preventDefault(); pick(tabs[0],true); }
+      else if(e.key==='End'){ e.preventDefault(); pick(tabs[tabs.length-1],true); }
+      else if(k){ e.preventDefault(); pick(tabs[(i+k+tabs.length)%tabs.length],true); }
+    });
+  });
+  if(tabs.length) pick(tabs[0]);
+
+  var tl=document.querySelector('.sv-timeline');
+  if(tl){
+    var items=[].slice.call(tl.children), ticking=false;
+    function upd(){
+      ticking=false;
+      var r=tl.getBoundingClientRect(), mid=window.innerHeight*0.6;
+      var p=Math.max(0,Math.min(1,(mid-r.top)/r.height));
+      tl.style.setProperty('--prog',(p*100).toFixed(1)+'%');
+      items.forEach(function(li){ li.classList.toggle('lit', li.getBoundingClientRect().top+12<mid); });
+    }
+    window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; window.requestAnimationFrame(upd); } },{passive:true});
+    window.addEventListener('resize',upd); upd();
+  }
+})();
+
+</script>
+<script>
+/* Pathway page: path planner (layout x spacing) */
+(function(){
+  var g=document.getElementById('pw-lights'); if(!g) return;
+  var NS='http://www.w3.org/2000/svg';
+  var state={layout:'stagger',space:'even'};
+  var LAYOUT={
+    stagger:['Staggered','Lights alternate sides of the walk, so it never looks like a landing strip.'],
+    parallel:['Parallel','Matching lights on both sides. A classic, formal look for a straight walk to the front door.'],
+    well:['Well Lights','Small in-ground lights along the edges that never get knocked over or block the mower.']
+  };
+  var SPACE={
+    close:['Too Close','The pools run together, and the walk feels over-lit.',9],
+    even:['Even Spacing','Overlapping pools, no dark gaps. This is what we design for.',5],
+    wide:['Too Far','Dark gaps open up between the pools, right where someone could trip.',3]
+  };
+  function el(tag,attrs){ var e=document.createElementNS(NS,tag); for(var k in attrs) e.setAttribute(k,attrs[k]); return e; }
+  // walkway: bottom edge x 230..370 at y 380, top edge x 282..318 at y 124
+  function edge(t,side){ var y=380-t*256, xl=230+52*t, xr=370-52*t; return {y:y, x: side<0 ? xl : xr, s:1-0.72*t}; }
+  function draw(){
+    while(g.firstChild) g.removeChild(g.firstChild);
+    var n=SPACE[state.space][2]+(state.layout==='stagger'?{close:2,even:2,wide:1}[state.space]:0), pools=el('g',{'class':'pw-pools'}), fx=el('g',{'class':'pw-fx'});
+    for(var i=0;i<n;i++){
+      var t=1-Math.pow(1-(i+0.5)/n*0.94,1.35);
+      var sides = state.layout==='stagger' ? [i%2?1:-1] : [-1,1];
+      sides.forEach(function(sd){
+        var p=edge(t,sd), s=p.s, lx=p.x+sd*16*s;
+        if(state.layout==='well'){
+          pools.appendChild(el('ellipse',{cx:p.x-sd*6*s, cy:p.y, rx:46*s, ry:15*s, fill:'url(#pwPool)', opacity:'.8'}));
+          fx.appendChild(el('path',{d:'M'+(lx-5*s)+' '+p.y+'L'+(lx+5*s)+' '+p.y+'L'+(lx+14*s)+' '+(p.y-70*s)+'L'+(lx-14*s)+' '+(p.y-70*s)+'Z', fill:'url(#pwUp)'}));
+          fx.appendChild(el('ellipse',{cx:lx, cy:p.y, rx:6*s, ry:2.4*s, fill:'#fff1d2'}));
+          fx.appendChild(el('circle',{cx:lx, cy:p.y, r:12*s, fill:'url(#pwBulb)'}));
+        } else {
+          pools.appendChild(el('ellipse',{cx:p.x-sd*20*s, cy:p.y+4*s, rx:92*s, ry:34*s, fill:'url(#pwPool)'}));
+          fx.appendChild(el('rect',{x:lx-1.6*s, y:p.y-30*s, width:3.2*s, height:30*s, fill:'#3b3a33'}));
+          fx.appendChild(el('path',{d:'M'+(lx-9*s)+' '+(p.y-30*s)+'L'+(lx+9*s)+' '+(p.y-30*s)+'L'+(lx+5*s)+' '+(p.y-36*s)+'L'+(lx-5*s)+' '+(p.y-36*s)+'Z', fill:'#4a463c'}));
+          fx.appendChild(el('circle',{cx:lx, cy:p.y-28*s, r:9*s, fill:'url(#pwBulb)'}));
+        }
+      });
+    }
+    g.appendChild(pools); g.appendChild(fx);
+    var name=document.querySelector('.pw-name'), desc=document.querySelector('.pw-desc');
+    if(name) name.textContent=LAYOUT[state.layout][0]+', '+SPACE[state.space][0];
+    if(desc) desc.textContent=LAYOUT[state.layout][1]+' '+SPACE[state.space][1];
+  }
+  [].forEach.call(document.querySelectorAll('.pw-group'),function(grp){
+    var btns=[].slice.call(grp.querySelectorAll('button'));
+    btns.forEach(function(b){ b.addEventListener('click',function(){
+      btns.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+      if(b.dataset.layout) state.layout=b.dataset.layout; if(b.dataset.space) state.space=b.dataset.space;
+      draw();
+    }); });
+  });
+  draw();
+})();
+
 </script>
 </body>
 </html>
