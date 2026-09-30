@@ -270,6 +270,17 @@ em{font-style:italic;color:var(--brass)}
 h1,h2,h3,h4,summary,.sv-tname,.cta h2,.sv-head h2,.sv-why-head h2,.sv-gulf h2{text-wrap:wrap}
 #spec-h{font-size:clamp(2.2rem,4vw,3.6rem)}
 @media (min-width:1001px) and (max-width:1180px){.rp-cards .rp-card h3,ol.cp-life li h3{font-size:1.25rem}}
+/* headings with nothing beside them use the full row; the paragraph keeps its reading width */
+main .rp-hero h1{max-width:none}
+main .head.head{max-width:none}
+main .head.head>.lede{max-width:760px}
+main div[style*="max-width:760px"]{max-width:none!important}
+main div[style*="max-width:760px"]>p{max-width:760px}
+main .bl-railhead>div:first-child{max-width:none}
+main .bl-railhead .lede{max-width:680px}
+main .rp-panel h3{font-size:clamp(1.7rem,2.3vw,2.05rem)}
+@media (min-width:761px){main .rp-hero{min-height:585px;display:flex;align-items:flex-end}main .rp-hero>.wrap{width:100%}}
+@media (min-width:1001px) and (max-width:1180px){main .sv-benefits h3{font-size:1.2rem}main .ct-areas h3{font-size:1.45rem}}
 p,li,blockquote,figcaption,dd,.lede{text-wrap:pretty}
 a[href^="tel:"],.nw{white-space:nowrap}
 .rp-faq .side h2{font-size:clamp(2.2rem,3.8vw,3.4rem)}

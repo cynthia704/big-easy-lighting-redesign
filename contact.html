@@ -270,6 +270,17 @@ em{font-style:italic;color:var(--brass)}
 h1,h2,h3,h4,summary,.sv-tname,.cta h2,.sv-head h2,.sv-why-head h2,.sv-gulf h2{text-wrap:wrap}
 #spec-h{font-size:clamp(2.2rem,4vw,3.6rem)}
 @media (min-width:1001px) and (max-width:1180px){.rp-cards .rp-card h3,ol.cp-life li h3{font-size:1.25rem}}
+/* headings with nothing beside them use the full row; the paragraph keeps its reading width */
+main .rp-hero h1{max-width:none}
+main .head.head{max-width:none}
+main .head.head>.lede{max-width:760px}
+main div[style*="max-width:760px"]{max-width:none!important}
+main div[style*="max-width:760px"]>p{max-width:760px}
+main .bl-railhead>div:first-child{max-width:none}
+main .bl-railhead .lede{max-width:680px}
+main .rp-panel h3{font-size:clamp(1.7rem,2.3vw,2.05rem)}
+@media (min-width:761px){main .rp-hero{min-height:585px;display:flex;align-items:flex-end}main .rp-hero>.wrap{width:100%}}
+@media (min-width:1001px) and (max-width:1180px){main .sv-benefits h3{font-size:1.2rem}main .ct-areas h3{font-size:1.45rem}}
 p,li,blockquote,figcaption,dd,.lede{text-wrap:pretty}
 a[href^="tel:"],.nw{white-space:nowrap}
 .rp-faq .side h2{font-size:clamp(2.2rem,3.8vw,3.4rem)}
@@ -755,7 +766,7 @@ body.modal-open{overflow:hidden}
 .ct-steps .n{display:block;font:italic 400 3.4rem/1 var(--serif);color:var(--brass);margin-bottom:14px}
 .ct-steps h3{font-size:1.5rem;margin-bottom:8px}
 .ct-steps p{margin:0;color:var(--ink-dim);font-size:15.5px}
-.ct-areas{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px 40px;align-items:center;padding:clamp(26px,3vw,36px);border-radius:16px;background:var(--ivory-2);border:1px solid var(--line)}
+.ct-areas{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px 40px;align-items:center;padding:clamp(26px,3vw,36px);border-radius:16px;background:var(--ivory-2);border:1px solid var(--line)}
 .ct-areas h3{font-size:clamp(1.5rem,2.2vw,1.9rem)}
 .ct-areas p{margin:8px 0 0;color:var(--ink-dim);font-size:15px}
 .ct-areas ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
