@@ -266,6 +266,13 @@ em{font-style:italic;color:var(--brass)}
 .cta .inner{position:relative;max-width:900px;margin:0 auto;text-align:center}
 .cta .inner>.qform,.cta .inner>.cta-alt{max-width:672px;margin-left:auto;margin-right:auto}
 .cta h2{text-wrap:balance}
+/* typo-fix: no lone last words, no split names or numbers */
+h1,h2,h3,h4,summary,.sv-tname,.cta h2,.sv-head h2,.sv-why-head h2,.sv-gulf h2{text-wrap:wrap}
+#spec-h{font-size:clamp(2.2rem,4vw,3.6rem)}
+@media (min-width:1001px) and (max-width:1180px){.rp-cards .rp-card h3,ol.cp-life li h3{font-size:1.25rem}}
+p,li,blockquote,figcaption,dd,.lede{text-wrap:pretty}
+a[href^="tel:"],.nw{white-space:nowrap}
+.rp-faq .side h2{font-size:clamp(2.2rem,3.8vw,3.4rem)}
 .qform{margin-top:46px;text-align:left;background:rgba(245,240,230,.05);border:1px solid var(--line-light);border-radius:10px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
 .qf-hd{padding:26px clamp(20px,4vw,40px) 18px;border-bottom:1px solid var(--line-light)}
 .qf-hd h3{font-size:clamp(1.7rem,2.6vw,2.1rem);margin-bottom:8px}
@@ -1183,6 +1190,41 @@ body.modal-open{overflow:hidden}
     s.setAttribute('data-widget-id',LC_ID);s.async=true;
     s.onerror=function(){clearTimeout(fail);lcState='idle';bubble('bot',"Sorry, live chat didn't load. Please call us or send a request and we'll get back to you.",[CALL,EST]);renderChips()};
     document.body.appendChild(s);
+  });
+})();
+</script>
+<script id="typo-fix">
+/* Keeps the last two words of headings and sentences together, and stops names, times and phone numbers splitting across lines */
+(function(){
+  var NB='\u00a0';
+  var KEEP=[[/New Orleans/g,'New'+NB+'Orleans'],[/St\. Rose/g,'St.'+NB+'Rose'],[/Abita Springs/g,'Abita'+NB+'Springs'],[/Lake Pontchartrain/g,'Lake'+NB+'Pontchartrain'],[/Service Areas/g,'Service'+NB+'Areas'],[/Salt Air/g,'Salt'+NB+'Air'],
+            [/(\d{1,2}) (AM|PM)\b/g,'$1'+NB+'$2'],[/\((\d{3})\) (\d{3})/g,'($1)'+NB+'$2'],[/(\d+) (volts|articles|communities)\b/g,'$1'+NB+'$2']];
+  function texts(el){ var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null), a=[], n; while((n=w.nextNode())) if(!n.parentElement.closest('[aria-hidden=true],.x')) a.push(n); return a; }
+  document.querySelectorAll('body *:not(script):not(style)').forEach(function(el){
+    [].forEach.call(el.childNodes,function(n){ if(n.nodeType!==3||!/\S/.test(n.data)) return; var d=n.data; KEEP.forEach(function(k){ d=d.replace(k[0],k[1]); }); if(d!==n.data) n.data=d; });
+  });
+  document.querySelectorAll('h1 em,h2 em,h3 em,h2 .o').forEach(function(e){
+    var t=e.textContent.trim(); if(e.closest('nav,.hdr,.drawer,button')||t.split(/\s+/).length>3||t.length>24) return;
+    texts(e).forEach(function(n){ n.data=n.data.replace(/ /g,NB); });
+    var p=e.previousSibling; if(p&&p.nodeType===3) p.data=p.data.replace(/(^|[\s\u00a0])(a|an|the|at|by|in|of|on|or|to|&) $/i,function(m,p1,w){ return p1+w+NB; });
+  });
+  document.querySelectorAll('h1,h2,h3,h4,summary').forEach(function(h){
+    if(h.closest('nav,.hdr,.drawer,button')) return;
+    texts(h).forEach(function(t){ var d=t.data.replace(/(^|[\s\u00a0])(a|an|the|at|by|in|of|on|or|to|&)\s+(?=\S)/gi,function(m,p1,w){ return p1+w+NB; }); if(d!==t.data) t.data=d; });
+  });
+  var SEL='h1,h2,h3,h4,summary,p,li,blockquote,figcaption,dd,.sv-tname,.sv-tdesc';
+  document.querySelectorAll(SEL).forEach(function(el){
+    if(el.closest('nav,.hdr,.drawer,.chips,.bl-chips,.sv-tlist,.ct-social,.sa-legend,button')) return;
+    var all=texts(el), words=el.textContent.trim().split(/\s+/);
+    if(words.length<(/^(H1|H2|H3|H4|SUMMARY)$/.test(el.tagName)?3:4)) return;
+    for(var i=all.length-1;i>=0;i--){
+      var t=all[i], d=t.data.replace(/\s+$/,'');
+      if(!/\S/.test(d)) continue;
+      var sp=Math.max(d.lastIndexOf(' '),d.lastIndexOf(NB));
+      if(sp>0){ if(d.charAt(sp)===' ') t.data=d.slice(0,sp)+NB+d.slice(sp+1)+t.data.slice(d.length); return; }
+      for(var j=i-1;j>=0;j--){ var p=all[j]; if(/[ \u00a0]$/.test(p.data)){ p.data=p.data.replace(/ $/,NB); return; } if(/\S/.test(p.data)) return; }
+      return;
+    }
   });
 })();
 </script>
