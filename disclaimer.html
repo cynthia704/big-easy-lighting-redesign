@@ -899,6 +899,41 @@ main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
 .bp-nw{white-space:nowrap;font:inherit!important;color:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;display:inline!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
 .bp-body td,.bp-body th{text-wrap:pretty}
 .lg-draft{margin:0 0 28px;padding:16px 20px;border-radius:12px;background:#fff6e6;border:1px solid #f0c27a;color:var(--ink);font-size:15.5px}.lg-draft b{color:#9a6a12}.bp-body a{overflow-wrap:anywhere}</style>
+<style id="nav-dd">
+/* ===== nav dropdowns ===== */
+.hdr .dd{position:relative;display:flex;align-items:center;gap:4px}
+.hdr .dd-t{display:grid;place-items:center;width:26px;height:26px;margin-right:-6px;padding:0;border:0;border-radius:50%;background:none;color:inherit;cursor:pointer;opacity:.8;transition:transform .25s,opacity .2s,background .2s}
+.hdr .dd-t svg{width:12px;height:12px}
+.hdr .dd-t:hover,.hdr .dd-t:focus-visible{opacity:1;background:rgba(127,127,127,.15)}
+.hdr .dd.open .dd-t,.hdr .dd:hover .dd-t{transform:rotate(180deg)}
+.hdr .dd-p{position:absolute;top:calc(100% + 18px);left:-22px;z-index:60;min-width:260px;padding:18px 20px 16px;border-radius:16px;background:var(--ivory);color:var(--ink);border:1px solid var(--line);box-shadow:0 24px 60px -18px rgba(20,28,24,.35);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .2s,transform .2s,visibility 0s linear .2s}
+.hdr .dd-p::before{content:"";position:absolute;left:0;right:0;top:-20px;height:20px}
+.hdr .dd:hover .dd-p,.hdr .dd.open .dd-p,.hdr .dd:focus-within .dd-p{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.hdr .dd.shut .dd-p{opacity:0!important;visibility:hidden!important}
+.hdr .dd-h{margin:0 0 8px;font:600 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.hdr .dd-p ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.hdr .dd-p.cols{left:auto;right:-22px}
+.hdr .dd-p.cols ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px;min-width:340px}
+.hdr .dd-p ul a{display:block;padding:8px 10px;margin:0 -10px;border-radius:9px;font:500 15px/1.3 var(--sans);color:var(--ink);text-decoration:none;white-space:nowrap;transition:background .2s,color .2s}
+.hdr .dd-p ul a::after,.hdr .dd-p .dd-all::after{display:none}
+.hdr .dd-p ul a:hover,.hdr .dd-p ul a:focus-visible{background:var(--ivory-2);color:var(--ink)}
+.hdr .dd-p ul a[aria-current="page"]{background:var(--ivory-2);color:var(--brass);font-weight:700}
+.hdr .dd-all{display:flex;align-items:center;gap:8px;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);font:700 11.5px var(--sans)!important;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)!important;text-decoration:none;white-space:nowrap}
+.hdr .dd-all svg{width:14px;height:14px}
+/* mobile drawer accordion */
+.hdr .drawer{max-height:calc(100vh - 92px);max-height:calc(100dvh - 92px);overflow-y:auto;overscroll-behavior:contain}
+.hdr .drawer .dr-row{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.hdr .drawer .dr-row>a{flex:1;border-bottom:0!important}
+.hdr .drawer .dr-t{display:grid;place-items:center;width:44px;height:44px;flex:none;border:1px solid var(--line);border-radius:50%;background:none;color:var(--ink);cursor:pointer;transition:transform .25s,background .2s}
+.hdr .drawer .dr-t svg{width:14px;height:14px}
+.hdr .drawer .dr-t[aria-expanded="true"]{transform:rotate(180deg);background:var(--ivory-2)}
+.hdr .drawer .dr-sub{list-style:none;margin:0;padding:6px 0 12px 14px;border-bottom:1px solid var(--line)}
+.hdr .drawer .dr-sub[hidden]{display:none}
+.hdr .drawer .dr-sub a{display:block;padding:9px 0;border-bottom:0!important;font:500 1rem/1.3 var(--sans)!important;color:var(--ink)}
+.hdr .drawer .dr-sub a[aria-current="page"]{color:var(--brass);font-weight:700!important}
+@media (max-width:760px){.hdr .drawer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}}   /* clear the fixed Call / Free estimate bar */
+@media (prefers-reduced-motion:reduce){.hdr .dd-p,.hdr .dd-t,.hdr .drawer .dr-t{transition:none}}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -915,12 +950,12 @@ main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
 
 <header class="hdr">
   <div class="wrap">
-    <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a></nav>
+    <nav aria-label="Primary"><div class="dd"><a href="residential.html">Residential</a><button class="dd-t" type="button" aria-expanded="false" aria-controls="dd-res" aria-label="Show residential services"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-p" id="dd-res"><p class="dd-h">Residential services</p><ul><li><a href="landscape-lighting.html">Landscape Lighting</a></li><li><a href="pathway-lighting.html">Pathway Lighting</a></li><li><a href="curb-appeal-lighting.html">Curb Appeal Lighting</a></li><li><a href="deck-and-patio-lighting.html">Deck &amp; Patio Lighting</a></li><li><a href="festive-string-lighting.html">Festive String Lighting</a></li><li><a href="sphere-lights.html">Sphere Lights</a></li><li><a href="color-changing-lighting.html">Color-Changing Lighting</a></li></ul><a class="dd-all" href="residential.html">All residential services <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div><div class="dd"><a href="commercial.html">Commercial</a><button class="dd-t" type="button" aria-expanded="false" aria-controls="dd-com" aria-label="Show commercial services"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-p" id="dd-com"><p class="dd-h">Commercial services</p><ul><li><a href="outdoor-lighting.html">Outdoor Lighting</a></li><li><a href="led-lighting-systems.html">LED Lighting Systems</a></li><li><a href="garden-lights.html">Garden Lights</a></li><li><a href="up-down-lights.html">Up/Down Lights</a></li></ul><a class="dd-all" href="commercial.html">All commercial services <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div><div class="dd"><a href="service-areas.html">Service Areas</a><button class="dd-t" type="button" aria-expanded="false" aria-controls="dd-area" aria-label="Show towns we serve"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-p cols" id="dd-area"><p class="dd-h">Towns we serve</p><ul><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="st-rose.html">St. Rose</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="covington.html">Covington</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="abita-springs.html">Abita Springs</a></li><li><a href="hammond.html">Hammond</a></li></ul><a class="dd-all" href="service-areas.html">All service areas <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
     <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><div class="dr-g"><div class="dr-row"><a href="residential.html">Residential</a><button class="dr-t" type="button" aria-expanded="false" aria-controls="dr-res" aria-label="Show residential services"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><ul class="dr-sub" id="dr-res" hidden><li><a href="landscape-lighting.html">Landscape Lighting</a></li><li><a href="pathway-lighting.html">Pathway Lighting</a></li><li><a href="curb-appeal-lighting.html">Curb Appeal Lighting</a></li><li><a href="deck-and-patio-lighting.html">Deck &amp; Patio Lighting</a></li><li><a href="festive-string-lighting.html">Festive String Lighting</a></li><li><a href="sphere-lights.html">Sphere Lights</a></li><li><a href="color-changing-lighting.html">Color-Changing Lighting</a></li></ul></div><div class="dr-g"><div class="dr-row"><a href="commercial.html">Commercial</a><button class="dr-t" type="button" aria-expanded="false" aria-controls="dr-com" aria-label="Show commercial services"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><ul class="dr-sub" id="dr-com" hidden><li><a href="outdoor-lighting.html">Outdoor Lighting</a></li><li><a href="led-lighting-systems.html">LED Lighting Systems</a></li><li><a href="garden-lights.html">Garden Lights</a></li><li><a href="up-down-lights.html">Up/Down Lights</a></li></ul></div><div class="dr-g"><div class="dr-row"><a href="service-areas.html">Service Areas</a><button class="dr-t" type="button" aria-expanded="false" aria-controls="dr-area" aria-label="Show towns we serve"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><ul class="dr-sub" id="dr-area" hidden><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="st-rose.html">St. Rose</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="covington.html">Covington</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="abita-springs.html">Abita Springs</a></li><li><a href="hammond.html">Hammond</a></li></ul></div><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
@@ -1369,6 +1404,21 @@ function upd(){ticking=false;
 }
 window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
 window.addEventListener('resize',upd);upd();
+})();</script>
+<script id="nav-dd-js">(function(){
+var dds=[].slice.call(document.querySelectorAll('.hdr .dd'));
+function shut(d,focus){d.classList.remove('open');var b=d.querySelector('.dd-t');b.setAttribute('aria-expanded','false');if(focus)b.focus();}
+dds.forEach(function(d){
+ var b=d.querySelector('.dd-t');
+ b.addEventListener('click',function(e){e.preventDefault();var o=!d.classList.contains('open');dds.forEach(function(x){if(x!==d)shut(x);});d.classList.toggle('open',o);d.classList.toggle('shut',!o);b.setAttribute('aria-expanded',o);if(o){var f=d.querySelector('.dd-p a');if(f&&e.detail===0)f.focus();}});
+ d.addEventListener('mouseleave',function(){d.classList.remove('shut');});
+ d.addEventListener('keydown',function(e){if(e.key==='Escape'&&(d.classList.contains('open')||d.contains(document.activeElement))){shut(d,true);d.classList.add('shut');}});
+ d.addEventListener('focusout',function(e){if(!d.contains(e.relatedTarget)){shut(d);d.classList.remove('shut');}});
+});
+document.addEventListener('click',function(e){dds.forEach(function(d){if(!d.contains(e.target))shut(d);});});
+[].slice.call(document.querySelectorAll('.hdr .drawer .dr-t')).forEach(function(b){
+ b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var s=document.getElementById(b.getAttribute('aria-controls')),o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);s.hidden=!o;});
+});
 })();</script>
 </body>
 </html>
