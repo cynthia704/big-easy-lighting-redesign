@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eco-Friendly Lighting for Your Home | Big Easy Lighting</title>
-<meta name="description" content="Big Easy Lighting looks at eco-friendly lighting for your home, from LEDs and recycled fixtures to smart systems, with tips to put them to work. See what works.">
+<title>Thank You | Big Easy Lighting</title>
+<meta name="description" content="Thanks for contacting Big Easy Lighting. Your request is on its way to our team, and we will follow up about your free estimate and evening demo.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="https://www.bigeasylighting.com/wp-content/uploads/2022/10/lights.jpg">
+<link rel="preload" as="image" href="assets/hero-house.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -710,195 +710,117 @@ body.modal-open{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.cp-life::after{width:100%}}
 
-/* ===== Blog page (bl-) ===== */
-@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
-.rp-hero h1{max-width:30ch}
-.bl-dark{background:var(--iron);color:var(--ivory)}
-.bl-dark:hover{box-shadow:0 14px 30px -14px rgba(29,43,37,.6)}
-.bl-dark svg,.bl-card .go svg{width:18px;height:18px}
-.meta{display:flex;align-items:center;gap:12px;font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
-.meta .tag{color:var(--brass)}
-.meta .tag::after{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:currentColor;margin-left:12px;vertical-align:middle;opacity:.6}
+/* ===== About page (ab-) ===== */
+.ab-believe .head{max-width:760px;margin-bottom:50px}
+.ab-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.ab-pillar{padding:34px 30px 8px 0;border-right:1px solid var(--line)}
+.ab-pillar+.ab-pillar{padding-left:30px}
+.ab-pillar:last-child{border-right:0}
+.ab-pillar .big{display:block;font:italic 400 clamp(2.2rem,3.4vw,3rem)/1.02 var(--serif);color:var(--brass);margin-bottom:18px}
+.ab-pillar h3{font-size:1.45rem;margin-bottom:10px}
+.ab-pillar p{margin:0;color:var(--ink-dim);font-size:15.5px}
 
-.bl-featsec .kicker{margin-bottom:22px}
-.bl-feat{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 40px 70px -50px rgba(29,43,37,.45)}
-.bl-feat .ph{position:relative;display:block;min-height:420px;overflow:hidden}
-.bl-feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
-.bl-feat:hover .ph img{transform:scale(1.05)}
-.bl-badge{position:absolute;top:20px;left:20px;padding:8px 14px;border-radius:40px;background:var(--amber);color:#1b1206;font:700 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;box-shadow:0 0 30px rgba(255,151,0,.5)}
-.bl-feat .tx{padding:clamp(30px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:18px}
-.bl-feat h2{font-size:clamp(1.9rem,2.9vw,2.7rem);line-height:1.1}
-.bl-feat h2 a{color:inherit;text-decoration:none;background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 2px no-repeat;transition:background-size .5s var(--ease)}
-.bl-feat h2 a:hover{background-size:100% 2px}
-.bl-feat p{margin:0;color:var(--ink-dim)}
-.bl-feat .btn{align-self:flex-start}
+.ab-scale .head{max-width:760px;margin-bottom:56px}
+.ab-track{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.ab-track::before{content:"";position:absolute;left:0;right:0;top:34px;height:6px;border-radius:6px;background:linear-gradient(90deg,rgba(255,151,0,.08),rgba(255,151,0,.35) 40%,#ffb54a 75%,#fff1d2);box-shadow:0 0 0 rgba(255,151,0,0);transition:box-shadow 1.4s var(--ease)}
+.ab-track.in::before{box-shadow:0 0 26px 2px rgba(255,151,0,.45)}
+.ab-track li{position:relative;padding-top:88px}
+.ab-track .bulb{position:absolute;top:12px;left:0;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--iron-2);border:2px solid var(--line-light);color:#c9c2b3;transition:background .6s,box-shadow .6s,color .6s,border-color .6s}
+.ab-track .bulb svg{width:22px;height:22px}
+.ab-track.in li:nth-child(1) .bulb{background:#5a4420;border-color:#5a4420;color:#f0b64a;box-shadow:0 0 12px 2px rgba(255,151,0,.15)}
+.ab-track.in li:nth-child(2) .bulb{background:#a06a12;border-color:#a06a12;color:#fff1d2;box-shadow:0 0 18px 4px rgba(255,151,0,.25);transition-delay:.35s}
+.ab-track.in li:nth-child(3) .bulb{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 24px 6px rgba(255,151,0,.4);transition-delay:.7s}
+.ab-track.in li:nth-child(4) .bulb{background:#fff1d2;border-color:#fff1d2;color:#1b1206;box-shadow:0 0 34px 10px rgba(255,190,90,.55);transition-delay:1.05s}
+.ab-track h3{font-size:1.5rem;margin-bottom:8px}
+.ab-track p{margin:0;color:#c9c2b3;font-size:15px}
+.ab-track .lvl{display:block;font:600 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e9b25a;margin-bottom:8px}
 
-.bl-railhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:34px}
-.bl-railhead>div:first-child{max-width:680px}
-.bl-railnav{display:flex;gap:10px;flex:none}
-.bl-arrow{width:52px;height:52px;border-radius:50%;border:1px solid var(--line-light);background:transparent;color:var(--ivory);display:grid;place-items:center;cursor:pointer;transition:background .3s,border-color .3s,color .3s}
-.bl-arrow svg{width:20px;height:20px}
-.bl-arrow[data-dir="-1"] svg{transform:scaleX(-1)}
-.bl-arrow:hover:not(:disabled){background:var(--amber);border-color:var(--amber);color:#1b1206}
-.bl-arrow:disabled{opacity:.35;cursor:default}
-.bl-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*20px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:rgba(255,151,0,.5) transparent}
-.bl-rail:focus-visible{outline:2px solid var(--amber);outline-offset:6px}
-.bl-slide{scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--ivory)}
-.bl-slide .ph{position:relative;display:block;aspect-ratio:4/3;border-radius:12px;overflow:hidden}
-.bl-slide .ph::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(245,240,230,.08);border-radius:inherit;transition:box-shadow .4s}
-.bl-slide img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
-.bl-slide:hover img{transform:scale(1.06);filter:brightness(1.08)}
-.bl-slide:hover .ph::after{box-shadow:inset 0 0 0 2px var(--amber),0 0 40px rgba(255,151,0,.3)}
-.bl-slide time{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#e9b25a}
-.bl-slide h3{font-size:1.28rem;line-height:1.25}
+.ab-check{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(280px,auto);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.ab-check .ph{position:relative;overflow:hidden;min-height:280px}
+.ab-check .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.ab-check .ph:hover img{transform:scale(1.06)}
+.ab-check .tx{padding:34px 30px;display:flex;flex-direction:column;justify-content:center;gap:12px;background:var(--ivory)}
+.ab-check .tx.dk{background:var(--iron);color:var(--ivory)}
+.ab-check .tx .n{font:italic 400 1.2rem var(--serif);color:var(--brass)}
+.ab-check .tx.dk .n{color:#e9b25a}
+.ab-check .tx h3{font-size:1.5rem}
+.ab-check .tx p{margin:0;font-size:15px;color:var(--ink-dim)}
+.ab-check .tx.dk p{color:#c9c2b3}
 
-.bl-libhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
-.bl-libhead .cta-pair{margin-top:0}
-.bl-tools{position:sticky;top:84px;z-index:5;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 0;background:var(--ivory);border-bottom:1px solid var(--line)}
-.bl-chips{display:flex;gap:8px;flex-wrap:wrap}
-.bl-chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:40px;border:1px solid var(--line);background:#fff;color:var(--ink);font:600 14px var(--sans);cursor:pointer;transition:background .25s,border-color .25s,color .25s}
-.bl-chip span{font-size:12px;color:var(--ink-dim)}
-.bl-chip:hover{border-color:var(--brass)}
-.bl-chip[aria-pressed="true"]{background:var(--iron);border-color:var(--iron);color:var(--ivory)}
-.bl-chip[aria-pressed="true"] span{color:#e9b25a}
-.bl-search{position:relative;display:block;flex:0 1 300px}
-.bl-search svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--ink-dim)}
-.bl-search input{width:100%;min-height:44px;padding:0 16px 0 42px;border-radius:40px;border:1px solid var(--line);background:#fff;font:500 15px var(--sans);color:var(--ink)}
-.bl-search input:focus{outline:none;border-color:var(--brass);box-shadow:0 0 0 3px rgba(176,122,28,.18)}
-.bl-count{margin:22px 0 22px;font-size:14px;color:var(--ink-dim)}
+.ab-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.ab-num{padding:10px 26px;border-left:1px solid var(--line-light)}
+.ab-num:first-child{border-left:0;padding-left:0}
+.ab-num b{display:block;font:400 clamp(3.4rem,6vw,5.4rem)/1 var(--serif);color:#f0b64a;text-shadow:0 0 34px rgba(255,151,0,.3)}
+.ab-num span{display:block;margin-top:12px;font-size:15px;color:#d4cdbf;max-width:22ch}
+.ab-numsec{padding:clamp(56px,7vw,90px) 0}
 
-.bl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 22px}
-.bl-card[hidden]{display:none}
-.bl-card a{display:flex;flex-direction:column;gap:12px;height:100%;text-decoration:none;color:inherit}
-.bl-card .ph{display:block;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:var(--ivory-2)}
-.bl-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
-.bl-card a:hover img{transform:scale(1.05)}
-.bl-card .meta{margin-top:6px}
-.bl-card h3{font-size:1.4rem;line-height:1.2;transition:color .3s}
-.bl-card a:hover h3{color:var(--brass)}
-.bl-card p{margin:0;font-size:15px;color:var(--ink-dim);flex:1}
-.bl-card .go{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
-.bl-card .go svg{transition:transform .3s var(--ease)}
-.bl-card a:hover .go svg{transform:translateX(4px)}
-.bl-card.pop{animation:blIn .6s var(--ease) both}
-@keyframes blIn{from{opacity:0;transform:translateY(16px)}}
-.bl-empty{text-align:center;padding:50px 20px;border:1px dashed var(--line);border-radius:14px}
-.bl-empty h3{font-size:1.8rem;margin-bottom:8px}
-.bl-empty p{margin:0 auto 22px;color:var(--ink-dim);max-width:46ch}
+.ab-review{display:grid;grid-template-columns:auto minmax(0,820px);justify-content:center;gap:clamp(24px,4vw,56px);align-items:start}
+.ab-review .q{font:italic 400 clamp(7rem,12vw,10rem)/.7 var(--serif);color:var(--amber);opacity:.9;text-shadow:0 0 50px rgba(255,151,0,.35)}
+.ab-review blockquote{margin:0;font:400 clamp(1.35rem,2.1vw,1.85rem)/1.4 var(--serif)}
+.ab-review figcaption{margin-top:24px;display:flex;align-items:center;gap:14px;font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
 
+.ab-next{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ab-tile{position:relative;display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ivory);isolation:isolate}
+.ab-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
+.ab-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(15,22,19,.88),rgba(15,22,19,.15) 60%)}
+.ab-tile:hover img{transform:scale(1.07)}
+.ab-tile .t{position:absolute;left:24px;right:24px;bottom:22px;display:flex;justify-content:space-between;align-items:flex-end;gap:14px}
+.ab-tile h3{font-size:clamp(1.6rem,2.4vw,2.1rem)}
+.ab-tile p{margin:6px 0 0;font-size:14px;color:#d4cdbf}
+.ab-tile .go{width:44px;height:44px;flex:none;border-radius:50%;border:1px solid rgba(245,240,230,.4);display:grid;place-items:center;transition:background .3s,border-color .3s,color .3s}
+.ab-tile .go svg{width:18px;height:18px}
+.ab-tile:hover .go{background:var(--amber);border-color:var(--amber);color:#1b1206}
+
+@media (max-width:1180px){.ab-check{grid-template-columns:1fr 1fr}}
 @media (max-width:1000px){
-  .bl-feat{grid-template-columns:minmax(0,1fr)}
-  .bl-feat .ph{min-height:0;aspect-ratio:16/10}
-  .bl-rail{grid-auto-columns:calc((100% - 20px)/2.2)}
-  .bl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .bl-tools{top:70px}
+  .ab-pillars{grid-template-columns:1fr}
+  .ab-pillar,.ab-pillar+.ab-pillar{padding:28px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .ab-track{grid-template-columns:1fr 1fr;gap:34px 24px}
+  .ab-track::before{display:none}
+  .ab-track li{padding-top:66px}
+  .ab-check{grid-template-columns:1fr 1fr}
+  .ab-nums{grid-template-columns:1fr 1fr;gap:30px 0}
+  .ab-num:nth-child(3){border-left:0;padding-left:0}
+  .ab-next{grid-template-columns:1fr}
+  .ab-tile{aspect-ratio:16/9}
 }
 @media (max-width:760px){
-  .bl-railnav{display:none}
-  .bl-rail{grid-auto-columns:78%;gap:14px}
-  .bl-grid{grid-template-columns:minmax(0,1fr)}
-  .bl-tools{position:static;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
-  .bl-chips{flex-wrap:nowrap;overflow-x:auto;min-width:0;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
-  .bl-chips::-webkit-scrollbar{display:none}
-  .bl-chip{flex:none}
-  .bl-search{flex:none}
-  .bl-feat .btn{align-self:stretch}
+  .ab-track{grid-template-columns:1fr}
+  .ab-check{grid-template-columns:1fr}
+  .ab-check .ph{min-height:220px}
+  .ab-check>:nth-child(5){order:6}.ab-check>:nth-child(6){order:5}.ab-check>:nth-child(7){order:8}.ab-check>:nth-child(8){order:7}
+  .ab-check>:nth-child(-n+4){order:0}
+  .ab-review{grid-template-columns:1fr;gap:4px}
+  .ab-review .q{height:64px}
 }
-@media (prefers-reduced-motion:reduce){.bl-card.pop{animation:none}.bl-rail{scroll-behavior:auto}}
-
-/* ===== Blog post template (bp-) ===== */
+@media (prefers-reduced-motion:reduce){.ab-track .bulb{transition:none}}
 @media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
-main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
-.bp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin-top:22px;font:600 13px var(--sans);letter-spacing:.06em;color:#e7dfcf}
-.bp-meta>span{display:inline-flex;align-items:center;gap:8px}
-.bp-meta>span>svg{width:16px;height:16px;color:var(--amber)}
-.bp-progress{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--amber),#ffcf7a);z-index:200;pointer-events:none}
-.bp-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(40px,6vw,88px);align-items:start}
-.bp-side{position:sticky;top:110px;display:grid;gap:18px}
-.bp-toc{padding:22px 22px 18px;border-radius:14px;background:#fff;border:1px solid var(--line)}
-.bp-toc-h{margin:0 0 10px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
-.bp-toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;max-height:52vh;overflow:auto}
-.bp-toc a{display:block;padding:7px 0 7px 12px;border-left:2px solid var(--line);color:var(--ink-dim);text-decoration:none;font-size:14.5px;line-height:1.35;transition:color .2s,border-color .2s}
-.bp-toc a:hover{color:var(--ink)}
-.bp-toc a.on{color:var(--ink);border-left-color:var(--amber);font-weight:600}
-.bp-cta{padding:24px 22px;border-radius:14px;background:var(--iron);color:var(--ivory);display:grid;gap:10px}
-.bp-cta h2{font-size:1.5rem;margin:0}
-.bp-cta p{margin:0;color:#c9c2b3;font-size:15px}
-.bp-cta .btn{justify-content:center}
-.bp-cta .btn svg{width:18px;height:18px}
-/* Article body */
-.bp-body{max-width:740px;font-size:18px;line-height:1.75;color:var(--ink)}
-.bp-body>*:first-child{margin-top:0}
-.bp-body p{margin:0 0 1.15em}
-.bp-body h2{font-size:clamp(1.75rem,2.6vw,2.3rem);line-height:1.15;margin:1.9em 0 .6em;scroll-margin-top:110px}
-.bp-body h3{font-size:clamp(1.3rem,1.8vw,1.55rem);line-height:1.25;margin:1.6em 0 .5em;scroll-margin-top:110px}
-.bp-body h4,.bp-body h5,.bp-body h6{font-size:1.2rem;margin:1.4em 0 .4em}
-.bp-n{display:inline-flex;align-items:center;justify-content:center;min-width:1.6em;height:1.6em;margin-right:.1em;padding:0 .3em;border-radius:8px;background:var(--amber);color:#1b1206;font:700 .62em/1 var(--sans);vertical-align:.2em}
-.bp-body a{color:#9a6a12;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
-.bp-body a:hover{color:var(--ink)}
-.bp-body ul,.bp-body ol{margin:0 0 1.2em;padding-left:1.3em}
-.bp-body li{margin:.35em 0}
-.bp-body li::marker{color:var(--brass)}
-.bp-body strong,.bp-body b{font-weight:600}
-.bp-body hr{border:0;border-top:1px solid var(--line);margin:2em 0}
-.bp-body blockquote{margin:0 0 1.6em;padding:22px 26px;border-radius:14px;background:var(--ivory-2);border-left:4px solid var(--amber)}
-.bp-body blockquote p{margin:0;font:italic 400 1.2rem/1.55 var(--serif)}
-.bp-body blockquote p+p{margin-top:.7em}
-.bp-body img{max-width:100%;height:auto;border-radius:12px}
-.bp-body .alignright{float:right;width:min(46%,360px);margin:.3em 0 1em 28px}
-.bp-body .alignleft{float:left;width:min(46%,360px);margin:.3em 28px 1em 0}
-.bp-body .alignnone,.bp-body .aligncenter{display:block;margin:1.4em auto}
-.bp-body h2,.bp-body h3,.bp-body hr,.bp-body .bp-table,.bp-body details{clear:both}
-.bp-table{overflow-x:auto;margin:0 0 1.6em;border:1px solid var(--line);border-radius:12px;background:#fff}
-.bp-table table{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5}
-.bp-table th,.bp-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-.bp-table th{background:var(--ivory-2);font-weight:600}
-.bp-table tr:last-child td{border-bottom:0}
-.bp-body details{border-top:1px solid var(--line);padding:0}
-.bp-body details:last-of-type{border-bottom:1px solid var(--line)}
-.bp-body details+*:not(details){margin-top:1.4em}
-.bp-body summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 30px;gap:16px;align-items:center;padding:18px 0;font:400 1.25rem/1.3 var(--serif)}
-.bp-body summary::-webkit-details-marker{display:none}
-.bp-body summary::after{content:"+";display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);color:var(--brass);font:400 20px/1 var(--sans);transition:transform .3s,background .3s}
-.bp-body details[open] summary::after{transform:rotate(45deg);background:var(--amber);border-color:var(--amber);color:#1b1206}
-.bp-body details>*:not(summary){margin:0 0 18px}
-.bp-tags{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);clear:both}
-.bp-tags b{font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-right:6px}
-.bp-tags a{padding:7px 14px;border-radius:40px;background:var(--ivory-2);border:1px solid var(--line);font:600 13.5px var(--sans);color:var(--ink);text-decoration:none}
-.bp-tags a:hover{border-color:var(--brass)}
-.bp-by{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;align-items:center;margin-top:28px;padding:22px 24px;border-radius:14px;background:#fff;border:1px solid var(--line)}
-.bp-by img{width:56px;height:56px;object-fit:contain}
-.bp-by p{margin:0;color:var(--ink-dim);font-size:15.5px}
-.bp-by b{display:block;color:var(--ink);font:400 1.25rem/1.2 var(--serif);margin-bottom:4px}
-.bp-pn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
-.bp-pn a{display:grid;gap:6px;padding:18px 20px;border-radius:14px;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .25s,background .25s}
-.bp-pn a:hover{border-color:var(--brass);background:#fff}
-.bp-pn a>span{font:600 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
-.bp-pn b{font:400 1.12rem/1.3 var(--serif)}
-.bp-pn .nx{text-align:right}
-/* Related */
-.bp-rel-head{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;flex-wrap:wrap;margin-bottom:34px}
-.bp-rel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.bp-card{display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:transform .35s var(--ease),box-shadow .35s}
-.bp-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(27,34,30,.12)}
-.bp-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
-.bp-card div{padding:20px 22px 22px;display:grid;gap:8px}
-.bp-card div>span{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
-.bp-card h3{font-size:1.3rem;line-height:1.25;margin:0}
-.bp-all{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
-.bp-all svg{width:15px;height:15px}
-@media (max-width:1100px){.bp-layout{grid-template-columns:minmax(0,1fr)}.bp-side{position:static;order:-1}.bp-toc ol{max-height:none}.bp-cta{display:none}.bp-body{max-width:none}}
-@media (max-width:1000px){.bp-rel{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:760px){.bp-body{font-size:17px}.bp-body .alignright,.bp-body .alignleft{float:none;width:100%;margin:.4em 0 1.2em}.bp-pn{grid-template-columns:minmax(0,1fr)}.bp-pn .nx{text-align:left}.bp-by{grid-template-columns:minmax(0,1fr)}}
-@media (prefers-reduced-motion:reduce){.bp-card,.bp-progress{transition:none}}
-.bp-toc summary{list-style:none;cursor:default}
-.bp-toc summary::-webkit-details-marker{display:none}
-@media (max-width:1100px){.bp-toc summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin:0}.bp-toc summary::after{content:"+";font:400 20px/1 var(--sans);color:var(--brass);transition:transform .3s}.bp-toc[open] summary::after{transform:rotate(45deg)}.bp-toc[open] summary{margin-bottom:10px}}
-.bp-body .bp-img{margin:0 0 1em}
-.bp-body a[href^="tel:"]{white-space:normal}
-.bp-nw{white-space:nowrap;font:inherit!important;color:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;display:inline!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
-.bp-body td,.bp-body th{text-wrap:pretty}
-</style>
+@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+.ty-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:s}
+.ty-steps li{padding:28px;border-radius:16px;background:#fff;border:1px solid var(--line);display:grid;gap:10px;align-content:start}
+.ty-steps .n{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:#1b1206;font:700 16px var(--sans)}
+.ty-steps h3{font-size:1.45rem;margin:6px 0 0}
+.ty-steps p{margin:0;color:var(--ink-dim)}
+.ty-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,90px);align-items:center}
+.ty-split figure{margin:0;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.ty-split img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.ty-split .lede{margin-top:18px}
+#extend-h{font-size:clamp(2rem,3.2vw,2.9rem)}
+.ty-head{display:flex;justify-content:space-between;align-items:end;gap:20px 48px;flex-wrap:wrap;margin-bottom:34px}
+.ty-revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ty-rc{margin:0;padding:28px 28px 24px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:18px}
+.ty-rc blockquote{margin:0;flex:1;font:400 1.2rem/1.5 var(--serif)}
+.ty-rc figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.ty-stars{display:inline-flex;gap:3px;color:var(--amber)}.ty-stars svg{width:15px;height:15px}
+.ty-more{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ty-more a{display:grid;gap:6px;padding:22px;border-radius:14px;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .25s,transform .3s}
+.ty-more a:hover{border-color:var(--brass);transform:translateY(-3px)}
+.ty-more b{font:400 1.35rem/1.2 var(--serif)}
+.ty-more span{color:var(--ink-dim);font-size:15px}
+.ty-link{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}.ty-link svg{width:15px;height:15px}
+@media (max-width:1000px){.ty-steps,.ty-split,.ty-revs{grid-template-columns:minmax(0,1fr)}.ty-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.ty-more{grid-template-columns:minmax(0,1fr)}}
+.lg-nw{white-space:nowrap}#estimate{display:none}</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -917,111 +839,66 @@ main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
   <div class="wrap">
     <nav aria-label="Primary"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a></nav>
     <a class="logo" href="./" aria-label="Big Easy Lighting home"><img class="l-dark" src="assets/logo.png" alt="Big Easy Lighting" width="164" height="131"><img class="l-light" src="assets/logo-light.png" alt="Big Easy Lighting" width="164" height="131"></a>
-    <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html" aria-current="true">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
+    <nav class="right" aria-label="Secondary"><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a class="phone" href="tel:+15047846858">(504) 784-6858</a><a class="btn btn-solid" href="#estimate" data-estimate style="min-height:44px;padding:0 18px">Free Estimate</a>
       <button class="menu" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="20" height="20"><use href="#menu"/></svg></button></nav>
   </div>
-  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html" aria-current="true">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
+  <nav class="drawer" id="drawer" aria-label="Mobile"><a href="residential.html">Residential</a><a href="commercial.html">Commercial</a><a href="service-areas.html">Service Areas</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="#estimate" data-estimate>Free Estimate</a></nav>
 </header>
 
 <main id="main">
-<div class="bp-progress" aria-hidden="true"></div>
 <section class="rp-hero" aria-labelledby="h1">
-  <div class="rp-hero-bg" aria-hidden="true"><img src="https://www.bigeasylighting.com/wp-content/uploads/2022/10/lights.jpg" alt="" fetchpriority="high"></div>
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/hero-house.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="blog.html">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Article</span></nav>
-    <p class="kicker fade-up">Eco-Friendly Lighting</p>
-    <h1 id="h1" class="fade-up d1">Sustainable Illumination With Eco-Friendly Lighting Options for Your Home</h1>
-    <div class="bp-meta fade-up d2"><span><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><time datetime="2025-08-05">August 5, 2025</time></span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>5 min read</span><span><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>By Big Easy Lighting</span></div>
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Thank You</span></nav>
+    <p class="kicker fade-up">Request received</p>
+    <h1 id="h1" class="fade-up d1">Thank You for <em>Reaching Out</em></h1>
+    <p class="lede fade-up d2">Your request is on its way to our team. Here is what happens next, and how to reach us sooner if you need to.</p>
+    <div class="rp-ctarow fade-up d2"><div class="cta-pair"><a class="btn btn-amber" href="tel:+15047846858"><svg><use href="#ph"/></svg>Call <span class="lg-nw">(504) 784-6858</span></a><a class="btn btn-line-l" href="./">Back to Home</a></div><div class="rp-trust"><span><b>Mon–Fri</b> 8 AM–6 PM</span><span><b>Free</b> estimates</span><span><b>Free</b> evening demo</span></div></div>
   </div>
 </section>
 
-<section class="pad bp-main" aria-label="Article">
-  <div class="wrap bp-layout">
-    <article class="bp-body">
-
-<p>Sustainable lighting with green lighting solutions for your home blends energy efficiency and contemporary design to provide a balanced living space. At our business, we are convinced that lighting can be both energy-efficient and cool. From LEDs to intelligent controls, our green lighting solutions blend long-term value with a reduced environmental impact.</p>
-<p>Ready to bring smarter, greener lighting into your home? <a href="contact.html">Connect with us at Big Easy Lighting</a> and let’s find the right energy-saving solutions that fit your space and style.</p>
-<h2 id="key-takeaways">Key Takeaways</h2>
-<ul>
-<li aria-level="1">Eco-friendly lighting marries efficiency, sustainability, and durability to brighten your home while darkening your footprint.</li>
-<li aria-level="1">Search for the likes of an ENERGY STAR certification and lumens per watt to ensure it’s energy efficient and up to global standards.</li>
-<li aria-level="1">Go renewable and recycled — think bamboo, rattan, or reclaimed glass for sustainable, chic lighting.</li>
-<li aria-level="1">Go LED for the best energy savings, longest lifespans, and most versatile applications throughout your home.</li>
-<li aria-level="1">Try solar-powered choices and smart lighting systems to reduce energy consumption and improve convenience.</li>
-<li aria-level="1">Maximize ambient sunlight, task lighting, and fixture positioning for a sustainable lighting design.</li>
-</ul>
-<h2 id="major-eco-friendly-lighting-features">Major Eco-Friendly Lighting Features</h2>
-<p class="bp-img"><img loading="lazy" decoding="async" class="alignright wp-image-2132 size-full" src="https://www.bigeasylighting.com/wp-content/uploads/2023/02/garden-lights-with-solar-battery-e1754403293736.webp" alt="garden lights with solar battery" width="400" height="265" /></p>
-<p><a href="residential.html">Eco-lighting is the smartest way of lighting your house from the perspective of efficiency and saving energy and waste.</a> From state-of-the-art technology to green materials, these options are functional and practical for the planet.</p>
-<ul>
-<li>
-<h3 id="energy-efficiency-standards">Energy Efficiency Standards</h3>
-</li>
-</ul>
-<p>&#8216;Energy Efficiency Greenlight&#8217; means maximizing energy savings without performance loss. Such as in the case of ENERGY STAR for appliances, LED lighting consumes up to 90 percent less energy than incandescent lighting. The brightness-per-watt ratings are always highly rated as the light provides more brightness with less energy consumption, thus contributing to the cause of global sustainability.</p>
-<p>The fixture will be made directional or task lighting, so that its efficiency will be minimized.</p>
-<ul>
-<li>
-<h3 id="sustainable-materials">Sustainable Materials</h3>
-</li>
-</ul>
-<p>Incorporating natural materials into lighting adds warmth and character. Fixtures made of sustainable materials like bamboo, rattan, and reclaimed wood are ideal. Recycled glass and metal conserve resources and reduce manufacturing energy. Some lighting even features biodegradable components, reducing landfill waste. Removing non-renewable materials assures a trendy but sustainable solution.</p>
-<ul>
-<li>
-<h3 id="longevity-and-durability">Longevity and Durability</h3>
-</li>
-</ul>
-<p>Long-lasting lighting reduces repair expenses and waste. LEDs last 25,000–50,000 hours, lowering replacement requirements. Long-lasting materials and repairable designs make fixtures last longer through wear, and component replacement allows further waste reduction.</p>
-<ul>
-<li>
-<h3 id="low-carbon-footprint">Low Carbon Footprint</h3>
-</li>
-</ul>
-<p>Environmentally friendly lighting also assists with carbon emissions. Solar-powered options do not depend on non-renewable resources, and locally produced fixtures lower transportation emissions. Brands focused on sustainability employ cleaner manufacturing methods. By choosing such measures, homeowners can lower their footprint.</p>
-<h2 id="exploring-eco-friendly-lighting-options">Exploring Eco-Friendly Lighting Options</h2>
-<p class="bp-img"><img loading="lazy" decoding="async" class="alignright wp-image-2548 size-full" src="https://www.bigeasylighting.com/wp-content/uploads/2023/05/Modern-living-room-interior-e1754403533578.jpg" alt="Modern living room interior" width="400" height="267" /></p>
-<p><a href="residential.html">Sustainable lighting is vital for lowering your energy usage and establishing a cozy, practical living space.</a> Incorporating green alternatives, we’ll make things look good and reduce our carbon footprint.</p>
-<h3 id="led-lights"><span class="bp-n" aria-hidden="true">1</span><span class="sr-only">1 </span> LED Lights</h3>
-<p>When using<a href="residential.html"> LEDs with solar</a>, power consumption is highly minimized. Hand-held shining solar lanterns and hanging lights make great out-of-this-world celebrations or camping scenes. Save some money not only in reduced kilowatt-hour usage, but also make savings in maintaining lights in the event of outages.</p>
-<h3 id="recycled-and-natural-fixtures"><span class="bp-n" aria-hidden="true">2</span><span class="sr-only">2 </span> Recycled and Natural Fixtures</h3>
-<p>Sustainable lighting crafted from reclaimed wood, metal, and glass. Handmade items such as woven bamboo pendant lights or rattan lamp shades add warmth to interiors and support sustainable artisans. Repurposing old trinkets into new fixtures reduces wastage and prevents toxic fumes from chemical-laden alternatives from contaminating the environment.</p>
-<h3 id="smart-lighting-systems"><span class="bp-n" aria-hidden="true">3</span><span class="sr-only">3 </span> Smart Lighting Systems</h3>
-<p>Smart systems enable us to automate energy saving. Dimming and scheduling, and motion sensing prevent usage where it isn&#8217;t necessary. Real-time adjustments and monitoring are made possible through smartphone controls, which ensure maximum efficiency.</p>
-<h2 id="practical-tips-for-implementing-eco-lighting-at-home">Practical Tips for Implementing Eco Lighting at Home</h2>
-<p>Simple planning is the essence of designing a home lighting scheme that&#8217;s sustainable. With the integration of nature&#8217;s best, efficient technology, and smart controls, we can cut energy needs in half while enhancing the beauty and functionality of our spaces.</p>
-<h3 id="optimize-natural-light">Optimize Natural Light</h3>
-<p>Let natural light do the work of lighting at home. Start by placing furniture so windows remain unobstructed, and sunbeams flow freely through rooms. Light-colored drapes or sheer blinds spread without obstructing, and reflective materials such as mirrors radiate light around a room.</p>
-<p>For more lasting solutions, add skylights or enlarge windows to introduce natural illumination. Mirrors placed strategically can serve as design elements and reflect light into dark crevices.</p>
-<h3 id="use-task-specific-lighting">Use Task-Specific Lighting</h3>
-<p>Task lighting makes certain that you’re utilizing energy only where it’s necessary. As an example, under-cabinet lighting in kitchens offers concentrated light for food preparation, without having to keep the overhead lights on all day.</p>
-<p>Adjustable desk lamps accommodate workspaces, providing the optimal lumen amount for reading or writing. Pendant lighting is perfect for dining tables or kitchen islands, providing focused illumination. Special hobby lights for sewing or crafting prevent you from overlighting surrounding areas and can be more effective and comfortable.</p>
-<h3 id="optimize-placement-and-design">Optimize Placement and Design</h3>
-<p><a href="residential.html">Lighting design</a>, as much as it is about light, is more about form-it is an exercise in the form and fashion it delivers space. Place fixtures in such a way that shadows are minimized and even illumination is maximized.</p>
-<p>Layered lighting consists largely of the combination of ambient, task, and accent lighting, making the spaces that much more versatile and comprehensive without getting claustrophobic. Accent light is extraordinary; it provides depth and highlights the other aspects of architecture, such as alcoves or textures.</p>
-<p>Fixtures that are evenly spaced also ensure consistent illumination, thus preventing redundancies in installation (leading to energy savings).</p>
-<h3 id="implement-smart-controls">Implement Smart Controls</h3>
-<p><a href="residential.html">Intelligent control simplifies energy optimization</a>. Timers and sensors may be employed to turn off the lights once inactivity is detected for a duration of time. Dimmers enable you to adjust the intensity of the bulb, conserve energy, and extend its lifespan. Smart home systems, coupled with voice assistants, ensure comfort and precision through distant control and hands-free use.</p>
-<h2 id="get-the-illumination-you-need-in-your-home-with-our-expertis">Get the Illumination You Need in Your Home With Our Expertise</h2>
-<p>Energy-saving alternatives like LEDs and solar can save money, reduce energy consumption, and warm up spaces. Conscious lighting beautifies your home and the earth at the same time.</p>
-<p>We concentrate on solutions that meet your requirements with selections ranging from <a href="residential.html">fixture upgrades to smart controllers</a>. Easy additions such as dimmers or timers can increase efficiency. Let&#8217;s illuminate greener, brighter spaces together with chic, energy-saving designs.</p>
-<p>Energy-efficient lighting matters in New Orleans, where summer heat keeps homes and businesses running hard. LED systems cut electricity use while standing up to our humidity, a smart long-term choice across the metro and Northshore.</p>
-<p><a href="contact.html">Reach out to us at Big Easy Lighting</a> to discuss your vision and begin work with shining ideas.</p>
-
-      <div class="bp-tags"><b>Filed under</b><a href="blog.html#library">Eco-Friendly Lighting</a><a href="blog.html#library">Sustainable Illumination</a><a href="blog.html#library">Sustainable Lighting for Homes</a></div>
-      <div class="bp-by"><img src="assets/logo.png" alt="" width="56" height="56"><p><b>Big Easy Lighting</b>Outdoor and landscape lighting for homes and businesses across New Orleans and the Northshore. Free estimates and evening demos.</p></div>
-      <nav class="bp-pn" aria-label="More articles"><a class="pv" href="outdoor-lighting-that-enhances-curb-appeal-and-security.html"><span>Older article</span><b>Outdoor Lighting That Enhances Curb Appeal and Security</b></a><a class="nx" href="under-cabinet-lighting-brightening-up-your-kitchen-space.html"><span>Newer article</span><b>Under-Cabinet Lighting: Brightening Up Your Kitchen Space</b></a></nav>
-    </article>
-    <aside class="bp-side" aria-label="Article tools"><details class="bp-toc" open><summary class="bp-toc-h">In This Article</summary><ol><li><a href="#key-takeaways">Key Takeaways</a></li><li><a href="#major-eco-friendly-lighting-features">Major Eco-Friendly Lighting Features</a></li><li><a href="#exploring-eco-friendly-lighting-options">Exploring Eco-Friendly Lighting Options</a></li><li><a href="#practical-tips-for-implementing-eco-lighting-at-home">Practical Tips for Implementing Eco Lighting at Home</a></li><li><a href="#get-the-illumination-you-need-in-your-home-with-our-expertis">Get the Illumination You Need in Your Home With Our Expertise</a></li></ol></details><div class="bp-cta"><h2>Planning Outdoor Lighting?</h2><p>See it lit on your property first with a free evening demo.</p><a class="btn btn-amber" href="#estimate" data-estimate>Get a Free Estimate <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></aside>
-  </div>
-</section>
-
-<section class="pad" style="background:var(--ivory-2)" aria-labelledby="rel-h">
+<section class="pad" aria-labelledby="next-h">
   <div class="wrap">
-    <div class="bp-rel-head rv"><div><p class="kicker">Keep reading</p><h2 id="rel-h">Related <em>Articles</em></h2></div><a class="bp-all" href="blog.html">All articles <svg><use href="#arr"/></svg></a></div>
-    <div class="bp-rel"><a class="bp-card rv" href="what-are-the-requirements-for-emergency-lighting-in-a-commercial-building-in-new-orleans-la.html"><img src="https://www.bigeasylighting.com/wp-content/uploads/2026/09/eg-feat-768x596.jpg" alt="Illuminated EXIT sign mounted above a pair of white doors" loading="lazy"><div><span>Lighting Fixtures Types</span><h3>What Are the Requirements for Emergency Lighting in a Commercial Building in New Orleans, LA?</h3></div></a><a class="bp-card rv" href="what-are-some-common-problems-with-outdoor-lighting-in-new-orleans-la.html"><img src="https://www.bigeasylighting.com/wp-content/uploads/2026/09/storm-feat-768x512.jpg" alt="Lit lantern-style post light among flowers in a garden bed at night" loading="lazy"><div><span>Lighting Maintenance</span><h3>What Are Some Common Problems With Outdoor Lighting in New Orleans, LA?</h3></div></a><a class="bp-card rv" href="how-do-you-run-wiring-for-outdoor-lighting-in-new-orleans-la.html"><img src="https://www.bigeasylighting.com/wp-content/uploads/2026/09/deck-feat-768x511.jpg" alt="Wooden deck at dusk with small lights along the railing and a chair" loading="lazy"><div><span>Outdoor Lighting</span><h3>How Do You Run Wiring for Outdoor Lighting in New Orleans, LA?</h3></div></a></div>
+    <div class="rv" style="margin-bottom:40px"><p class="kicker">What happens next</p><h2 id="next-h">After You <em>Reach Out</em></h2></div>
+    <ol class="ty-steps">
+      <li class="rv"><span class="n">1</span><h3>We Get Back to You</h3><p>Our team reads every message and follows up to talk through your property and what you have in mind.</p></li>
+      <li class="rv"><span class="n">2</span><h3>Free Estimate and Design</h3><p>We walk the property, plan the lighting, and give you a free, <span class="lg-nw">no-obligation estimate.</span></p></li>
+      <li class="rv"><span class="n">3</span><h3>See It Lit Before You Decide</h3><p>With the free evening demo, we set fixtures up after dark so you see the real effect first.</p></li>
+    </ol>
   </div>
 </section>
 
+<section class="pad dark" aria-labelledby="extend-h">
+  <div class="wrap ty-split">
+    <div class="rv">
+      <p class="kicker">Already a customer?</p>
+      <h2 id="extend-h">Extend Your Lighting <em>Throughout Your Property</em></h2>
+      <p class="lede">Love your new outdoor lighting? Extend the beauty and safety to more areas of your property with additional pathway lights. Our customers frequently add more fixtures after seeing how transformative the initial installation is.</p>
+      <p class="lede">Since our team is already familiar with your property and lighting system, adding pathway lights to walkways, driveways, or garden areas is quick and seamless.</p>
+      <div class="cta-pair" style="margin-top:28px"><a class="btn btn-amber" href="tel:+15047846858"><svg><use href="#ph"/></svg>Call <span class="lg-nw">(504) 784-6858</span></a><a class="btn btn-line-l" href="pathway-lighting.html">Pathway Lighting</a></div>
+    </div>
+    <figure class="rv"><img src="assets/pathway.jpg" alt="Lit garden pathway at night" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="pad" style="background:var(--ivory-2)" aria-labelledby="ty-rev-h">
+  <div class="wrap">
+    <div class="ty-head rv"><div><p class="kicker">Reviews</p><h2 id="ty-rev-h">What Our <em>Clients Say</em></h2></div><a class="ty-link" href="testimonials.html">All reviews <svg><use href="#arr"/></svg></a></div>
+    <div class="ty-revs"><figure class="ty-rc rv"><blockquote>It was an easy and seamless process from demo to installation. It was a great installation and the lighting turned out even better than expected. Thanks again!</blockquote><figcaption>Gina Bowman<span class="ty-stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg></span></figcaption></figure><figure class="ty-rc rv"><blockquote>We loved our lights, so we added some additional pathway light fixtures. Once again, we’re very pleased with Big Easy Lighting’s customer service and would highly recommend them for any outdoor lighting needs.</blockquote><figcaption>Carol Burditt<span class="ty-stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg></span></figcaption></figure><figure class="ty-rc rv"><blockquote>Big Easy Lighting did an excellent job on our landscape lighting. They provided us with helpful advice and were extremely easy to work with. We&#x27;re delighted with the results!</blockquote><figcaption>Christina Porter<span class="ty-stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8Z"/></svg></span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="pad" aria-labelledby="more-h">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:34px"><p class="kicker">While you wait</p><h2 id="more-h">Explore <em>Big Easy Lighting</em></h2></div>
+    <div class="ty-more">
+      <a class="rv" href="residential.html"><b>Residential</b><span>Seven ways to light your home.</span></a>
+      <a class="rv" href="commercial.html"><b>Commercial</b><span>Lighting for storefronts and properties.</span></a>
+      <a class="rv" href="faqs.html"><b>FAQs</b><span>Answers to the questions we hear most.</span></a>
+      <a class="rv" href="blog.html"><b>Blog</b><span>Ideas, how-tos, and local answers.</span></a>
+    </div>
+  </div>
+</section>
 
 <section class="dark pad cta" id="estimate" aria-labelledby="cta-h">
   <div class="wrap inner">
@@ -1300,54 +1177,6 @@ main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
   });
 })();
 </script>
-<script>
-/* Blog: topic chips + search, and the New Orleans rail arrows */
-(function(){
-  var grid=document.getElementById('bl-grid'); if(!grid) return;
-  var cards=[].slice.call(grid.querySelectorAll('.bl-card'));
-  var chips=[].slice.call(document.querySelectorAll('.bl-chip'));
-  var q=document.getElementById('bl-q'), count=document.getElementById('bl-count'), empty=document.getElementById('bl-empty');
-  var filter='all';
-  var text=cards.map(function(c){return c.textContent.replace(/ /g,' ').toLowerCase();});
-  function matches(i){
-    var c=cards[i], term=q.value.replace(/ /g,' ').trim().toLowerCase();
-    if(filter!=='all' && (' '+c.dataset.cats+' ').indexOf(' '+filter+' ')<0) return false;
-    return !term || term.split(/\s+/).every(function(w){return text[i].indexOf(w)>=0;});
-  }
-  function render(animateFrom){
-    var hits=0, visible=0;
-    cards.forEach(function(c,i){
-      var ok=matches(i); if(ok) hits++;
-      var show=ok;
-      if(show){ visible++; if(c.hidden && animateFrom!=null){ c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }
-      c.hidden=!show;
-    });
-    count.textContent=!hits ? 'No matching articles' : (hits===cards.length ? 'Showing all '+hits+' articles' : 'Showing '+hits+' of '+cards.length+' article'+(cards.length===1?'':'s'));
-    empty.hidden=hits>0;
-  }
-  chips.forEach(function(b){ b.addEventListener('click',function(){
-    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
-    filter=b.dataset.f; render(0);
-  });});
-  var t; q.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){render(0);},120); });
-  document.getElementById('bl-reset').addEventListener('click',function(){
-    q.value=''; filter='all'; chips.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.f==='all'));}); render(0);
-  });
-  render();
-  var hdr=document.querySelector('.hdr'), tools=document.querySelector('.bl-tools');
-  function pin(){ if(hdr&&tools) tools.style.top=Math.round(hdr.getBoundingClientRect().height)+'px'; }
-  pin(); window.addEventListener('resize',pin);
-
-  var rail=document.querySelector('.bl-rail'), arrows=[].slice.call(document.querySelectorAll('.bl-arrow'));
-  if(rail){
-    function upd(){ var max=rail.scrollWidth-rail.clientWidth-2; arrows[0].disabled=rail.scrollLeft<=2; arrows[1].disabled=rail.scrollLeft>=max; }
-    arrows.forEach(function(a){ a.addEventListener('click',function(){ var s=rail.querySelector('.bl-slide'); var step=(s?s.getBoundingClientRect().width+20:300)*(window.innerWidth>1000?2:1); rail.scrollBy({left:step*Number(a.dataset.dir)}); }); });
-    rail.addEventListener('scroll',function(){ window.requestAnimationFrame(upd); },{passive:true});
-    window.addEventListener('resize',upd); upd();
-  }
-})();
-
-</script>
 <script id="typo-fix">
 /* Keeps the last two words of headings and sentences together, and stops names, times and phone numbers splitting across lines */
 (function(){
@@ -1383,53 +1212,5 @@ main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
   });
 })();
 </script>
-<script>(function(){
-var bar=document.querySelector('.bp-progress'),body=document.querySelector('.bp-body'),toc=document.querySelector('.bp-toc');
-if(toc&&window.innerWidth<=1100)toc.removeAttribute('open');
-if(toc){toc.querySelector('summary').addEventListener('click',function(e){if(window.innerWidth>1100)e.preventDefault();});}
-var links=toc?[].slice.call(toc.querySelectorAll('a')):[];
-var heads=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
-
-/* headings, questions, card titles: never split a hyphenated word across lines */
-[].slice.call(document.querySelectorAll('.bp-body h2,.bp-body h3,.bp-body h4,.bp-body summary,.bp-toc a,.bp-card h3,.bp-pn b,.rp-hero h1')).forEach(function(el){
- var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),t,list=[];while(t=w.nextNode())list.push(t);
- list.forEach(function(t){
-  if(t.parentNode.closest('.bp-nw,.sr-only,[aria-hidden="true"]')||!/\S-\S/.test(t.data))return;
-  var f=document.createDocumentFragment(),last=0,m,re=/\S+-\S+/g;
-  while(m=re.exec(t.data)){f.appendChild(document.createTextNode(t.data.slice(last,m.index)));var sp=document.createElement('span');sp.className='bp-nw';sp.textContent=m[0];f.appendChild(sp);last=m.index+m[0].length;}
-  f.appendChild(document.createTextNode(t.data.slice(last)));t.parentNode.replaceChild(f,t);
- });
-});
-/* keep phone numbers whole; keep the last two words of article text together, never splitting a hyphenated word there */
-var body2=document.querySelector('.bp-body');
-if(body2){
- var tw=document.createTreeWalker(body2,NodeFilter.SHOW_TEXT,null),n,ph=[];
- while(n=tw.nextNode()){if(/\(?\d{3}\)?[\s.-]?\d{3}-\d{4}/.test(n.data))ph.push(n);}
- ph.forEach(function(t){var f=document.createDocumentFragment(),last=0,m,re=/\(?\d{3}\)?[\s.-]?\d{3}-\d{4}/g;while(m=re.exec(t.data)){f.appendChild(document.createTextNode(t.data.slice(last,m.index)));var sp=document.createElement('span');sp.className='bp-nw';sp.textContent=m[0];f.appendChild(sp);last=m.index+m[0].length;}f.appendChild(document.createTextNode(t.data.slice(last)));t.parentNode.replaceChild(f,t);});
- var els=[].slice.call(document.querySelectorAll('.bp-body p,.bp-body li,.bp-body h2,.bp-body h3,.bp-body h4,.bp-body summary,.bp-body td,.bp-body th,.bp-body blockquote p,.bp-toc a,.bp-card h3,.bp-pn b'));
- els.forEach(function(el){
-  if(el.querySelector('p,li,ul,ol,div'))return;
-  var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),t,lastT=null;while(t=w.nextNode()){if(/\S/.test(t.data))lastT=t;}
-  if(lastT&&lastT.parentNode.classList&&lastT.parentNode.classList.contains('bp-nw')&&!lastT.parentNode.nextSibling){var sp0=lastT.parentNode,pv=sp0.previousSibling,mm=pv&&pv.nodeType===3&&pv.data.match(/(\S+)[ \u00a0]+$/);if(mm){pv.data=pv.data.slice(0,mm.index);sp0.textContent=mm[1]+'\u00a0'+sp0.textContent;}return;}
-  if(!lastT||lastT.parentNode.closest('.bp-nw,.sr-only,[aria-hidden="true"]'))return;
-  var words=(el.textContent||'').trim().split(/\s+/);if(words.length<3)return;
-  var m=lastT.data.match(/(\S+)[ \u00a0]+(\S+)(\s*)$/);
-  var ps=lastT.previousSibling, one=lastT.data.match(/^[ \u00a0]+(\S+)(\s*)$/);
-  if(one&&ps&&ps.nodeType===1&&ps.classList.contains('bp-nw')){var j=document.createElement('span');j.className='bp-nw';j.textContent=ps.textContent+'\u00a0'+one[1];ps.parentNode.insertBefore(j,ps);ps.parentNode.removeChild(ps);lastT.data=one[2]||'';return;}
-  if(!m){ if(/-/.test(lastT.data.trim())&&lastT.data.trim().split(/\s+/).length===1){var s1=document.createElement('span');s1.className='bp-nw';s1.textContent=lastT.data.trim();lastT.parentNode.replaceChild(s1,lastT);} return;}
-  var pair=m[1]+'\u00a0'+m[2];
-  if(/-/.test(pair)){var head=lastT.data.slice(0,m.index),sp=document.createElement('span');sp.className='bp-nw';sp.textContent=pair;var f=document.createDocumentFragment();f.appendChild(document.createTextNode(head));f.appendChild(sp);if(m[3])f.appendChild(document.createTextNode(m[3]));lastT.parentNode.replaceChild(f,lastT);}
-  else lastT.data=lastT.data.slice(0,m.index)+pair+m[3];
- });
-}
-var ticking=false;
-function upd(){ticking=false;
- if(bar&&body){var r=body.getBoundingClientRect(),h=r.height-window.innerHeight*0.6;var p=h>0?Math.max(0,Math.min(1,-r.top/h)):0;bar.style.transform='scaleX('+p.toFixed(3)+')';}
- var cur=-1;heads.forEach(function(h,i){if(h&&h.getBoundingClientRect().top<140)cur=i;});
- links.forEach(function(a,i){a.classList.toggle('on',i===cur);});
-}
-window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
-window.addEventListener('resize',upd);upd();
-})();</script>
 </body>
 </html>
