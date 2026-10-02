@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sitemap | Big Easy Lighting</title>
-<meta name="description" content="Browse every page on the Big Easy Lighting website, from residential and commercial lighting services to service areas, guides, and blog articles.">
+<title>Website Disclaimer | Big Easy Lighting</title>
+<meta name="description" content="Read the website disclaimer for Big Easy Lighting, covering who runs this site, how content is published, accuracy, copyright, and how to contact us.">
 <meta name="theme-color" content="#0f1512">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/garden.jpg">
+<link rel="preload" as="image" href="assets/landscape.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -710,106 +710,195 @@ body.modal-open{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.cp-life::after{width:100%}}
 
-/* ===== About page (ab-) ===== */
-.ab-believe .head{max-width:760px;margin-bottom:50px}
-.ab-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
-.ab-pillar{padding:34px 30px 8px 0;border-right:1px solid var(--line)}
-.ab-pillar+.ab-pillar{padding-left:30px}
-.ab-pillar:last-child{border-right:0}
-.ab-pillar .big{display:block;font:italic 400 clamp(2.2rem,3.4vw,3rem)/1.02 var(--serif);color:var(--brass);margin-bottom:18px}
-.ab-pillar h3{font-size:1.45rem;margin-bottom:10px}
-.ab-pillar p{margin:0;color:var(--ink-dim);font-size:15.5px}
+/* ===== Blog page (bl-) ===== */
+@media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+.rp-hero h1{max-width:30ch}
+.bl-dark{background:var(--iron);color:var(--ivory)}
+.bl-dark:hover{box-shadow:0 14px 30px -14px rgba(29,43,37,.6)}
+.bl-dark svg,.bl-card .go svg{width:18px;height:18px}
+.meta{display:flex;align-items:center;gap:12px;font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+.meta .tag{color:var(--brass)}
+.meta .tag::after{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:currentColor;margin-left:12px;vertical-align:middle;opacity:.6}
 
-.ab-scale .head{max-width:760px;margin-bottom:56px}
-.ab-track{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
-.ab-track::before{content:"";position:absolute;left:0;right:0;top:34px;height:6px;border-radius:6px;background:linear-gradient(90deg,rgba(255,151,0,.08),rgba(255,151,0,.35) 40%,#ffb54a 75%,#fff1d2);box-shadow:0 0 0 rgba(255,151,0,0);transition:box-shadow 1.4s var(--ease)}
-.ab-track.in::before{box-shadow:0 0 26px 2px rgba(255,151,0,.45)}
-.ab-track li{position:relative;padding-top:88px}
-.ab-track .bulb{position:absolute;top:12px;left:0;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--iron-2);border:2px solid var(--line-light);color:#c9c2b3;transition:background .6s,box-shadow .6s,color .6s,border-color .6s}
-.ab-track .bulb svg{width:22px;height:22px}
-.ab-track.in li:nth-child(1) .bulb{background:#5a4420;border-color:#5a4420;color:#f0b64a;box-shadow:0 0 12px 2px rgba(255,151,0,.15)}
-.ab-track.in li:nth-child(2) .bulb{background:#a06a12;border-color:#a06a12;color:#fff1d2;box-shadow:0 0 18px 4px rgba(255,151,0,.25);transition-delay:.35s}
-.ab-track.in li:nth-child(3) .bulb{background:var(--amber);border-color:var(--amber);color:#1b1206;box-shadow:0 0 24px 6px rgba(255,151,0,.4);transition-delay:.7s}
-.ab-track.in li:nth-child(4) .bulb{background:#fff1d2;border-color:#fff1d2;color:#1b1206;box-shadow:0 0 34px 10px rgba(255,190,90,.55);transition-delay:1.05s}
-.ab-track h3{font-size:1.5rem;margin-bottom:8px}
-.ab-track p{margin:0;color:#c9c2b3;font-size:15px}
-.ab-track .lvl{display:block;font:600 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#e9b25a;margin-bottom:8px}
+.bl-featsec .kicker{margin-bottom:22px}
+.bl-feat{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 40px 70px -50px rgba(29,43,37,.45)}
+.bl-feat .ph{position:relative;display:block;min-height:420px;overflow:hidden}
+.bl-feat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.bl-feat:hover .ph img{transform:scale(1.05)}
+.bl-badge{position:absolute;top:20px;left:20px;padding:8px 14px;border-radius:40px;background:var(--amber);color:#1b1206;font:700 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;box-shadow:0 0 30px rgba(255,151,0,.5)}
+.bl-feat .tx{padding:clamp(30px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.bl-feat h2{font-size:clamp(1.9rem,2.9vw,2.7rem);line-height:1.1}
+.bl-feat h2 a{color:inherit;text-decoration:none;background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 2px no-repeat;transition:background-size .5s var(--ease)}
+.bl-feat h2 a:hover{background-size:100% 2px}
+.bl-feat p{margin:0;color:var(--ink-dim)}
+.bl-feat .btn{align-self:flex-start}
 
-.ab-check{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(280px,auto);border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-.ab-check .ph{position:relative;overflow:hidden;min-height:280px}
-.ab-check .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
-.ab-check .ph:hover img{transform:scale(1.06)}
-.ab-check .tx{padding:34px 30px;display:flex;flex-direction:column;justify-content:center;gap:12px;background:var(--ivory)}
-.ab-check .tx.dk{background:var(--iron);color:var(--ivory)}
-.ab-check .tx .n{font:italic 400 1.2rem var(--serif);color:var(--brass)}
-.ab-check .tx.dk .n{color:#e9b25a}
-.ab-check .tx h3{font-size:1.5rem}
-.ab-check .tx p{margin:0;font-size:15px;color:var(--ink-dim)}
-.ab-check .tx.dk p{color:#c9c2b3}
+.bl-railhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:34px}
+.bl-railhead>div:first-child{max-width:680px}
+.bl-railnav{display:flex;gap:10px;flex:none}
+.bl-arrow{width:52px;height:52px;border-radius:50%;border:1px solid var(--line-light);background:transparent;color:var(--ivory);display:grid;place-items:center;cursor:pointer;transition:background .3s,border-color .3s,color .3s}
+.bl-arrow svg{width:20px;height:20px}
+.bl-arrow[data-dir="-1"] svg{transform:scaleX(-1)}
+.bl-arrow:hover:not(:disabled){background:var(--amber);border-color:var(--amber);color:#1b1206}
+.bl-arrow:disabled{opacity:.35;cursor:default}
+.bl-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*20px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:rgba(255,151,0,.5) transparent}
+.bl-rail:focus-visible{outline:2px solid var(--amber);outline-offset:6px}
+.bl-slide{scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--ivory)}
+.bl-slide .ph{position:relative;display:block;aspect-ratio:4/3;border-radius:12px;overflow:hidden}
+.bl-slide .ph::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(245,240,230,.08);border-radius:inherit;transition:box-shadow .4s}
+.bl-slide img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.bl-slide:hover img{transform:scale(1.06);filter:brightness(1.08)}
+.bl-slide:hover .ph::after{box-shadow:inset 0 0 0 2px var(--amber),0 0 40px rgba(255,151,0,.3)}
+.bl-slide time{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#e9b25a}
+.bl-slide h3{font-size:1.28rem;line-height:1.25}
 
-.ab-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.ab-num{padding:10px 26px;border-left:1px solid var(--line-light)}
-.ab-num:first-child{border-left:0;padding-left:0}
-.ab-num b{display:block;font:400 clamp(3.4rem,6vw,5.4rem)/1 var(--serif);color:#f0b64a;text-shadow:0 0 34px rgba(255,151,0,.3)}
-.ab-num span{display:block;margin-top:12px;font-size:15px;color:#d4cdbf;max-width:22ch}
-.ab-numsec{padding:clamp(56px,7vw,90px) 0}
+.bl-libhead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.bl-libhead .cta-pair{margin-top:0}
+.bl-tools{position:sticky;top:84px;z-index:5;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 0;background:var(--ivory);border-bottom:1px solid var(--line)}
+.bl-chips{display:flex;gap:8px;flex-wrap:wrap}
+.bl-chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:40px;border:1px solid var(--line);background:#fff;color:var(--ink);font:600 14px var(--sans);cursor:pointer;transition:background .25s,border-color .25s,color .25s}
+.bl-chip span{font-size:12px;color:var(--ink-dim)}
+.bl-chip:hover{border-color:var(--brass)}
+.bl-chip[aria-pressed="true"]{background:var(--iron);border-color:var(--iron);color:var(--ivory)}
+.bl-chip[aria-pressed="true"] span{color:#e9b25a}
+.bl-search{position:relative;display:block;flex:0 1 300px}
+.bl-search svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--ink-dim)}
+.bl-search input{width:100%;min-height:44px;padding:0 16px 0 42px;border-radius:40px;border:1px solid var(--line);background:#fff;font:500 15px var(--sans);color:var(--ink)}
+.bl-search input:focus{outline:none;border-color:var(--brass);box-shadow:0 0 0 3px rgba(176,122,28,.18)}
+.bl-count{margin:22px 0 22px;font-size:14px;color:var(--ink-dim)}
 
-.ab-review{display:grid;grid-template-columns:auto minmax(0,820px);justify-content:center;gap:clamp(24px,4vw,56px);align-items:start}
-.ab-review .q{font:italic 400 clamp(7rem,12vw,10rem)/.7 var(--serif);color:var(--amber);opacity:.9;text-shadow:0 0 50px rgba(255,151,0,.35)}
-.ab-review blockquote{margin:0;font:400 clamp(1.35rem,2.1vw,1.85rem)/1.4 var(--serif)}
-.ab-review figcaption{margin-top:24px;display:flex;align-items:center;gap:14px;font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.bl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 22px}
+.bl-card[hidden]{display:none}
+.bl-card a{display:flex;flex-direction:column;gap:12px;height:100%;text-decoration:none;color:inherit}
+.bl-card .ph{display:block;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:var(--ivory-2)}
+.bl-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.bl-card a:hover img{transform:scale(1.05)}
+.bl-card .meta{margin-top:6px}
+.bl-card h3{font-size:1.4rem;line-height:1.2;transition:color .3s}
+.bl-card a:hover h3{color:var(--brass)}
+.bl-card p{margin:0;font-size:15px;color:var(--ink-dim);flex:1}
+.bl-card .go{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.bl-card .go svg{transition:transform .3s var(--ease)}
+.bl-card a:hover .go svg{transform:translateX(4px)}
+.bl-card.pop{animation:blIn .6s var(--ease) both}
+@keyframes blIn{from{opacity:0;transform:translateY(16px)}}
+.bl-empty{text-align:center;padding:50px 20px;border:1px dashed var(--line);border-radius:14px}
+.bl-empty h3{font-size:1.8rem;margin-bottom:8px}
+.bl-empty p{margin:0 auto 22px;color:var(--ink-dim);max-width:46ch}
 
-.ab-next{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.ab-tile{position:relative;display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ivory);isolation:isolate}
-.ab-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
-.ab-tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(15,22,19,.88),rgba(15,22,19,.15) 60%)}
-.ab-tile:hover img{transform:scale(1.07)}
-.ab-tile .t{position:absolute;left:24px;right:24px;bottom:22px;display:flex;justify-content:space-between;align-items:flex-end;gap:14px}
-.ab-tile h3{font-size:clamp(1.6rem,2.4vw,2.1rem)}
-.ab-tile p{margin:6px 0 0;font-size:14px;color:#d4cdbf}
-.ab-tile .go{width:44px;height:44px;flex:none;border-radius:50%;border:1px solid rgba(245,240,230,.4);display:grid;place-items:center;transition:background .3s,border-color .3s,color .3s}
-.ab-tile .go svg{width:18px;height:18px}
-.ab-tile:hover .go{background:var(--amber);border-color:var(--amber);color:#1b1206}
-
-@media (max-width:1180px){.ab-check{grid-template-columns:1fr 1fr}}
 @media (max-width:1000px){
-  .ab-pillars{grid-template-columns:1fr}
-  .ab-pillar,.ab-pillar+.ab-pillar{padding:28px 0;border-right:0;border-bottom:1px solid var(--line)}
-  .ab-track{grid-template-columns:1fr 1fr;gap:34px 24px}
-  .ab-track::before{display:none}
-  .ab-track li{padding-top:66px}
-  .ab-check{grid-template-columns:1fr 1fr}
-  .ab-nums{grid-template-columns:1fr 1fr;gap:30px 0}
-  .ab-num:nth-child(3){border-left:0;padding-left:0}
-  .ab-next{grid-template-columns:1fr}
-  .ab-tile{aspect-ratio:16/9}
+  .bl-feat{grid-template-columns:minmax(0,1fr)}
+  .bl-feat .ph{min-height:0;aspect-ratio:16/10}
+  .bl-rail{grid-auto-columns:calc((100% - 20px)/2.2)}
+  .bl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bl-tools{top:70px}
 }
 @media (max-width:760px){
-  .ab-track{grid-template-columns:1fr}
-  .ab-check{grid-template-columns:1fr}
-  .ab-check .ph{min-height:220px}
-  .ab-check>:nth-child(5){order:6}.ab-check>:nth-child(6){order:5}.ab-check>:nth-child(7){order:8}.ab-check>:nth-child(8){order:7}
-  .ab-check>:nth-child(-n+4){order:0}
-  .ab-review{grid-template-columns:1fr;gap:4px}
-  .ab-review .q{height:64px}
+  .bl-railnav{display:none}
+  .bl-rail{grid-auto-columns:78%;gap:14px}
+  .bl-grid{grid-template-columns:minmax(0,1fr)}
+  .bl-tools{position:static;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+  .bl-chips{flex-wrap:nowrap;overflow-x:auto;min-width:0;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
+  .bl-chips::-webkit-scrollbar{display:none}
+  .bl-chip{flex:none}
+  .bl-search{flex:none}
+  .bl-feat .btn{align-self:stretch}
 }
-@media (prefers-reduced-motion:reduce){.ab-track .bulb{transition:none}}
+@media (prefers-reduced-motion:reduce){.bl-card.pop{animation:none}.bl-rail{scroll-behavior:auto}}
 @media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
+/* ===== Blog post template (bp-) ===== */
 @media (min-width:761px){.rp-hero{min-height:585px;display:flex;align-items:flex-end}.rp-hero>.wrap{width:100%}}
-.sm-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:start}
-.sm-card{padding:26px;border-radius:16px;background:#fff;border:1px solid var(--line)}
-.sm-card h2{font-size:1.5rem;margin:0 0 6px}
-.sm-card p{margin:0 0 12px;color:var(--ink-dim);font-size:14px}
-.sm-card ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.sm-card a{display:block;padding:7px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:15.5px;line-height:1.35}
-.sm-card li:last-child a{border-bottom:0}
-.sm-card a:hover{color:var(--brass)}
-.sm-wide{grid-column:span 2}
-.sm-wide ul{columns:2;column-gap:28px;display:block}
-.sm-wide li{break-inside:avoid}
-@media (max-width:1180px){.sm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:760px){.sm-grid{grid-template-columns:minmax(0,1fr)}.sm-wide{grid-column:auto}.sm-wide ul{columns:1}}
-.lg-nw{white-space:nowrap}</style>
+main .rp-hero h1{font-size:clamp(2rem,3.3vw,3.05rem)}
+.bp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin-top:22px;font:600 13px var(--sans);letter-spacing:.06em;color:#e7dfcf}
+.bp-meta>span{display:inline-flex;align-items:center;gap:8px}
+.bp-meta>span>svg{width:16px;height:16px;color:var(--amber)}
+.bp-progress{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--amber),#ffcf7a);z-index:200;pointer-events:none}
+.bp-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(40px,6vw,88px);align-items:start}
+.bp-side{position:sticky;top:110px;display:grid;gap:18px}
+.bp-toc{padding:22px 22px 18px;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.bp-toc-h{margin:0 0 10px;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.bp-toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;max-height:52vh;overflow:auto}
+.bp-toc a{display:block;padding:7px 0 7px 12px;border-left:2px solid var(--line);color:var(--ink-dim);text-decoration:none;font-size:14.5px;line-height:1.35;transition:color .2s,border-color .2s}
+.bp-toc a:hover{color:var(--ink)}
+.bp-toc a.on{color:var(--ink);border-left-color:var(--amber);font-weight:600}
+.bp-cta{padding:24px 22px;border-radius:14px;background:var(--iron);color:var(--ivory);display:grid;gap:10px}
+.bp-cta h2{font-size:1.5rem;margin:0}
+.bp-cta p{margin:0;color:#c9c2b3;font-size:15px}
+.bp-cta .btn{justify-content:center}
+.bp-cta .btn svg{width:18px;height:18px}
+/* Article body */
+.bp-body{max-width:740px;font-size:18px;line-height:1.75;color:var(--ink)}
+.bp-body>*:first-child{margin-top:0}
+.bp-body p{margin:0 0 1.15em}
+.bp-body h2{font-size:clamp(1.75rem,2.6vw,2.3rem);line-height:1.15;margin:1.9em 0 .6em;scroll-margin-top:110px}
+.bp-body h3{font-size:clamp(1.3rem,1.8vw,1.55rem);line-height:1.25;margin:1.6em 0 .5em;scroll-margin-top:110px}
+.bp-body h4,.bp-body h5,.bp-body h6{font-size:1.2rem;margin:1.4em 0 .4em}
+.bp-n{display:inline-flex;align-items:center;justify-content:center;min-width:1.6em;height:1.6em;margin-right:.1em;padding:0 .3em;border-radius:8px;background:var(--amber);color:#1b1206;font:700 .62em/1 var(--sans);vertical-align:.2em}
+.bp-body a{color:#9a6a12;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.bp-body a:hover{color:var(--ink)}
+.bp-body ul,.bp-body ol{margin:0 0 1.2em;padding-left:1.3em}
+.bp-body li{margin:.35em 0}
+.bp-body li::marker{color:var(--brass)}
+.bp-body strong,.bp-body b{font-weight:600}
+.bp-body hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.bp-body blockquote{margin:0 0 1.6em;padding:22px 26px;border-radius:14px;background:var(--ivory-2);border-left:4px solid var(--amber)}
+.bp-body blockquote p{margin:0;font:italic 400 1.2rem/1.55 var(--serif)}
+.bp-body blockquote p+p{margin-top:.7em}
+.bp-body img{max-width:100%;height:auto;border-radius:12px}
+.bp-body .alignright{float:right;width:min(46%,360px);margin:.3em 0 1em 28px}
+.bp-body .alignleft{float:left;width:min(46%,360px);margin:.3em 28px 1em 0}
+.bp-body .alignnone,.bp-body .aligncenter{display:block;margin:1.4em auto}
+.bp-body h2,.bp-body h3,.bp-body hr,.bp-body .bp-table,.bp-body details{clear:both}
+.bp-table{overflow-x:auto;margin:0 0 1.6em;border:1px solid var(--line);border-radius:12px;background:#fff}
+.bp-table table{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5}
+.bp-table th,.bp-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.bp-table th{background:var(--ivory-2);font-weight:600}
+.bp-table tr:last-child td{border-bottom:0}
+.bp-body details{border-top:1px solid var(--line);padding:0}
+.bp-body details:last-of-type{border-bottom:1px solid var(--line)}
+.bp-body details+*:not(details){margin-top:1.4em}
+.bp-body summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 30px;gap:16px;align-items:center;padding:18px 0;font:400 1.25rem/1.3 var(--serif)}
+.bp-body summary::-webkit-details-marker{display:none}
+.bp-body summary::after{content:"+";display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);color:var(--brass);font:400 20px/1 var(--sans);transition:transform .3s,background .3s}
+.bp-body details[open] summary::after{transform:rotate(45deg);background:var(--amber);border-color:var(--amber);color:#1b1206}
+.bp-body details>*:not(summary){margin:0 0 18px}
+.bp-tags{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);clear:both}
+.bp-tags b{font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-right:6px}
+.bp-tags a{padding:7px 14px;border-radius:40px;background:var(--ivory-2);border:1px solid var(--line);font:600 13.5px var(--sans);color:var(--ink);text-decoration:none}
+.bp-tags a:hover{border-color:var(--brass)}
+.bp-by{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;align-items:center;margin-top:28px;padding:22px 24px;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.bp-by img{width:56px;height:56px;object-fit:contain}
+.bp-by p{margin:0;color:var(--ink-dim);font-size:15.5px}
+.bp-by b{display:block;color:var(--ink);font:400 1.25rem/1.2 var(--serif);margin-bottom:4px}
+.bp-pn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
+.bp-pn a{display:grid;gap:6px;padding:18px 20px;border-radius:14px;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .25s,background .25s}
+.bp-pn a:hover{border-color:var(--brass);background:#fff}
+.bp-pn a>span{font:600 11.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.bp-pn b{font:400 1.12rem/1.3 var(--serif)}
+.bp-pn .nx{text-align:right}
+/* Related */
+.bp-rel-head{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;flex-wrap:wrap;margin-bottom:34px}
+.bp-rel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bp-card{display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:transform .35s var(--ease),box-shadow .35s}
+.bp-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(27,34,30,.12)}
+.bp-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.bp-card div{padding:20px 22px 22px;display:grid;gap:8px}
+.bp-card div>span{font:600 11.5px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.bp-card h3{font-size:1.3rem;line-height:1.25;margin:0}
+.bp-all{display:inline-flex;align-items:center;gap:8px;font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.bp-all svg{width:15px;height:15px}
+@media (max-width:1100px){.bp-layout{grid-template-columns:minmax(0,1fr)}.bp-side{position:static;order:-1}.bp-toc ol{max-height:none}.bp-cta{display:none}.bp-body{max-width:none}}
+@media (max-width:1000px){.bp-rel{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.bp-body{font-size:17px}.bp-body .alignright,.bp-body .alignleft{float:none;width:100%;margin:.4em 0 1.2em}.bp-pn{grid-template-columns:minmax(0,1fr)}.bp-pn .nx{text-align:left}.bp-by{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.bp-card,.bp-progress{transition:none}}
+.bp-toc summary{list-style:none;cursor:default}
+.bp-toc summary::-webkit-details-marker{display:none}
+@media (max-width:1100px){.bp-toc summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin:0}.bp-toc summary::after{content:"+";font:400 20px/1 var(--sans);color:var(--brass);transition:transform .3s}.bp-toc[open] summary::after{transform:rotate(45deg)}.bp-toc[open] summary{margin-bottom:10px}}
+.bp-body .bp-img{margin:0 0 1em}
+.bp-body a[href^="tel:"]{white-space:normal}
+.bp-nw{white-space:nowrap;font:inherit!important;color:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;display:inline!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
+.bp-body td,.bp-body th{text-wrap:pretty}
+.lg-draft{margin:0 0 28px;padding:16px 20px;border-radius:12px;background:#fff6e6;border:1px solid #f0c27a;color:var(--ink);font-size:15.5px}.lg-draft b{color:#9a6a12}.bp-body a{overflow-wrap:anywhere}</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -835,18 +924,50 @@ body.modal-open{overflow:hidden}
 </header>
 
 <main id="main">
+<div class="bp-progress" aria-hidden="true"></div>
 <section class="rp-hero" aria-labelledby="h1">
-  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/garden.jpg" alt="" fetchpriority="high"></div>
+  <div class="rp-hero-bg" aria-hidden="true"><img src="assets/landscape.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
-    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Sitemap</span></nav>
-    <p class="kicker fade-up">Sitemap</p>
-    <h1 id="h1" class="fade-up d1">Every Page on <em>One Page</em></h1>
-    <p class="lede fade-up d2">All 132 pages of the Big Easy Lighting website, grouped by topic.</p>
+    <nav class="rp-crumbs fade-up" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Disclaimer</span></nav>
+    <p class="kicker fade-up">Legal</p>
+    <h1 id="h1" class="fade-up d1">Website <em>Disclaimer</em></h1>
+    <p class="lede fade-up d2">The disclaimer that applies to everything published on the Big Easy Lighting website.</p>
+    <div class="bp-meta fade-up d2"><span>Last updated: pending approval</span><span>4 min read</span></div>
   </div>
 </section>
 
-<section class="pad" aria-label="All pages">
-  <div class="wrap sm-grid"><section class="sm-card rv" aria-labelledby="sm-main-pages"><h2 id="sm-main-pages">Main Pages</h2><p>7 pages</p><ul><li><a href="./">Home</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="service-areas.html">Service Areas</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></section><section class="sm-card rv" aria-labelledby="sm-residential-services"><h2 id="sm-residential-services">Residential Services</h2><p>7 pages</p><ul><li><a href="landscape-lighting.html">Landscape Lighting</a></li><li><a href="pathway-lighting.html">Pathway Lighting</a></li><li><a href="curb-appeal-lighting.html">Curb Appeal Lighting</a></li><li><a href="deck-and-patio-lighting.html">Deck &amp; Patio Lighting</a></li><li><a href="festive-string-lighting.html">Festive String Lighting</a></li><li><a href="sphere-lights.html">Sphere Lights</a></li><li><a href="color-changing-lighting.html"><span class="lg-nw">Color-Changing Lighting</span></a></li></ul></section><section class="sm-card rv" aria-labelledby="sm-commercial-services"><h2 id="sm-commercial-services">Commercial Services</h2><p>4 pages</p><ul><li><a href="outdoor-lighting.html">Outdoor Lighting</a></li><li><a href="led-lighting-systems.html">LED Lighting Systems</a></li><li><a href="garden-lights.html">Garden Lights</a></li><li><a href="up-down-lights.html">Up/Down Lights</a></li></ul></section><section class="sm-card rv" aria-labelledby="sm-service-areas"><h2 id="sm-service-areas">Service Areas</h2><p>9 pages</p><ul><li><a href="metairie.html">Metairie</a></li><li><a href="kenner.html">Kenner</a></li><li><a href="st-rose.html">St. Rose</a></li><li><a href="laplace.html">LaPlace</a></li><li><a href="mandeville.html">Mandeville</a></li><li><a href="covington.html">Covington</a></li><li><a href="madisonville.html">Madisonville</a></li><li><a href="abita-springs.html">Abita Springs</a></li><li><a href="hammond.html">Hammond</a></li></ul></section><section class="sm-card rv" aria-labelledby="sm-company"><h2 id="sm-company">Company</h2><p>5 pages</p><ul><li><a href="testimonials.html">Testimonials</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms and Conditions</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></section><section class="sm-card sm-wide rv" aria-labelledby="sm-lighting-guides"><h2 id="sm-lighting-guides">Lighting Guides</h2><p>28 pages</p><ul><li><a href="advantages-of-led-lighting-system.html">Advantages of LED Lighting System</a></li><li><a href="benefits-of-up-and-down-lighting-in-new-orleans.html">Benefits of Up and Down Lighting in New Orleans</a></li><li><a href="commercial-solar-flood-lights.html">Best Commercial Solar Flood Lights in New Orleans</a></li><li><a href="best-outdoor-business-lights.html">Best Outdoor Business Lights in New Orleans</a></li><li><a href="best-practices-for-maintaining-and-repairing-sphere-lighting.html">Best Practices for Maintaining and Repairing Sphere Lighting</a></li><li><a href="challenges-of-using-sphere-lighting.html">Challenges of Using Sphere Lighting</a></li><li><a href="design-considerations-for-garden-lights.html">Design Considerations for Garden Lights</a></li><li><a href="landscape-lighting-affect-plant-growth.html">Does Landscape Lighting Affect Plant Growth in New Orleans, Louisiana?</a></li><li><a href="energy-efficient-festive-string-lighting.html">Energy-Efficient Festive String Lighting</a></li><li><a href="how-long-do-color-changing-led-bulbs-last.html">How Long Do Color-Changing LED Bulbs Last?</a></li><li><a href="how-to-determine-the-best-pathway-lighting-system.html">How to Determine the Best Pathway Lighting System</a></li><li><a href="how-to-protect-outdoor-lights-from-rain.html">How to Protect Outdoor Lights From Rain</a></li><li><a href="how-to-protect-pathway-lighting-in-new-orleans.html">How to Protect Pathway Lighting in New Orleans</a></li><li><a href="installation-and-maintenance-of-garden-lights.html">Installation and Maintenance of Garden Lights</a></li><li><a href="is-landscape-lighting-expensive.html">Is Landscape Lighting Expensive?</a></li><li><a href="low-voltage-landscape-lighting.html">Low Voltage Landscape Lighting</a></li><li><a href="outdoor-commercial-lighting-ideas-in-new-orleans.html">Outdoor Commercial Lighting Ideas in New Orleans</a></li><li><a href="outdoor-led-lighting.html">Outdoor LED Lighting</a></li><li><a href="pathway-lighting-design-in-new-orleans.html">Pathway Lighting Design in New Orleans</a></li><li><a href="safety-tips-for-festive-string-lighting.html">Safety Tips for Festive String Lighting</a></li><li><a href="solar-landscape-lighting-ideas.html">Solar Landscape Lighting Ideas</a></li><li><a href="the-role-of-lighting-in-interior-design.html">The Role of Lighting in Interior Design</a></li><li><a href="types-of-festive-string-lightings.html">Types of Festive String Lightings</a></li><li><a href="types-of-garden-lights-in-new-orleans.html">Types of Garden Lights in New Orleans</a></li><li><a href="types-of-sphere-lighting.html">Types of Sphere Lighting</a></li><li><a href="how-to-choose-the-right-up-and-down-lighting-fixtures.html">Up and Down Lighting Fixtures for Your Home</a></li><li><a href="best-lights-for-outdoor-patio.html">What Are the Best Lights for Outdoor Patio?</a></li><li><a href="why-use-low-voltage-outdoor-lighting.html">Why Use Low Voltage Outdoor Lighting</a></li></ul></section><section class="sm-card sm-wide rv" aria-labelledby="sm-blog-articles"><h2 id="sm-blog-articles">Blog Articles</h2><p>72 pages</p><ul><li><a href="what-are-the-requirements-for-emergency-lighting-in-a-commercial-building-in-new-orleans-la.html">What Are the Requirements for Emergency Lighting in a Commercial Building in New Orleans, LA?</a></li><li><a href="what-are-some-common-problems-with-outdoor-lighting-in-new-orleans-la.html">What Are Some Common Problems With Outdoor Lighting in New Orleans, LA?</a></li><li><a href="how-do-you-run-wiring-for-outdoor-lighting-in-new-orleans-la.html">How Do You Run Wiring for Outdoor Lighting in New Orleans, LA?</a></li><li><a href="what-type-of-lighting-is-best-for-a-swimming-pool-in-new-orleans-la.html">What Type of Lighting Is Best for a Swimming Pool in New Orleans, LA?</a></li><li><a href="historic-district-lighting-guidelines-for-homeowners-in-new-orleans-la.html">Historic District Lighting Guidelines for Homeowners in New Orleans, LA</a></li><li><a href="choosing-between-diy-and-professional-lighting-installation-in-new-orleans-la.html">Choosing Between DIY and Professional Lighting Installation in New Orleans, LA</a></li><li><a href="outdoor-event-and-party-lighting-ideas-in-new-orleans-la.html">Outdoor Event and Party Lighting Ideas in New Orleans, LA</a></li><li><a href="gfci-and-electrical-code-basics-for-outdoor-lighting-in-new-orleans-la.html">GFCI and Electrical Code Basics for Outdoor Lighting in New Orleans, LA</a></li><li><a href="the-benefits-of-dimmable-lights-customizing-your-lighting-experience-in-new-orleans-la.html">The Benefits of Dimmable Lights: Customizing Your Lighting Experience in New Orleans, LA</a></li><li><a href="track-lighting-trends-flexible-and-functional-designs-in-new-orleans-la.html">Track Lighting Trends: Flexible and Functional Designs in New Orleans, LA</a></li><li><a href="recessed-lighting-sleek-and-subtle-illumination-options-in-new-orleans-la.html">Recessed Lighting: Sleek and Subtle Illumination Options in New Orleans, LA</a></li><li><a href="pendant-lighting-versatile-solutions-for-every-room-in-new-orleans-la.html">Pendant Lighting: Versatile Solutions for Every Room in New Orleans, LA</a></li><li><a href="leds-a-smart-way-to-cut-energy-costs.html">Energy-Efficient LEDs: A Smart Way to Cut Energy Costs</a></li><li><a href="garden-glow-strategic-lighting.html">Garden Glow: Enhancing Outdoor Spaces With Strategic Lighting</a></li><li><a href="diy-lighting-projects-creative-ideas-to-illuminate-your-home.html">DIY Lighting Projects: Creative Ideas to Illuminate Your Home</a></li><li><a href="energy-saving-tips-for-reducing-your-electricity-bill-with-efficient-lighting.html">Energy-Saving Tips for Reducing Your Electricity Bill With Efficient Lighting</a></li><li><a href="lighting-maintenance-keeping-your-fixtures-in-top-condition.html">Lighting Maintenance: Keeping Your Fixtures in Top Condition</a></li><li><a href="chandeliers-reimagined-contemporary-designs-for-classic-fixtures.html">Chandeliers Reimagined: Contemporary Designs for Classic Fixtures</a></li><li><a href="the-art-of-lampscaping-curating-light-for-mood-and-functionality.html">The Art of Lampscaping: Curating Light for Mood and Functionality</a></li><li><a href="under-cabinet-lighting-brightening-up-your-kitchen-space.html">Under-Cabinet Lighting: Brightening Up Your Kitchen Space</a></li><li><a href="sustainable-illumination-with-eco-friendly-lighting-options-for-your-home.html">Sustainable Illumination With Eco-Friendly Lighting Options for Your Home</a></li><li><a href="outdoor-lighting-that-enhances-curb-appeal-and-security.html">Outdoor Lighting That Enhances Curb Appeal and Security</a></li><li><a href="lighting-controls-smart-systems-for-modern-homes.html">Lighting Controls: Smart Systems for Modern Homes</a></li><li><a href="led-innovations-the-future-of-energy-efficient-lighting.html">LED Innovations: The Future of <span class="lg-nw">Energy-Efficient Lighting</span></a></li><li><a href="color-temperature-101-choosing-the-right-light-for-every-room.html">Color Temperature 101: Choosing the Right Light for Every Room</a></li><li><a href="vintage-vibes-incorporating-retro-lighting-fixtures-into-modern-spaces.html">Vintage Vibes: Incorporating Retro Lighting Fixtures Into Modern Spaces</a></li><li><a href="smart-lighting-solutions-integrating-technology-for-a-brighter-future.html">Smart Lighting Solutions: Integrating Technology for a Brighter Future</a></li><li><a href="embracing-organic-shapes-the-rise-of-natural-forms-in-lighting-design.html">Embracing Organic Shapes: The Rise of Natural Forms in Lighting Design</a></li><li><a href="the-rise-of-decorative-lighting-enhancing-home-aesthetics-in-2025.html">The Rise of Decorative Lighting: Enhancing Home Aesthetics</a></li><li><a href="energy-efficient-leds-a-smart-way-to-cut-energy-costs.html">Energy-Efficient LEDs: A Smart Way to Cut Energy Costs</a></li><li><a href="5-must-know-tips-for-modernizing-your-homes-lighting-design.html">5 Must-Know Tips for Modernizing Your Home’s Lighting Design</a></li><li><a href="the-advantages-of-up-down-lighting-for-your-business.html">The Advantages of Up/Down Lighting for Your Business</a></li><li><a href="how-up-and-down-lights-improve-commercial-spaces-ambiance-safety-and-design.html">How Up and Down Lights Improve Commercial Spaces: Ambiance, Safety, and Design</a></li><li><a href="top-lighting-fixture-types-to-enhance-your-interior-design.html">Top Lighting Fixture Types to Enhance Your Interior Design</a></li><li><a href="how-to-choose-the-perfect-outdoor-lighting-fixtures-for-security-and-style.html">How to Choose the Perfect Outdoor Lighting Fixtures for Security and Style</a></li><li><a href="how-to-retrofit-your-current-lighting-system-with-led-lighting.html">How to Retrofit Your Current Lighting System With LED Lighting</a></li><li><a href="the-environmental-impact-of-led-lighting-how-it-lowers-your-carbon-footprint.html">The Environmental Impact of LED Lighting: How It Lowers Your Carbon Footprint</a></li><li><a href="the-pros-and-cons-of-led-lighting-for-businesses-is-it-worth-the-investment.html">The Pros and Cons of LED Lighting for Businesses: Is It Worth the Investment?</a></li><li><a href="lighting-maintenance-tips-how-to-keep-your-fixtures-looking-and-working-like-new.html">Lighting Maintenance Tips: How to Keep Your Fixtures Looking and Working Like New</a></li><li><a href="safety-first-why-proper-landscape-lighting-is-essential-for-your-property.html">Safety First: Why Proper Landscape Lighting Is Essential for Your Property</a></li><li><a href="choosing-the-right-bulbs-led-vs-incandescent.html">Choosing the Right Bulbs: LED vs Incandescent for Patio and Deck Lighting</a></li><li><a href="weather-resistant-lighting-options-for-outdoor-spaces.html">Weather-Resistant Lighting Options for Outdoor Spaces</a></li><li><a href="how-to-use-color-temperature-in-residential-lighting.html">How to Use Color Temperature in Residential Lighting</a></li><li><a href="garden-lighting-mistakes-to-avoid.html">Garden Lighting Mistakes to Avoid</a></li><li><a href="how-long-does-it-take-to-install-festive-lighting-services.html">How Long Does It Take to Install Festive Lighting Services?</a></li><li><a href="best-pathway-lighting-safety-tips.html">Best Pathway Lighting Safety Tips</a></li><li><a href="what-is-low-voltage-pathway-lighting.html">What Is Low Voltage Pathway Lighting</a></li><li><a href="solar-pathway-lighting-in-your-outdoor-spaces.html">Solar Pathway Lighting in Your Outdoor Spaces</a></li><li><a href="how-to-create-a-festive-atmosphere-with-lighting.html">How to Create a Festive Atmosphere With Lighting</a></li><li><a href="the-best-waterproof-garden-lights-for-every-budget.html">The Best Waterproof Garden Lights for Every Budget</a></li><li><a href="waterproof-garden-lighting-ideas.html">Waterproof Garden Lighting Ideas</a></li><li><a href="the-advancements-in-led-lighting-technology.html">The Advancements in LED Lighting Technology: What’s Next for the Future?</a></li><li><a href="how-to-upgrade-your-outdoor-lighting-for-enhanced-security.html">How to Upgrade Your Outdoor Lighting for Enhanced Security</a></li><li><a href="new-orleans-outdoor-living-space-with-stunning-garden-lights.html">Transform Your Outdoor Living Space With Stunning Garden Lights in New Orleans</a></li><li><a href="how-led-technology-creates-a-dynamic-lighting-experience.html">How LED Technology Creates a Dynamic Lighting Experience</a></li><li><a href="how-led-lights-are-revolutionizing-lighting-solutions.html">How LED Lights Are Revolutionizing Lighting Solutions</a></li><li><a href="enhancing-your-homes-aesthetics-with-led-light-strips.html">Enhancing Your Home’s Aesthetics With LED Light Strips</a></li><li><a href="how-to-illuminate-your-garden-with-color-changing-led-lights.html">How to Illuminate Your Garden With Color-Changing LED Lights</a></li><li><a href="understanding-the-different-types-of-led-lighting-which-one-is-right-for-you.html">Understanding the Different Types of LED Lighting: Which One Is Right for You?</a></li><li><a href="reasons-to-switch-to-led-lighting-the-benefits-for-your-home-or-business.html">Reasons to Switch to LED Lighting: The Benefits for Your Home or Business</a></li><li><a href="illuminate-your-outdoor-living-spaces-with-big-easy-lighting-unleashing-creative-ways-to-use-lighting.html">Illuminate Your Outdoor Living Spaces With Big Easy Lighting: Unleashing Creative Ways to Use Lighting</a></li><li><a href="how-to-choose-the-right-lighting-for-each-room-in-your-home.html">How to Choose the Right Lighting for Each Room in Your Home</a></li><li><a href="tips-for-saving-energy-with-your-lighting.html">Tips for Saving Energy With Your Lighting</a></li><li><a href="understanding-color-temperature-and-how-it-impacts-lighting-design.html">Understanding Color Temperature and How It Impacts Lighting Design</a></li><li><a href="how-to-use-lighting-to-accentuate-artwork-and-decor.html">How to Use Lighting to Accentuate Artwork and Décor</a></li><li><a href="how-to-properly-dispose-of-old-light-bulbs-and-fixtures.html">How to Properly Dispose of Old Light Bulbs and Fixtures</a></li><li><a href="lighting-affects-mood.html">How Lighting Affects Mood, Productivity: Essential Guide</a></li><li><a href="types-of-lighting-fixtures.html">Different Types of Lighting Fixtures and How to Use Them</a></li><li><a href="tips-for-maintaining-lighting-system.html">Tips for Maintaining Your Lighting System</a></li><li><a href="role-of-lighting-in-creating-safe-secure-environment.html">The Role of Lighting in Creating a Safe and Secure Environment</a></li><li><a href="how-outdoor-lighting-enhance-homes-curb-appeal.html">How Outdoor Lighting Can Enhance Your Home’s Curb Appeal</a></li><li><a href="how-to-choose-trusted-lighting-service-provider.html">How to Choose the Most Trusted Lighting Service Provider for Your Needs</a></li></ul></section></div>
+<section class="pad bp-main" aria-label="Disclaimer">
+  <div class="wrap bp-layout">
+    <article class="bp-body">
+<div class="lg-draft" role="note"><b>Draft for review.</b> This disclaimer is pending Big Easy Lighting's review and approval and is not yet in effect.</div>
+<h2 id="who-runs-this-site"><span class="bp-n" aria-hidden="true">1</span><span class="sr-only">1 </span> Who Runs This Site</h2>
+<p>BigEasyLighting.com is owned and operated by Big Easy Lighting and may contain advertisements, sponsored content, paid insertions, affiliate links, or other forms of monetization.</p>
+<p>This site is personally maintained and edited by the author as referred to in all articles. For more information and questions that may not have been included on this site, please keep in touch with us via this site’s contact form.</p>
+<h2 id="advertising-and-opinions"><span class="bp-n" aria-hidden="true">2</span><span class="sr-only">2 </span> Advertising and Opinions</h2>
+<p>BigEasyLighting.com abides by word-of-mouth marketing standards. We believe in honesty of relationship, opinion, and identity. The compensation received may influence the advertising content, topics, or posts made on this blog. That content, advertising space, or post will be clearly identified as paid or sponsored content.</p>
+<p>BigEasyLighting.com is never directly compensated to provide opinions on products, services, websites, and various other topics. The views and opinions expressed on this website are purely those of the authors. If we claim or appear to be experts on a certain topic, product, or service area, we will only endorse products or services that we believe, based on our expertise, are worthy of such endorsement. Any product claim, statistic, quote, or other representation about a product or service should be verified with the manufacturer or provider.</p>
+<p>This site does not contain any content that might present a conflict of interest.</p>
+<h2 id="accuracy-of-content"><span class="bp-n" aria-hidden="true">3</span><span class="sr-only">3 </span> Accuracy of Content</h2>
+<p>BigEasyLighting.com makes no representations, warranties, or assurances as to the accuracy, currency, or completeness of the content contained on this website or any sites linked to or from this site.</p>
+<p>We have been providing content and marketing solutions and services for various clients. All topics and information contained on this site are purely our own views, which are based on years of continuous testing, learning, and application. If we appear to be experts in a certain area, rest assured that every effort has been made to present accurate and up-to-date information.</p>
+<h2 id="affiliate-links"><span class="bp-n" aria-hidden="true">4</span><span class="sr-only">4 </span> Affiliate Links</h2>
+<p>In this regard, we will only endorse products and services within our area of expertise that we believe are worthy of such promotion or endorsement. In line with the FTC/FCA guidelines, we are required to inform you that some links are, in fact, affiliate marketing links and that we receive commissions once you buy products through these affiliate links.</p>
+<p>Any specifics on the statistics, benefits, and effects of these products on your business or way of life should be verified with the product owner or merchant. While such products have been personally tested or comprehensively reviewed by us or any of our partners, any reliance on the solutions presented is completely at your own risk.</p>
+<h2 id="site-availability"><span class="bp-n" aria-hidden="true">5</span><span class="sr-only">5 </span> Site Availability</h2>
+<p>All efforts have been made to keep this site up and running 24/7. The owner(s) takes no responsibility for the server being down or unavailable due to technical issues that are beyond our control.</p>
+<h2 id="results-and-forward-looking-statements"><span class="bp-n" aria-hidden="true">6</span><span class="sr-only">6 </span> Results and Forward-Looking Statements</h2>
+<p>In this field, where anyone can claim potential marketing results, we don’t guarantee or promise quick profits, as our methods may involve white-hat techniques that require hard work. This site is strongly against get-rich-quick schemes or scams and is focused on long-term results by building legitimate businesses online. While we might present promising benefits, all results are affected by many factors, such as market conditions, customer requirements, buyer intent, search engine algorithms, social behavior, and how you use such solutions.</p>
+<p>All services provided require your active participation to get closer to your goals. This site may include forward-looking claims that commonly appear as terms such as “intend,” “believe,” “anticipate,” “plan,” “project,” “estimate,” “expect,” and other similar terminologies about the description of potential market results or financial performance.</p>
+<p>Any similar claims listed in this blog or in any of the sales materials are meant to present ideas of revenue potential. Various elements can become crucial in identifying real success. No guarantees are made regarding the end results similar or comparable to ours or anyone else’s. In fact, there are no promises that you’ll achieve any certain success from the solutions and methods we present.</p>
+<p>Final outcomes always vary, and just like in any business venture, there are risks: you may or may not earn. The expected results in any type of business always come from hard work, dedication, time, and other similar factors. No income guarantees are made by this site.</p>
+<h2 id="copyright"><span class="bp-n" aria-hidden="true">7</span><span class="sr-only">7 </span> Copyright</h2>
+<p>Copyright BigEasyLighting.com, All rights reserved.</p>
+<p>Unauthorized copying or publication of the content from this website is prohibited.</p>
+<h2 id="contact"><span class="bp-n" aria-hidden="true">8</span><span class="sr-only">8 </span> Contact</h2>
+<p>If you have any questions regarding this policy or your dealings with our website, please <a href="contact.html">contact us</a>.</p>
+    </article>
+    <aside class="bp-side" aria-label="Page tools"><details class="bp-toc" open><summary class="bp-toc-h">On This Page</summary><ol><li><a href="#who-runs-this-site">Who Runs This Site</a></li><li><a href="#advertising-and-opinions">Advertising and Opinions</a></li><li><a href="#accuracy-of-content">Accuracy of Content</a></li><li><a href="#affiliate-links">Affiliate Links</a></li><li><a href="#site-availability">Site Availability</a></li><li><a href="#results-and-forward-looking-statements">Results and Forward-Looking Statements</a></li><li><a href="#copyright">Copyright</a></li><li><a href="#contact">Contact</a></li></ol></details><div class="bp-cta"><h2>Questions About This Page?</h2><p>Call us or use the contact page and we will help.</p><a class="btn btn-amber" href="contact.html">Contact Us <svg><use href="#arr"/></svg></a><a class="btn btn-line-l" href="tel:+15047846858"><svg><use href="#ph"/></svg>(504) 784-6858</a></div></aside>
+  </div>
 </section>
 
 <section class="dark pad cta" id="estimate" aria-labelledby="cta-h">
@@ -1126,6 +1247,54 @@ body.modal-open{overflow:hidden}
   });
 })();
 </script>
+<script>
+/* Blog: topic chips + search, and the New Orleans rail arrows */
+(function(){
+  var grid=document.getElementById('bl-grid'); if(!grid) return;
+  var cards=[].slice.call(grid.querySelectorAll('.bl-card'));
+  var chips=[].slice.call(document.querySelectorAll('.bl-chip'));
+  var q=document.getElementById('bl-q'), count=document.getElementById('bl-count'), empty=document.getElementById('bl-empty');
+  var filter='all';
+  var text=cards.map(function(c){return c.textContent.replace(/ /g,' ').toLowerCase();});
+  function matches(i){
+    var c=cards[i], term=q.value.replace(/ /g,' ').trim().toLowerCase();
+    if(filter!=='all' && (' '+c.dataset.cats+' ').indexOf(' '+filter+' ')<0) return false;
+    return !term || term.split(/\s+/).every(function(w){return text[i].indexOf(w)>=0;});
+  }
+  function render(animateFrom){
+    var hits=0, visible=0;
+    cards.forEach(function(c,i){
+      var ok=matches(i); if(ok) hits++;
+      var show=ok;
+      if(show){ visible++; if(c.hidden && animateFrom!=null){ c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }
+      c.hidden=!show;
+    });
+    count.textContent=!hits ? 'No matching articles' : (hits===cards.length ? 'Showing all '+hits+' articles' : 'Showing '+hits+' of '+cards.length+' article'+(cards.length===1?'':'s'));
+    empty.hidden=hits>0;
+  }
+  chips.forEach(function(b){ b.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+    filter=b.dataset.f; render(0);
+  });});
+  var t; q.addEventListener('input',function(){ clearTimeout(t); t=setTimeout(function(){render(0);},120); });
+  document.getElementById('bl-reset').addEventListener('click',function(){
+    q.value=''; filter='all'; chips.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.f==='all'));}); render(0);
+  });
+  render();
+  var hdr=document.querySelector('.hdr'), tools=document.querySelector('.bl-tools');
+  function pin(){ if(hdr&&tools) tools.style.top=Math.round(hdr.getBoundingClientRect().height)+'px'; }
+  pin(); window.addEventListener('resize',pin);
+
+  var rail=document.querySelector('.bl-rail'), arrows=[].slice.call(document.querySelectorAll('.bl-arrow'));
+  if(rail){
+    function upd(){ var max=rail.scrollWidth-rail.clientWidth-2; arrows[0].disabled=rail.scrollLeft<=2; arrows[1].disabled=rail.scrollLeft>=max; }
+    arrows.forEach(function(a){ a.addEventListener('click',function(){ var s=rail.querySelector('.bl-slide'); var step=(s?s.getBoundingClientRect().width+20:300)*(window.innerWidth>1000?2:1); rail.scrollBy({left:step*Number(a.dataset.dir)}); }); });
+    rail.addEventListener('scroll',function(){ window.requestAnimationFrame(upd); },{passive:true});
+    window.addEventListener('resize',upd); upd();
+  }
+})();
+
+</script>
 <script id="typo-fix">
 /* Keeps the last two words of headings and sentences together, and stops names, times and phone numbers splitting across lines */
 (function(){
@@ -1161,5 +1330,53 @@ body.modal-open{overflow:hidden}
   });
 })();
 </script>
+<script>(function(){
+var bar=document.querySelector('.bp-progress'),body=document.querySelector('.bp-body'),toc=document.querySelector('.bp-toc');
+if(toc&&window.innerWidth<=1100)toc.removeAttribute('open');
+if(toc){toc.querySelector('summary').addEventListener('click',function(e){if(window.innerWidth>1100)e.preventDefault();});}
+var links=toc?[].slice.call(toc.querySelectorAll('a')):[];
+var heads=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+
+/* headings, questions, card titles: never split a hyphenated word across lines */
+[].slice.call(document.querySelectorAll('.bp-body h2,.bp-body h3,.bp-body h4,.bp-body summary,.bp-toc a,.bp-card h3,.bp-pn b,.rp-hero h1')).forEach(function(el){
+ var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),t,list=[];while(t=w.nextNode())list.push(t);
+ list.forEach(function(t){
+  if(t.parentNode.closest('.bp-nw,.sr-only,[aria-hidden="true"]')||!/\S-\S/.test(t.data))return;
+  var f=document.createDocumentFragment(),last=0,m,re=/\S+-\S+/g;
+  while(m=re.exec(t.data)){f.appendChild(document.createTextNode(t.data.slice(last,m.index)));var sp=document.createElement('span');sp.className='bp-nw';sp.textContent=m[0];f.appendChild(sp);last=m.index+m[0].length;}
+  f.appendChild(document.createTextNode(t.data.slice(last)));t.parentNode.replaceChild(f,t);
+ });
+});
+/* keep phone numbers whole; keep the last two words of article text together, never splitting a hyphenated word there */
+var body2=document.querySelector('.bp-body');
+if(body2){
+ var tw=document.createTreeWalker(body2,NodeFilter.SHOW_TEXT,null),n,ph=[];
+ while(n=tw.nextNode()){if(/\(?\d{3}\)?[\s.-]?\d{3}-\d{4}/.test(n.data))ph.push(n);}
+ ph.forEach(function(t){var f=document.createDocumentFragment(),last=0,m,re=/\(?\d{3}\)?[\s.-]?\d{3}-\d{4}/g;while(m=re.exec(t.data)){f.appendChild(document.createTextNode(t.data.slice(last,m.index)));var sp=document.createElement('span');sp.className='bp-nw';sp.textContent=m[0];f.appendChild(sp);last=m.index+m[0].length;}f.appendChild(document.createTextNode(t.data.slice(last)));t.parentNode.replaceChild(f,t);});
+ var els=[].slice.call(document.querySelectorAll('.bp-body p,.bp-body li,.bp-body h2,.bp-body h3,.bp-body h4,.bp-body summary,.bp-body td,.bp-body th,.bp-body blockquote p,.bp-toc a,.bp-card h3,.bp-pn b'));
+ els.forEach(function(el){
+  if(el.querySelector('p,li,ul,ol,div'))return;
+  var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),t,lastT=null;while(t=w.nextNode()){if(/\S/.test(t.data))lastT=t;}
+  if(lastT&&lastT.parentNode.classList&&lastT.parentNode.classList.contains('bp-nw')&&!lastT.parentNode.nextSibling){var sp0=lastT.parentNode,pv=sp0.previousSibling,mm=pv&&pv.nodeType===3&&pv.data.match(/(\S+)[ \u00a0]+$/);if(mm){pv.data=pv.data.slice(0,mm.index);sp0.textContent=mm[1]+'\u00a0'+sp0.textContent;}return;}
+  if(!lastT||lastT.parentNode.closest('.bp-nw,.sr-only,[aria-hidden="true"]'))return;
+  var words=(el.textContent||'').trim().split(/\s+/);if(words.length<3)return;
+  var m=lastT.data.match(/(\S+)[ \u00a0]+(\S+)(\s*)$/);
+  var ps=lastT.previousSibling, one=lastT.data.match(/^[ \u00a0]+(\S+)(\s*)$/);
+  if(one&&ps&&ps.nodeType===1&&ps.classList.contains('bp-nw')){var j=document.createElement('span');j.className='bp-nw';j.textContent=ps.textContent+'\u00a0'+one[1];ps.parentNode.insertBefore(j,ps);ps.parentNode.removeChild(ps);lastT.data=one[2]||'';return;}
+  if(!m){ if(/-/.test(lastT.data.trim())&&lastT.data.trim().split(/\s+/).length===1){var s1=document.createElement('span');s1.className='bp-nw';s1.textContent=lastT.data.trim();lastT.parentNode.replaceChild(s1,lastT);} return;}
+  var pair=m[1]+'\u00a0'+m[2];
+  if(/-/.test(pair)){var head=lastT.data.slice(0,m.index),sp=document.createElement('span');sp.className='bp-nw';sp.textContent=pair;var f=document.createDocumentFragment();f.appendChild(document.createTextNode(head));f.appendChild(sp);if(m[3])f.appendChild(document.createTextNode(m[3]));lastT.parentNode.replaceChild(f,lastT);}
+  else lastT.data=lastT.data.slice(0,m.index)+pair+m[3];
+ });
+}
+var ticking=false;
+function upd(){ticking=false;
+ if(bar&&body){var r=body.getBoundingClientRect(),h=r.height-window.innerHeight*0.6;var p=h>0?Math.max(0,Math.min(1,-r.top/h)):0;bar.style.transform='scaleX('+p.toFixed(3)+')';}
+ var cur=-1;heads.forEach(function(h,i){if(h&&h.getBoundingClientRect().top<140)cur=i;});
+ links.forEach(function(a,i){a.classList.toggle('on',i===cur);});
+}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
+window.addEventListener('resize',upd);upd();
+})();</script>
 </body>
 </html>
